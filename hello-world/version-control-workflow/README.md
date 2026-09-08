@@ -1,4 +1,4 @@
-# TITLE OF PROJECT
+# Version-control-workflow
 
 AUTHOR NAME
 
