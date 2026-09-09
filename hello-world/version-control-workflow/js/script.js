@@ -14,7 +14,7 @@
 */
 function setup() {
     // A 900x640 canvas
-    createCanvas(900, 600
+    createCanvas(1920, 1080
     );
 
     // Don't show the cursor
@@ -27,11 +27,11 @@ function setup() {
 */
 function draw() {
     // Make the background black (specified as RGB)
-    background(255, 255, 255);
+    background(60, 0, 120);
 
     // Draw a pyramid
     // How many levels for the pyramid
-    const levels = 50;
+    const levels = 20;
     // Loop through every level (backwards)
     for (let level = levels; level > 0; level--) {
         // Draw this layer
@@ -60,8 +60,8 @@ function draw() {
     // No line around the shape
     noStroke();
     // Make it red (RGB)
-    fill(255, 0, 0);
+    fill(255, 255, 255);
     // Draw a 100x100 circle at the mouse position
-    ellipse(mouseX, mouseY, 100, 100);
+    triangle(mouseX, mouseY, 24, 24);
     pop();
 }

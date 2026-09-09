@@ -1,9 +1,10 @@
 # cart253
 ---
-This is Felipe Amorim Castelo Branco's coursework repository for CART-253 course at Concordia University
+This is **Felipe Amorim** Castelo Branco's coursework repository for CART-253 course at Concordia University.
 
  ## Description
- This repository accumulates *all course challenges* throughout the twelve weeks of homeowork.
+ This repository accumulates *all weekly challenges* throughout the twelve weeks of classes, as well as the larger projects and prototype.
 ---
- Last known alteration made on this file: 2026-09-08 ---
- 
+ Last known alteration made on this file: 2026-09-09 
+---
+Teammate for the Hello World Project: Felipe S. Paiva
