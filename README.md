@@ -1,6 +1,6 @@
 # CART-253
 ---
-This is **Felipe Amorim** Castelo Branco's coursework repository for CART-253 course at Concordia University.
+This is ``Felipe Amorim`` C. Branco's coursework repository for CART-253 course at Concordia University.
 
 ## Description<br>
 This repository accumulates *all weekly challenges* throughout the twelve weeks of classes, as well as the larger projects and prototype.

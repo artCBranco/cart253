@@ -15,7 +15,7 @@ The project is meant to explore what a GitHub repository is, what code looks lik
 
 ## Screenshot(s)
 
-> ![2D Pyramid art.](./assets/images/clown.png)
+> ![2D Pyramid art.](./assets/images/pyramid.png)
 
 ## Attribution
 

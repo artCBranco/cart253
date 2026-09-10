@@ -10,13 +10,13 @@ Also hides overflow.
 **********************************************/
 
 body {
-  padding: 10;
-  margin: 10;
+  padding: 0;
+  margin: 0;
   display: grid;
   /* Set up the grid and justify/align to center */
   justify-content: center;
   align-content: center;
-  height: 500vh;
+  height: 100vh;
   /* Body is the height of the viewport */
   overflow: hidden;
   /* Hide anything that goes off the window size */
