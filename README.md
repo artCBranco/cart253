@@ -11,18 +11,16 @@ This repository accumulates *all weekly challenges*
 throughout the twelve weeks of classes, as well as  
 the larger projects and prototype.
 
----
+
 
 ## Projects:
 
 - [**Hello World**](https://artcbranco.github.io/cart253/Challenges/hello-world/)
 
----
+<linebreak>
 
 Last known alteration made on this file: 2026-09-09
 
----
+<linebreak> 
 
 Teammate for the Hello World Project: Felipe S. Paiva
-
----
