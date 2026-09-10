@@ -19,7 +19,6 @@ The project is meant to explore what a GitHub repository is, what code looks lik
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
 The entire [js code](https://pippinbarr.com/cart253/topics/hello-world/version-control-workflow-example/js/script.js) was offered by Pippin Barr as part of the CART253 course.
 
 ## License
