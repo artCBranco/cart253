@@ -15,6 +15,10 @@ the larger projects and prototype.
 
 ---
 
+### Reflexive Journal
+
+[Read the journal here](https://artcbranco.github.io/cart253/Challenges/journal/)
+
 ### Challenges:
 
 - [**Hello World**](https://artcbranco.github.io/cart253/Challenges/hello-world/)
