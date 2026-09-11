@@ -1,6 +1,6 @@
 # CART-253
 
-> ![Artcbranco Logo Banner](./assets/images/banner.jpg)
+> ![Artcbranco Logo Banner](./images/banner.jpg)
 
 This is ``Felipe Amorim`` C. Branco's coursework  
 repository for CART-253 course at Concordia University.
