@@ -1,5 +1,7 @@
 # CART-253
 
+> ![2D Pyramid art.](./assets/images/banner.jpg)
+
 This is ``Felipe Amorim`` C. Branco's coursework  
 repository for CART-253 course at Concordia University.
 
@@ -13,9 +15,10 @@ the larger projects and prototype.
 
 ---
 
-## Challenges:
+### Challenges:
 
 - [**Hello World**](https://artcbranco.github.io/cart253/Challenges/hello-world/)
+
 Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)
 
 ---
@@ -25,6 +28,7 @@ Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io
 Felipe C. Branco is a Graphic Designer living in Montréal, Canada and currently learning Computational Arts at Concordia University. While still new to the industry, they are brimming with new ideas and a burning desire to create.
 
 [Learn more about Felipe](artcbranco.carrd.co)
+
 [Portfolio](https://www.behance.net/artcbranco)
 
 ---
