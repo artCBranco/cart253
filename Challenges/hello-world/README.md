@@ -1,6 +1,6 @@
 # Hello World
 
-Felipe Amorim Castelo Branco
+by Felipe Amorim Castelo Branco
 
 [View this project online](https://artcbranco.github.io/cart253/Challenges/hello-world/)
 
