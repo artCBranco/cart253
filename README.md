@@ -2,7 +2,7 @@
 
 > ![Artcbranco Logo Banner](./images/banner.jpg)
 
-This is ``Felipe Amorim`` C. Branco's coursework  
+This is ``Felipe Amorim C. Branco's`` coursework  
 repository for CART-253 course at Concordia University.
 
 ---

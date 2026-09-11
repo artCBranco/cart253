@@ -1,6 +1,6 @@
 # Reflective Journal
 
-by ```Felipe Amorim Castelo Branco```
+by ``Felipe Amorim Castelo Branco``
 
 ---
 
