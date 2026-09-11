@@ -17,11 +17,11 @@ the larger projects and prototype.
 
 ### Reflexive Journal
 
-[Read the journal here](https://artcbranco.github.io/cart253/Challenges/journal/)
+[Read the journal here](https://artcbranco.github.io/cart253/challenges/journal/)
 
 ### Challenges:
 
-- [**Hello World**](https://artcbranco.github.io/cart253/Challenges/hello-world/)
+- [**Hello World**](https://artcbranco.github.io/cart253/challenges/hello-world/)
 
 Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)
 
