@@ -4,8 +4,6 @@
 # CART-253
 ## Felipe A. C. Branco's Repository
 
-> ![Felipe Profile](./assets/images/profile.png)
-
 This is ``Felipe Amorim Castelo Branco's`` coursework  
 repository for CART-253 course at Concordia University.
 
@@ -32,6 +30,8 @@ Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io
 ---
 
 ## About Felipe C. Branco
+
+> ![Felipe Profile](./assets/images/profile.png)
 
 Felipe C. Branco is a Graphic Designer living  
 in Montréal, Canada and currently learning  
