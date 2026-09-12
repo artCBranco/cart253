@@ -38,8 +38,8 @@ in Montréal, Canada and currently learning
 Computational Arts at Concordia University. 
 
 While still new to the industry, they are  
-brimming with new ideas and a burning desire  
-to create.
+brimming with new ideas and a burning  
+desire to create.
 
 [Learn more about Felipe](https://artcbranco.carrd.co)
 
