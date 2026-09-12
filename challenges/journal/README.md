@@ -12,7 +12,7 @@ On one hand, ever since I typed github on the browser, I have been feeling **ver
 
 That said, I have never even tried to learn *how* to code or why these macros appeared in the way they did. It's very daunting to face something seemingly so large and endless: A thousand coding languages, incountable details that are a 'must-know' for programmers. It's no wonder that people call it coding _languages_, rather than dialects or even "skills". Because this *is* a language, a very complex one that you have to completely change the way you think if you want to get anywhere at it. 
 
-<small>Luckily... I debug for a living ;P</small>
+<sub>Luckily... I debug for a living ;P</sub>
 
 Now, on the **other** hand, I can already taste the freedom on my fingers every time I type "</>" push commits to github. As a Graphic Designer, I _loved_ UI/UX for the ability to do and animate anything I wanted, to really bring a project to life with Figma Prototypes. But I _hated_ it for the fact that all I could ever do was non-functional **prototypes**. 
 
@@ -22,6 +22,6 @@ Now, I have the <striking>power of the sun...</striking>
 
 > ![Power of The Sun...](./assets/images/sunpower.webp)
 
-...as long as I can learn to control it. 
+<sub>...as long as I can learn to control it.</sub> 
 
 Anyway, my deepest apologies for the prose. TL;DR: I'm very excited to learn coding. It's hard, but surprisingly fun. Even the debugging *("It's broken. Why is it broken? Ah, there it is.")* is a fun experience to me. I'm mostly at the "Monkey see, monkey do" trying out all the code I saw in the Hello World file, like the ```let``` functions, but I'll get there eventually. Of that, I have no doubt. 
