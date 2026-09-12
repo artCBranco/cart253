@@ -24,4 +24,4 @@ Now, I have the <striking>power of the sun...</striking>
 
 ...as long as I can learn to control it. 
 
-Anyway, my deepest apologies for the prose. TL;DR: I'm very excited to learn coding. It's hard, but surprisingly fun. Even the debugging "It's broken. Why is it broken? Ah, there it is." is a fun experience to me. I'm mostly at the "Monkey see, monkey do" trying out all the code I saw in the Hello World file, like the ```let``` functions, but I'll get there eventually. Of that, I have no doubt. 
+Anyway, my deepest apologies for the prose. TL;DR: I'm very excited to learn coding. It's hard, but surprisingly fun. Even the debugging *("It's broken. Why is it broken? Ah, there it is.")* is a fun experience to me. I'm mostly at the "Monkey see, monkey do" trying out all the code I saw in the Hello World file, like the ```let``` functions, but I'll get there eventually. Of that, I have no doubt. 
