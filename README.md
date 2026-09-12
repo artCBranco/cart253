@@ -29,8 +29,8 @@ Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io
 
 ## About Felipe C. Branco
 
-Felipe C. Branco is a Graphic Designer living 
-in Montréal, Canada and currently learning 
+Felipe C. Branco is a Graphic Designer living  
+in Montréal, Canada and currently learning  
 Computational Arts at Concordia University. 
 
 While still new to the industry, they are 
