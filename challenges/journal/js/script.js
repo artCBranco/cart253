@@ -9,9 +9,18 @@
 
 "use strict";
 
-/**
- * Striking color
+
+
+function setup() {
+    /**
+ * Background color
 */
-let striking = "#0DE0BD"
-let bgColor = '#1A1A1A'
-let textColor = '#F5F5F5'
+    bgColor = color(0, 0, 0)
+    /**
+ * Text options such as color, font and striking
+*/
+    textColor = color(255, 255, 255)
+    textfont = 'comic sans ms'
+    textSize = 20
+    striking = color(13, 224, 189)
+}
