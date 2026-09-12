@@ -11,7 +11,7 @@
 
 
 
-function setup() {
+function draw() {
     /**
  * Background color
 */
