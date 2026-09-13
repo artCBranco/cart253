@@ -4,7 +4,7 @@
 # CART-253
 ## Felipe A. C. Branco's Repository
 
-This is ``Felipe Amorim Castelo Branco's`` coursework  
+This is ``Felipe Amorim Castelo Branco``'s coursework  
 repository for CART-253 course at Concordia University.
 
 ---

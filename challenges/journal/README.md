@@ -14,7 +14,7 @@ That said, I have never even tried to learn *how* to code or why these macros ap
 
 <sub>Luckily... I debug for a living ;P</sub>
 
-Now, on the **other** hand, I can already taste the freedom on my fingers every time I type "</>" push commits to github. As a Graphic Designer, I _loved_ UI/UX for the ability to do and animate anything I wanted, to really bring a project to life with Figma Prototypes. But I _hated_ it for the fact that all I could ever do was non-functional **prototypes**. 
+Now, on the **other** hand, I can already taste the freedom on my fingers every time I type "</>" and push commits to github. As a Graphic Designer, I _loved_ UI/UX for the ability to do and animate anything I wanted, to really bring a project to life with Figma Prototypes. But I _hated_ it for the fact that all I could ever do was non-functional **prototypes**. 
 
 Unlike printed media, where I knew exactly how to setup the document and export the pdf to print it myself and cut the pages of a magazine with my own hands and put everything together in a final product, UI/UX presented me a huge barrier between my visually pleasing projects and functional websites that I inevitably could only cross by handing off all my things to a stranger and hope they do it correctly.
 
