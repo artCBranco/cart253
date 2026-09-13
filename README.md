@@ -27,6 +27,10 @@ the larger projects and prototype.
 
 Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)
 
+### Prototypes:
+
+<sub> *This feature is still being worked on, please check back soon...!*</sub>
+
 ---
 
 ## About Felipe C. Branco

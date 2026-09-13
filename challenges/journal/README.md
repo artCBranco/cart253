@@ -1,5 +1,4 @@
 # Reflective Journal
-
 by <striking>Felipe Amorim Castelo Branco</striking>
 
 ---
