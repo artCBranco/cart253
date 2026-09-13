@@ -17,7 +17,7 @@ Now, on the **other** hand, I can already taste the freedom on my fingers every 
 
 Unlike printed media, where I knew exactly how to setup the document and export the pdf to print it myself and cut the pages of a magazine with my own hands and put everything together in a final product, UI/UX presented me a huge barrier between my visually pleasing projects and functional websites that I inevitably could only cross by handing off all my things to a stranger and hope they do it correctly.
 
-Now, I have the ==power of the sun...==
+Now, I have the **power of the sun...**
 
 > ![Power of The Sun...](./assets/images/sunpower.webp)
 
