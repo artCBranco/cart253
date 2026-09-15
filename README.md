@@ -37,11 +37,11 @@ the larger projects and prototype.
 
 - **Instructions**
 
-        [Emojinaut](https://artcbranco.github.io/cart253/challenges/emojinaut)
+    [Emojinaut](https://artcbranco.github.io/cart253/challenges/emojinaut)
         
-        [WIP](https://artcbranco.github.io/cart253/challenges/WIP)
+    [WIP](https://artcbranco.github.io/cart253/challenges/WIP)
     
-        [WIP](https://artcbranco.github.io/cart253/challenges/WIP)   
+    [WIP](https://artcbranco.github.io/cart253/challenges/WIP)   
         
 <sub> *This feature is still being worked on, please check back soon...!*</sub>
 

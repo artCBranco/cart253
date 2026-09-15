@@ -9,11 +9,11 @@
 "use strict";
 
 /**
- * This is the setup function for the program.
+ * This is the setup function for the program. It creates a 600x700 frame.
 */
 function setup() {
-  let canvas = createCanvas(600, 750);
-  canvas.parent('#sketch');
+    let canvas = createCanvas(600, 750);
+    canvas.parent('#sketch');
 }
 
 function drawWindow(x, y, width) {
@@ -36,8 +36,8 @@ function drawBuilding(x, width, height) {
     // loop that draws windows based on the width and height of the building
     // The loop starts at 10 pixels so that the windows are not drawn close to the edge of the building
     // There are two loops inside of eachother: one to determine the x position of the window, and another one to determine the y position.
-    for (var i = 10; i < width -10; i += 10) {
-        for (var a = 10; a < height -10; a += 10) {
+    for (var i = 10; i < width - 10; i += 10) {
+        for (var a = 10; a < height - 10; a += 10) {
             // draws the window
             drawWindow(x + i, fixHeight + a, 5);
         }
@@ -47,7 +47,7 @@ function drawBuilding(x, width, height) {
 
 
 /**
- * This draw function (...)
+ *Draws the background, the moon, the buildings and the foreground of the city skyline.
 */
 function draw() {
     // changes the background color to white
@@ -59,12 +59,12 @@ function draw() {
     rect(50, 50, 500, 500);
     // draws a moon in the sky
     noStroke();
-    fill(255,255,255);
-    circle(125,125,80);
+    fill(255, 255, 255);
+    circle(125, 125, 80);
     // draws the shadow of the moon in the sky
     noStroke();
-    fill(30,0,60);
-    circle(140,110,80);
+    fill(30, 0, 60);
+    circle(140, 110, 80);
 
     // Draws all the building of the skyline
     drawBuilding(50, 100, 200);
@@ -74,7 +74,7 @@ function draw() {
     drawBuilding(475, 50, 100);
 
     // Draws the foreground of the city skyline
-    fill(50,50,50)
+    fill(50, 50, 50)
     rect(50, 500, 350, 50)
     rect(450, 500, 100, 50)
 }

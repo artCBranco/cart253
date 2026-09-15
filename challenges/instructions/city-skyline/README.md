@@ -12,6 +12,8 @@ This is a vector/code art for the class challenge of week 2 "instructions". It d
 
 Project made in cooperation with [Felipe S. Paiva](https://feguri.github.io/cart253/)
 
+- This project uses [p5.js](https://p5js.org).
+
 ## License
 
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+This  is a non-monetized schoolwork and, as such, is protected by the Fair Dealing exception under the Copyright Laws for Educational Projects([Fair Dealing Classroom](https://www.cmec.ca/docs/copyright/CopyrightFairDealingClassroom_EN.pdf)).

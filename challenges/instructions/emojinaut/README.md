@@ -10,14 +10,8 @@ This description should help the reader understand what the program is, anything
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 
 ## License
 
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+This  is a non-monetized schoolwork and, as such, is protected by the Fair Dealing exception under the Copyright Laws for Educational Projects([Fair Dealing Classroom](https://www.cmec.ca/docs/copyright/CopyrightFairDealingClassroom_EN.pdf)).

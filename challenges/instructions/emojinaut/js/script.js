@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * The Emojinaut
+ * Felipe A. C. Branco
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is an illustration of my "emojinaut". A space explorer that displays their emotions on their helmet. This character was inspired by [a past project of mine](https://), but this illustration was created entirely through code.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * This
 */
 function setup() {
 
