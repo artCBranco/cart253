@@ -25,23 +25,23 @@ the larger projects and prototype.
 
 - [**Hello World**](https://artcbranco.github.io/cart253/challenges/hello-world/)
 
-Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)
+    <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 - **Instructions**
 
-    [City Skyline](https://artcbranco.github.io/cart253/challenges/city-skyline)
+     [City Skyline](https://artcbranco.github.io/cart253/challenges/city-skyline)
 
-Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)
+     <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 ### Prototypes:
 
 - **Instructions**
 
-    [Emojinaut](https://artcbranco.github.io/cart253/challenges/emojinaut)
+        [Emojinaut](https://artcbranco.github.io/cart253/challenges/emojinaut)
     
-    [WIP](https://artcbranco.github.io/cart253/challenges/WIP)
+     [WIP](https://artcbranco.github.io/cart253/challenges/WIP)
     
-    [WIP](https://artcbranco.github.io/cart253/challenges/WIP)   
+     [WIP](https://artcbranco.github.io/cart253/challenges/WIP)   
         
 <sub> *This feature is still being worked on, please check back soon...!*</sub>
 
