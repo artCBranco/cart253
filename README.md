@@ -27,6 +27,14 @@ the larger projects and prototype.
 
 Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)
 
+- **Instructions**
+        [City Skyline](https://artcbranco.github.io/cart253/challenges/city-skyline)
+        [Emojinaut](https://artcbranco.github.io/cart253/challenges/emojinaut)
+        [WIP](https://artcbranco.github.io/cart253/challenges/WIP)
+        [WIP](https://artcbranco.github.io/cart253/challenges/WIP)   
+            
+Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)
+
 ### Prototypes:
 
 <sub> *This feature is still being worked on, please check back soon...!*</sub>
