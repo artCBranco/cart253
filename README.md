@@ -29,7 +29,7 @@ the larger projects and prototype.
 
 - **Instructions**
 
-     [City Skyline](https://artcbranco.github.io/cart253/challenges/city-skyline)
+     [**City Skyline**](https://artcbranco.github.io/cart253/challenges/instructions/city-skyline)
 
      <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
@@ -37,7 +37,7 @@ the larger projects and prototype.
 
 - **Instructions**
 
-    [Emojinaut](https://artcbranco.github.io/cart253/challenges/emojinaut)
+    [**The Emojinaut**](https://artcbranco.github.io/cart253/challenges/instructions/emojinaut)
         
     [WIP](https://artcbranco.github.io/cart253/challenges/WIP)
     
