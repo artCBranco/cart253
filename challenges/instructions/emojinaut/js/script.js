@@ -25,16 +25,16 @@ function setup() {
 function drawEmojinaut() {
 
     // ▽ Create the Emojinaut backpack
-    fill('#ff00dd')
-    rect(1250, 1080, 1000, 500, 60, 0, 0, 0)
+    fill('#90007d')
+    rect(1250, 1080, 1000, 500, 60, 60, 0, 0)
 
     //▽ Create the Emojinaut body
     fill('#ffc2f7')
-    rect(1250, 1080, 1200, 150, 60, 0, 0, 0)
+    rect(1250, 1080, 1200, 150, 120, 120, 0, 0)
 
     // ▽ Create the Emojinaut neck
     fill('#ff80ee')
-    rect(1250, 980, 700, 250)
+    rect(1250, 980, 700, 250, 60, 60, 0, 0)
 
     // ▽ Create the Emojinaut's helmet
     fill('#cbe7ff')
