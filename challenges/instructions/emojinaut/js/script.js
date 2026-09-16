@@ -14,7 +14,7 @@ function setup() {
     createCanvas(1920, 1080);
 
     // ▽ Automatically recalculate the stars in the background
-    frameRate(.5);
+    frameRate(0.5);
 
     // ▽ Setting up automatic shape settings
     noStroke()
