@@ -19,7 +19,7 @@ the larger projects and prototype.
 
 ### Reflexive Journal
 
-[Read the journal here](https://artcbranco.github.io/cart253/journal/)
+[Read the journal here](./journal/README.md)
 
 ### Challenges:
 
