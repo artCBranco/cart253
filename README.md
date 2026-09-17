@@ -1,7 +1,8 @@
 
+# CART-253
+
 > ![Artcbranco Logo Banner](./assets/images/banner.png)
 
-# CART-253
 ## Felipe A. C. Branco's Repository
 
 This is ``Felipe Amorim Castelo Branco``'s coursework  
@@ -23,17 +24,16 @@ the larger projects and prototype.
 
 ### Challenges:
 
-- [**Hello World**](https://artcbranco.github.io/cart253/challenges/hello-world/)
-
+- [**Hello World**](./challenges/hello-world/README.md)
 <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 - **Instructions**
 
-     [**City Skyline**](https://artcbranco.github.io/cart253/challenges/instructions/city-skyline)
+     [**City Skyline**](./challenges/instructions/city-skyline/README.md)
 
      <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
      
-     [**The Emojinaut**](https://artcbranco.github.io/cart253/challenges/instructions/emojinaut)
+     [**The Emojinaut**](./challenges/instructions/emojinaut/README.md)
      
      [**WIP**](https://artcbranco.github.io/cart253/challenges/WIP)
     
