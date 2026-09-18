@@ -29,4 +29,25 @@ Anyway, my deepest apologies for the prose. TL;DR: I'm very excited to learn cod
 
 ## *Date:2026-09-15*
 
+The "Instructions" challenge was something so familiar that I felt like I was paying back for all the times I said "Illustrator is so easy I could do it blindfolded". Well, now I'm doing illustrator while typing on a dark screen. 
+
+The concept behind how to shape forms into pictures is the same in vectorial art and these coded compound paths. And even how the code is organized is so very similar to it:
+
+```createCanvas()``` is pretty much the New Document window. Once you have an Artboard created, you start shaing things with squares and circles by making them as large or small as possible and dragging them around the canvas. Even the X, Y, and the size are just represented in a different format. 
+
+But I was surprised to realize how instinctive it is. Even the layer organization works functionally the same, although inversed. The background goes at the <strikethrough>bottom</strikethrough> top and shapes will progressively layer themselves from the back to the front after that.
+
+A square here, a triangle there and you have your cute little astronaut staring back at you. Surprisingly similar.
+ 
+I also immediately adopted the ```function drawX ()``` to makeshift layer 'groups' and break down the image into specific areas. I'm not sure if that's something that can be done or if it's a big No-No in the computing community, but I gravitated towards that decision almost subconsciously. 
+ 
+It was only in the second challenge that I discovered the ```push()/pop()``` commands. If using functions the way I have been doing is cringe or unrecommended, I'll adapt to using those. 
+
+I also discovered Clipping Masks and filters such as Blur, but done old school style rather than accessing the Adobe Effects Library. It's a little weird to imagine that everything I've done in that app is just coding without the code. Every square created with a mouse was a ```square(x,y,size)``` being noted down in the background. 
+
+It was a challenge to figure out the exact pixel to anchor my forms, but it's like playing chess in your own head. Seems impossible at first, but if you actually understand what's going on, it's just a matter of keeping track of everything. 
+
+Now I can't help but imagine actual frame-by-frame animations are just a step away from what I'm doing here. It's all code, after all, right?
+
+---
 
