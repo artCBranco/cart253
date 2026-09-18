@@ -27,7 +27,7 @@ Anyway, my deepest apologies for the prose. TL;DR: I'm very excited to learn cod
 
 ---
 
-## *Date:2026-09-15*
+## *Date: 2026-09-18*
 
 The "Instructions" challenge was something so familiar that I felt like I was paying back for all the times I said "Illustrator is so easy I could do it blindfolded". Well, now I'm doing illustrator while typing on a dark screen. 
 

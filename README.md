@@ -38,13 +38,12 @@ the larger projects and prototype.
 
 - **Instructions**
      
-    - [**The Emojinaut**](https://artcbranco.github.io/cart253/challenges/instructions/emojinaut.md)
+    - [**The Emojinaut**](https://artcbranco.github.io/cart253/challenges/instructions/emojinaut)
      
     - [**Calm Horizons**](https://artcbranco.github.io/cart253/challenges/instructions/calm-horizons)
     
     - [**Fractalis**](https://artcbranco.github.io/cart253/challenges/instructions/fractalis)
         
-<sub> *This feature is still being worked on, please check back soon...!*</sub>
 
 ---
 
