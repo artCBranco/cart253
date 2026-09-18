@@ -34,12 +34,40 @@ function drawSky() {
     ellipse(50, 300, 200)
     ellipse(200, 400, 250)
     ellipse(50, 400, 200)
-    ellipse(350, 400, 200)
+    ellipse(350, 425, 200)
+
+    // ▽ Drawing the right bg cloud 
+    fill("#c0cdd8")
+    ellipse(900, 500, 150)
+    ellipse(800, 475, 125)
+    ellipse(900, 450, 125)
+    ellipse(1000, 450, 200)
+
+    // ▽ Drawing the sun
+    fill("#fedf8c")
+    ellipse(725, 700, 150)
+
+}
+
+function drawMountain() {
+
+    // ▽ Drawing the left mountain
+    fill("#01070d")
+    triangle(200, 900, 400, 600, 600, 900)
+    triangle(300, 900, 500, 700, 700, 900)
+
+    // ▽ Drawing the right mountain
+    triangle(800, 900, 900, 750, 1100, 900)
+    triangle(900, 900, 1040, 600, 1200, 900)
+
+    // ▽ Drawing the ground
+    rect(540, 992, 1080, 200)
 
 
 }
 
 function draw() {
     drawSky()
+    drawMountain()
 
 }
