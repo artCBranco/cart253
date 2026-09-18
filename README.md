@@ -20,24 +20,24 @@ the larger projects and prototype.
 
 ### Reflexive Journal
 
-[Read the journal here](./journal/README.md)
+[Read the journal here](https://artcbranco.github.io/cart253/journal)
 
 ### Challenges:
 
-- [**Hello World**](./challenges/hello-world/README.md)
+- [**Hello World**](https://artcbranco.github.io/cart253/challenges/hello-world)
 <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 - **Instructions**
 
-     [**City Skyline**](./challenges/instructions/city-skyline/README.md)
+     [**City Skyline**](https://artcbranco.github.io/cart253/challenges/instructions/city-skyline)
 
      <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
      
-     [**The Emojinaut**](./challenges/instructions/emojinaut/README.md)
+     [**The Emojinaut**](https://artcbranco.github.io/cart253/challenges/instructions/emojinaut.md)
      
-     [**WIP**](https://artcbranco.github.io/cart253/challenges/WIP)
+     [**WIP**](https://artcbranco.github.io/cart253/challenges/instructions/WIP)
     
-     [**WIP**](https://artcbranco.github.io/cart253/challenges/WIP)   
+     [**WIP**](https://artcbranco.github.io/cart253/challenges/instructions/WIP)   
 
 ### Prototypes:
 
