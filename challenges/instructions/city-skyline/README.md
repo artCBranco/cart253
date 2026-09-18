@@ -12,7 +12,7 @@ This is a vector/code art for the class challenge of week 2 "instructions". It d
 
 Project made in cooperation with [Felipe S. Paiva](https://feguri.github.io/cart253/)
 
-- This project uses [p5.js](https://p5js.org).
+This project uses [p5.js](https://p5js.org).
 
 ## License
 

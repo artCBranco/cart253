@@ -1,4 +1,4 @@
-# The Emojinaut
+# Calm Horizons
 
 by Felipe Amorim Castelo Branco
 
@@ -6,11 +6,11 @@ by Felipe Amorim Castelo Branco
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This is a vector/code art for the instructions prototype of week 2 "instructions". It displays a far way shot of a calm horizon
 
 ## Attribution
 
-> - This project uses [p5.js](https://p5js.org).
+This project uses [p5.js](https://p5js.org).
 
 ## License
 

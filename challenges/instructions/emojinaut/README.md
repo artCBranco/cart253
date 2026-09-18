@@ -6,11 +6,12 @@ by Felipe Amorim Castelo Branco
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This is a vector/code art for the prototype of week 2 "instructions". This is an illustration of my "emojinaut". A space explorer that displays their emotions on their helmet. This character was inspired by
+ [a past project of mine](https://www.instagram.com/p/DBUugzkPLyj/?utm_source=ig_web_button_share_sheet&stkn=MzRlODBiNWFlZA==), but this illustration was created entirely through code.
 
 ## Attribution
 
-> - This project uses [p5.js](https://p5js.org).
+This project uses [p5.js](https://p5js.org).
 
 ## License
 
