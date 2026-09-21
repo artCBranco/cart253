@@ -10,31 +10,36 @@
 
 function setup() {
 
-    // ▽ Canvas fullscreen + Frame
-    createCanvas(windowWidth, windowHeight);
+    // ▽ Canvas fullscreen
+    createCanvas(1080, 1080);
+    background("#060606");
 
-    // ▽ Loading speed
-    frameRate(5)
 
+
+    frameRate(60)
 
     // ▽ Setting up auto-shape settings
     noStroke()
 
 }
 
-function draw() {
-    background("#060606");
-
-    // ▽ horizontal distance is equal to 1/6th of the screen (to give a margin) + movement growing
-    let width = windowWidth / 6 + frameCount ^ 5
-
-    // ▽ ever growing bar  
-    rect(windowWidth / 6, windowHeight / 2, width, 50, 100)
-
-    // ▽ Loading text
-    fill('#FFFFFF')
-    text("Loading...", windowWidth / 2, windowHeight 4 / 6,)
-    textSize(windowWidth / 64)
 
 
+function drawSquare(y) {
+
+
+    fill(255, 255, 255)
+    square(y, 740, 25, 100)
+
+    textSize(64)
+    text('Loading', 540, 540)
+
+}
+
+function draw(y) {
+
+    drawSquare(y = 150 + frameCount * 6)
+
+
+    if (y = 800)
 }
