@@ -42,7 +42,7 @@ the larger projects and prototype.
      
     - [**Calm Horizons**](https://artcbranco.github.io/cart253/challenges/instructions/calm-horizons)
     
-    - [**Fractalis**](https://artcbranco.github.io/cart253/challenges/instructions/fractalis)
+    - [**Charge**](https://artcbranco.github.io/cart253/challenges/instructions/charge)
         
 
 ---
