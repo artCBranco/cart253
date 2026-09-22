@@ -11,25 +11,33 @@
 
 // ▽ Our friend Mr. Furious
 let mrFurious = {
-    // Position and size
-    x: 200,
-    y: 200,
-    size: 100,
-    // Colour
+
+    // ▽ Position and size
+    x: 540,
+    y: 540,
+    size: 540,
+
+    // ▽ Colour
     fill: {
         r: 255,
         g: 225,
         b: 225
     }
+
 };
 
-// ▽ Create the canvas
+
 function setup() {
-    createCanvas(400, 400);
+
+    // ▽ Create the canvas
+    createCanvas(1080, 1080);
+
 }
 
 // ▽ Draw (and update) Mr. Furious
 function draw() {
+
+    // ▽ Background color
     background(160, 180, 200);
 
     // ▽ Draw Mr. Furious as a coloured circle
