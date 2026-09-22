@@ -66,4 +66,3 @@ desire to create.
 ---
 
 <small>_Last known alteration made on this file: 2026-09-22_</small>
-
