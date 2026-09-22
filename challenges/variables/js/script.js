@@ -26,6 +26,16 @@ let mrFurious = {
 
 };
 
+let bird = {
+    x: 100,
+    y: 100,
+    w: 100,
+    h: 50,
+    fill: 'white',
+    speed: 10,
+
+}
+
 
 function setup() {
 
@@ -82,7 +92,7 @@ function drawMrFurious() {
     rectMode(CENTER)
 
     // Changes origin point to be able to rotate
-    translate(shakeX + 100, mrFurious.y - 50)
+    translate(shakeX + 100, mrFurious.y - 25)
 
     //Sets the rotate unit and rotate the origin point -25°
     angleMode(DEGREES)
@@ -98,7 +108,7 @@ function drawMrFurious() {
     rectMode(CENTER)
 
     // Changes origin point to be able to rotate    
-    translate(shakeX - 100, mrFurious.y - 50)
+    translate(shakeX - 100, mrFurious.y - 25)
 
     //Sets the rotate unit and rotate the origin point -25°
     angleMode(DEGREES)
@@ -112,19 +122,13 @@ function drawMrFurious() {
 
 // draws a little annoying bird
 function drawBird() {
+    fill(bird.fill);
+    bird.x += bird.speed;
+    ellipse(bird.x, bird.y, bird.w, bird.h);
 
-    // defines speed of the bird
-    let speed = 0;
-
-    if (speed >= 100) {
-        speed = 0 - frameCount;
-    } else {
-        speed = 0 + frameCount;
+    if (bird.x >= 800 || bird.x < 200) {
+        bird.speed = -bird.speed;
     }
-    let birdX = 100 + frameCount * speed;
-
-    fill('white');
-    ellipse(birdX, 100, 100, 50);
 }
 
 // draws the illustration
