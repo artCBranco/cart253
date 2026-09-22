@@ -32,7 +32,7 @@ the larger projects and prototype.
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
-- [**Variables**](https://artcbranco.github.io/cart253/challenge/variables)   
+- [**Variables**](https://artcbranco.github.io/cart253/challenges/variables)   
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
