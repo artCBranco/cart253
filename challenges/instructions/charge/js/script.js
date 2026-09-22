@@ -9,6 +9,7 @@
 "use strict";
 
 
+
 // ▽ Code Setup
 function setup() {
 
@@ -24,11 +25,12 @@ function setup() {
 
 }
 
+
+
 function draw() {
 
     // ▽ square horizontal position equals margin + constant move.
     let x = 150 + frameCount * 0.6
-
 
     if (x > 780) {
 
@@ -55,7 +57,5 @@ function draw() {
         square(x, 740, 25, 100)
 
     }
-
-
 
 }
