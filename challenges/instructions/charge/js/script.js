@@ -8,13 +8,13 @@
 
 "use strict";
 
+
+// ▽ Code Setup
 function setup() {
 
     // ▽ Canvas fullscreen
     createCanvas(1080, 1080);
     background("#060606");
-
-
 
     frameRate(60)
 
@@ -24,22 +24,23 @@ function setup() {
 }
 
 
+function draw() {
 
-function drawSquare(y) {
+    let x = 150 + frameCount
 
-
+    // ▽ Setting up auto-growing square
     fill(255, 255, 255)
-    square(y, 740, 25, 100)
+    square(x, 740, 25, 100)
 
+    if (square(x) = 930) {
+
+        drawImage()
+
+    }
+
+    // ▽ Loading text
     textSize(64)
     text('Loading', 540, 540)
 
-}
 
-function draw(y) {
-
-    drawSquare(y = 150 + frameCount * 6)
-
-
-    if (y = 800)
 }
