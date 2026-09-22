@@ -20,32 +20,30 @@ function setup() {
 
     // ▽ Setting up auto-shape settings
     noStroke()
+    textAlign(CENTER)
 
 }
 
 function draw() {
 
-    let x = 150 + frameCount * 3
+    // ▽ square horizontal position equals margin + constant move.
+    let x = 150 + frameCount * 0.6
 
 
-
-    // ▽ If the loading bar reaches 100%
-    if (x > 930) {
+    if (x > 780) {
 
         // ▽ Draw a new frame
         fill("#FFFFFF")
-        square(1080, 1080, 540)
+        background("#ffffff");
 
         // ▽ Hello world text
         fill("#060606")
         textSize(64)
-        text('hello world', 540, 540)
+        text("You're still here? Get a life, bro", 540, 540)
 
     }
 
     else {
-
-
 
         // ▽ Loading text
         fill("#FFFFFF")
@@ -55,6 +53,7 @@ function draw() {
         // ▽ Setting up auto-growing square
         fill("#FFFFFF")
         square(x, 740, 25, 100)
+
     }
 
 
