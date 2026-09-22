@@ -60,7 +60,6 @@ function drawMrFurious() {
     fill(mrFurious.fill.r, constrain(mrFurious.fill.g - frameCount, 150, 225), constrain(mrFurious.fill.b - frameCount, 150, 255));
 
 
-
     // ▽ Mr. Furious neck area
     ellipse(shakeX, mrFurious.y, mrFurious.size);
     ellipse(shakeX, mrFurious.y + 300, mrFurious.size + 200, mrFurious.size / 2)
@@ -74,17 +73,48 @@ function drawMrFurious() {
 
     // ▽ Mr. Furious pupils 
     fill(`black`)
-    circle(shakeX - 100, mrFurious.y, 20, 20)
-    circle(shakeX + 100, mrFurious.y, 20, 20)
+    circle(shakeX - 100, mrFurious.y, 15, 15)
+    circle(shakeX + 100, mrFurious.y, 15, 15)
 
+
+    // Draws the right eyebrow
+    push()
+    rectMode(CENTER)
+
+    // Changes origin point to be able to rotate
+    translate(shakeX + 100, mrFurious.y - 50)
+
+    //Sets the rotate unit and rotate the origin point -25°
+    angleMode(DEGREES)
+    rotate(-25)
+
+    // Creates eyebrows
+    rect(0, 0, 115, 25)
+
+    pop()
+
+    // Draws the left eyebrow
+    push()
+    rectMode(CENTER)
+
+    // Changes origin point to be able to rotate    
+    translate(shakeX - 100, mrFurious.y - 50)
+
+    //Sets the rotate unit and rotate the origin point -25°
+    angleMode(DEGREES)
+    rotate(25)
+
+    // Creates eyebrows
+    rect(0, 0, 115, 25)
+
+    pop()
 }
 
+// draws a little annoying bird
 function drawBird() {
 
     // defines speed of the bird
     let speed = 0;
-
-    // creates a little annoying bird
 
     if (speed >= 100) {
         speed = 0 - frameCount;
@@ -97,7 +127,7 @@ function drawBird() {
     ellipse(birdX, 100, 100, 50);
 }
 
-
+// draws the illustration
 function draw() {
 
     // ▽ Background color turns dark with frame count
