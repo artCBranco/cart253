@@ -28,12 +28,14 @@ the larger projects and prototype.
 
 <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
-- [**City Skyline**](https://artcbranco.github.io/cart253/challenges/instructions/city-skyline)
+- [**Instructions - City Skyline**](https://artcbranco.github.io/cart253/challenges/instructions/city-skyline)
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
-     
-       
 
+- [**Variables**](https://artcbranco.github.io/cart253/challenge/variables)    
+       
+       
+       
 ### Prototypes:
 
 - **Instructions**
