@@ -32,7 +32,7 @@ let bird = {
     w: 100,
     h: 50,
     fill: 'white',
-    speed: 10,
+    speed: 2,
 
 }
 
@@ -122,11 +122,12 @@ function drawMrFurious() {
 
 // draws a little annoying bird
 function drawBird() {
+
     fill(bird.fill);
-    bird.x += bird.speed;
+    bird.x += bird.speed * 8;
     ellipse(bird.x, bird.y, bird.w, bird.h);
 
-    if (bird.x >= 800 || bird.x < 200) {
+    if (bird.x >= 900 || bird.x < 100) {
         bird.speed = -bird.speed;
     }
 }
