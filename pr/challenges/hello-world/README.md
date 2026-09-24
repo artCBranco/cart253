@@ -2,7 +2,7 @@
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://artcbranco.github.io/cart253/Challenges/hello-world/)
+[View this project online](https://artcbranco.github.io/cart253/pr/challenges/hello-world/)
 
 ## Description
 The **Hello World** challenge is a simple 2D illustration made completely by a code template offered by Pippin Bar. 

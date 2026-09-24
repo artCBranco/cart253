@@ -18,21 +18,23 @@ the larger projects and prototype.
 
 ---
 
+## Projects:
+
 ### Reflexive Journal
 
-[Read the journal here](https://artcbranco.github.io/cart253/journal)
+[Read the journal here](https://artcbranco.github.io/cart253/pr/journal)
 
 ### Challenges:
 
-- [**Hello World**](https://artcbranco.github.io/cart253/challenges/hello-world)
+- [**Hello World**](https://artcbranco.github.io/cart253/pr/challenges/hello-world)
 
 <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
-- [**Instructions - City Skyline**](https://artcbranco.github.io/cart253/challenges/instructions/city-skyline)
+- [**Instructions - City Skyline**](https://artcbranco.github.io/cart253/pr/challenges/instructions/city-skyline)
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
-- [**Variables**](https://artcbranco.github.io/cart253/challenges/variables)   
+- [**Variables**](https://artcbranco.github.io/cart253/pr/challenges/variables)   
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
@@ -42,11 +44,11 @@ the larger projects and prototype.
 
 - **Instructions**
      
-    - [**The Emojinaut**](https://artcbranco.github.io/cart253/challenges/instructions/emojinaut)
+    - [**The Emojinaut**](https://artcbranco.github.io/cart253/pr/challenges/instructions/emojinaut)
      
-    - [**Calm Horizons**](https://artcbranco.github.io/cart253/challenges/instructions/calm-horizons)
+    - [**Calm Horizons**](https://artcbranco.github.io/cart253/pr/challenges/instructions/calm-horizons)
     
-    - [**Charge**](https://artcbranco.github.io/cart253/challenges/instructions/charge)
+    - [**Charge**](https://artcbranco.github.io/cart253/pr/challenges/instructions/charge)
 
 - **Variables**
 
@@ -73,4 +75,4 @@ desire to create.
 
 ---
 
-<small>_Last known alteration made on this file: 2026-09-22_</small>
+<small>_Last known alteration made on this file: 2026-09-23_</small>

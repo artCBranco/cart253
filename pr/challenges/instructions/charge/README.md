@@ -1,8 +1,8 @@
-# Fractalis
+# Charge
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://artcbranco.github.io/cart253/challenges/instructions/fractalis)
+[View this project online](https://artcbranco.github.io/cart253/pr/challenges/instructions/charge)
 
 ## Description
 

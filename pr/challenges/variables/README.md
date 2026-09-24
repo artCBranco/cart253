@@ -2,7 +2,7 @@
 
 by Felipe A. Castelo Branco and Felipe S. Paiva
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://artcbranco.github.io/cart253/pr/challenges/variables)
 
 ## Description
 
