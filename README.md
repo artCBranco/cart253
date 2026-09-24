@@ -8,6 +8,8 @@
 This is ``Felipe Amorim Castelo Branco``'s coursework  
 repository for CART-253 course at Concordia University.
 
+[View the Github Repository](https://github.com/artCBranco/cart253)
+
 ---
 
 ## Description
@@ -26,15 +28,30 @@ the larger projects and prototype.
 
 ### Challenges:
 
-- [**Hello World**](https://artcbranco.github.io/cart253/pr/challenges/hello-world)
+- **Hello World**
+
+> ![Hello World Challenge](./assets/images/hello-world.png)
+
+[View Online](https://artcbranco.github.io/cart253/pr/challenges/hello-world)
+[View Code](https://github.com/artCBranco/cart253/pr/challenges/hello-world)
 
 <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
-- [**Instructions - City Skyline**](https://artcbranco.github.io/cart253/pr/challenges/instructions/city-skyline)
+- **Instructions - City Skyline**
+
+> ![City Skyline Challenge](./assets/images/city-skyline.png)
+
+[View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/city-skyline)
+[View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/city-skyline)
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
-- [**Variables**](https://artcbranco.github.io/cart253/pr/challenges/variables)   
+- **Variables**
+
+> ![Mr. Furious Challenge](./assets/images/mrFurious.gif)
+
+[View Online](https://artcbranco.github.io/cart253/pr/challenges/variables) 
+[View Code](https://github.com/artCBranco/cart253/pr/challenges/variables)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
@@ -44,11 +61,25 @@ the larger projects and prototype.
 
 - **Instructions**
      
-    - [**The Emojinaut**](https://artcbranco.github.io/cart253/pr/challenges/instructions/emojinaut)
-     
-    - [**Calm Horizons**](https://artcbranco.github.io/cart253/pr/challenges/instructions/calm-horizons)
+    - **The Emojinaut**
     
-    - [**Charge**](https://artcbranco.github.io/cart253/pr/challenges/instructions/charge)
+    > ![The Emojinaut Prototype](./assets/images/emojinaut.png)
+    
+    [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/emojinaut)
+    [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/emojinaut)
+     
+    - **Calm Horizons**
+    
+    > ![Calm Horizons Prototype](./assets/images/calm-horizons.png)
+    
+    [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/calm-horizons)
+    [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/calm-horizons)
+    
+    - **Charge**
+    > ![Charge Prototype](./assets/images/charge.gif)
+    
+    [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/charge)
+    [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/charge)
 
 - **Variables**
 
@@ -75,4 +106,4 @@ desire to create.
 
 ---
 
-<small>_Last known alteration made on this file: 2026-09-23_</small>
+<small>_Last known alteration made on this file: 2026-09-24_</small>
