@@ -13,44 +13,34 @@ let canvasH = 1080
 function setup() {
     // Create a full screen canvas
     createCanvas(canvasW, canvasH)
-    // Background color
-    background(20, 20, 20)
 
     // Rectangle alignment, remove cursor
     rectMode(CENTER)
-}
-
-// Simple Background
-function drawDarkBG() {
-
-    // Darker wall
-    fill(15, 15, 15)
-    rect(canvasW / 6 * 5, canvasH / 2, canvasW / 6 * 2.5, canvasH)
-
-    // Lighter ground
-    fill(40, 40, 40)
-    rect(canvasW / 2, canvasH / 6 * 5.5, canvasW, canvasH / 6)
+    noStroke()
 
 }
 
 // Simple Background
-function drawLightBG() {
 
-    // Darker wall
-    fill(5, 5, 5)
-    rect(canvasW / 6 * 5, canvasH / 2, canvasW / 6 * 2.5, canvasH)
-    // Lighter ground
-    fill(40, 40, 40)
-    rect(canvasW / 2, canvasH / 6 * 5.5, canvasW, canvasH / 6)
 
+function drawDay() {
+
+    background(205, 240, 255)
 }
+function drawEve(x) {
 
-function drawLanternDark() {
-    fill(160, 160, 160)
-    circle(mouseX, mouseY, 100)
+    background(240, 160, 100, x)
+}
+function drawNight(x) {
+
+    background(20, 20, 40, x)
 }
 
 function draw() {
-    drawDarkBG()
-    drawLanternDark()
+    drawDay()
+    drawEve(map(mouseX, canvasW / 6, canvasW / 6 * 3, 0, 255))
+    drawNight(map(mouseX, canvasW / 6 * 3, canvasW / 6 * 5, 0, 255))
+
+    fill("#ffe604")
+    circle(canvasW / 2, map(mouseX, canvasW / 6, canvasW / 6 * 5, 0, canvasH * 1.25), 100)
 }
