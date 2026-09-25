@@ -2,7 +2,7 @@
 
 by Felipe A. Castelo Branco and Felipe S. Paiva
 
-[View this project online](https://artcbranco.github.io/cart253/pr/challenges/variables)
+[View this project online](https://artcbranco.github.io/cart253/pr/challenges/variables/mrfurious)
 
 ## Description
 

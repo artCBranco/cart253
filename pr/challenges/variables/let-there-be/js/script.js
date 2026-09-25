@@ -1,16 +1,13 @@
 /**
- * Title of Project
- * Author Name
+ * Let There Be Light
+ * by Felipe Amorim Castelo Branco
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * a simple p5.js coded animation that turns on a flashlight following the mouse's axis
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+
 function setup() {
 
 }
