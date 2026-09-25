@@ -50,8 +50,8 @@ the larger projects and prototype.
 
 > ![Mr. Furious Challenge](./assets/images/mrFurious.gif)
 
-[View Online](https://artcbranco.github.io/cart253/pr/challenges/variables) 
-[View Code](https://github.com/artCBranco/cart253/pr/challenges/variables)  
+[View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/mrfurious) 
+[View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/mrfurious)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
