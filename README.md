@@ -107,6 +107,14 @@ the larger projects and prototype.
      > ![Let there be... Night! Prototype](./assets/images/lettherebe.gif)
        
      [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/let-there-be)
+     
+     - **Polka Dot Abstract**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/polkadot)
+       
+     > ![Polka Dot Abstract Prototype](./assets/images/polkadot.gif)
+       
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/polkadot)
        
 This is a work in progress
         
