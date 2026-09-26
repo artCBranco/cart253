@@ -9,8 +9,8 @@
 "use strict";
 
 // Canvas size
-let canvasW = width
-let canvasH = height
+let canvasW = 1080
+let canvasH = 1080
 
 function setup() {
     // Setup Canvas
@@ -29,6 +29,11 @@ function mousePressed() {
     rect(canvasW / 2, canvasH / 2, canvasW / random(1, 5), canvasH / random(1, 5))
 }
 
+function keyPressed() {
+    if (keyCode === 32) {
+        save('PolkaDot', 'png')
+    }
+}
 
 function draw() {
     fill(map(mouseY, 0, canvasH, 150, 255) + random(-50, 50), map(mouseY, 0, canvasH, 150, 255) + random(-50, 50), map(mouseY, 0, canvasH, 150, 255) + random(-50, 50))
