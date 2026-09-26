@@ -2,7 +2,7 @@
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://artcbranco.github.io/cart253/pr/challenges/variables/let-there-be)
+[View this project online](https://artcbranco.github.io/cart253/pr/challenges/variables/)
 
 ## Description
 
