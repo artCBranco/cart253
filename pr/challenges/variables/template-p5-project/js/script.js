@@ -30,13 +30,6 @@ function mousePressed() {
 }
 
 
-function keyPressed() {
-    if (keyCode === 32) {
-        save('PolkaDot', 'png')
-    }
-}
-
-
 function draw() {
     fill(map(mouseY, 0, canvasH, 150, 255) + random(-50, 50), map(mouseY, 0, canvasH, 150, 255) + random(-50, 50), map(mouseY, 0, canvasH, 150, 255) + random(-50, 50))
     circle(mouseX, mouseY, canvasH / 20 * random(0, 1))
