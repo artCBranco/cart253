@@ -9,8 +9,8 @@
 "use strict";
 
 // Canvas size
-let canvasW = 1080
-let canvasH = 1080
+let canvasW = width
+let canvasH = height
 
 function setup() {
     // Setup Canvas
