@@ -22,8 +22,6 @@ the larger projects and prototype.
 
 ## Projects:
 
-
-
 ### Reflexive Journal
 
 [Read the journal here](https://artcbranco.github.io/cart253/pr/journal)
@@ -61,6 +59,7 @@ the larger projects and prototype.
  [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/mrfurious)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+       
        
        
        
