@@ -8,7 +8,7 @@
 
 // define the canvas size
 let canvasW = 1920
-let canvasH = 600
+let canvasH = 1080
 
 function setup() {
     // Create the canvas
