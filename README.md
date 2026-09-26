@@ -22,36 +22,43 @@ the larger projects and prototype.
 
 ## Projects:
 
+
+
 ### Reflexive Journal
 
 [Read the journal here](https://artcbranco.github.io/cart253/pr/journal)
+
+
 
 ### Challenges:
 
 - **Hello World**
 
-> ![Hello World Challenge](./assets/images/hello-world.png)
+ [View Online](https://artcbranco.github.io/cart253/pr/challenges/hello-world)
 
-[View Online](https://artcbranco.github.io/cart253/pr/challenges/hello-world)
-[View Code](https://github.com/artCBranco/cart253/pr/challenges/hello-world)
+ > ![Hello World Challenge](./assets/images/hello-world.png)
 
-<sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
+ [View Code](https://github.com/artCBranco/cart253/pr/challenges/hello-world)
+
+ <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 - **Instructions - City Skyline**
 
-> ![City Skyline Challenge](./assets/images/city-skyline.png)
+ [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/city-skyline)
 
-[View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/city-skyline)
-[View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/city-skyline)
+ > ![City Skyline Challenge](./assets/images/city-skyline.png)
 
-<sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
+ [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/city-skyline)
+
+ <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 - **Variables**
 
-> ![Mr. Furious Challenge](./assets/images/mrFurious.gif)
+ [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/mrfurious) 
 
-[View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/mrfurious) 
-[View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/mrfurious)  
+ > ![Mr. Furious Challenge](./assets/images/mrFurious.gif)
+
+ [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/mrfurious)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
@@ -63,26 +70,45 @@ the larger projects and prototype.
      
     - **The Emojinaut**
     
-    > ![The Emojinaut Prototype](./assets/images/emojinaut.png)
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/emojinaut)
     
-    [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/emojinaut)
-    [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/emojinaut)
+     > ![The Emojinaut Prototype](./assets/images/emojinaut.png)
+    
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/emojinaut)
+     
+     
      
     - **Calm Horizons**
     
-    > ![Calm Horizons Prototype](./assets/images/calm-horizons.png)
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/calm-horizons)
     
-    [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/calm-horizons)
-    [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/calm-horizons)
-    
+     > ![Calm Horizons Prototype](./assets/images/calm-horizons.png)
+     
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/calm-horizons)
+     
+     
+     
+     
     - **Charge**
-    > ![Charge Prototype](./assets/images/charge.gif)
     
-    [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/charge)
-    [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/charge)
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/charge)
+    
+     > ![Charge Prototype](./assets/images/charge.gif)
+    
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/charge)
+
+
 
 - **Variables**
 
+   - **Let there be... Night!**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/let-there-be)
+       
+     > ![Let there be... Night! Prototype](./assets/images/lettherebe.gif)
+       
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/let-there-be)
+       
 This is a work in progress
         
 
