@@ -29,7 +29,8 @@ function mousePressed() {
     rect(canvasW / 2, canvasH / 2, canvasW / random(1, 5), canvasH / random(1, 5))
 }
 
-function keyIsPressed() {
+
+function keyPressed() {
     if (keyCode === 32) {
         save('PolkaDot', 'png')
     }
