@@ -21,9 +21,11 @@ let canvas = {
     }
 }
 
+let cnv;
+
 function setup() {
     // Setup Canvas.
-    createCanvas(canvas.x, canvas.y)
+    cnv = createCanvas(canvas.x, canvas.y)
     background(canvas.fill.r, canvas.fill.g, canvas.fill.b)
 
     frameRate(24)
@@ -37,6 +39,7 @@ function drawTxt() {
     textSize(18)
     textAlign(CENTER, CENTER)
     textFont('Helvetica')
+
 
     //Text 1 - black.
     fill(0, 0, 0)
@@ -54,7 +57,7 @@ function mousePressed() {
 
 function keyPressed() {
     if (keyCode === 32) {
-        save('PolkaDot', 'png')
+        save(cnv, 'PolkaDot.png')
     }
 }
 
