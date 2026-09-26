@@ -102,11 +102,11 @@ the larger projects and prototype.
 
    - **Let there be... Night!**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/let-there-be)
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/let-there-be)
        
      > ![Let there be... Night! Prototype](./assets/images/lettherebe.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/let-there-be)
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/let-there-be)
        
 This is a work in progress
         
