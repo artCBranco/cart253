@@ -112,7 +112,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/polkadot)
        
-     > ![Polka Dot Abstract Prototype](./assets/images/polkadot.gif)
+     > ![Polka Dot Abstract Prototype](./assets/images/polkadot.png)
        
      [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/polkadot)
        
