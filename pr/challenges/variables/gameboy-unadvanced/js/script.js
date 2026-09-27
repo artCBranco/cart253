@@ -7,24 +7,33 @@
 
 "use strict";
 
-let Canvas(){
-    w: 1080
-    h: 1080
-}
+// Canvas resolution
+let cnv = 1080
+
 function setup() {
-    createCanvas(canvas.w, canvas.h)
-    background(117, 166, 82)
+    //Square Canvas
+    createCanvas(cnv, cnv)
+    background(100, 100, 100)
 
-    rectMode(CENTER)
+    // text settings
+    fill(0, 0, 0)
     textFont('LucidaConsole', 18)
+
+    // Base settings
+    noStroke()
+    rectMode(CENTER)
 }
 
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
 function draw() {
+    //Screen Depth
+    fill(90, 90, 90)
+    square(cnv * 0.4885, cnv * 0.4885, 925, 12)
+    //Green Screen
+    fill(117, 166, 82)
+    square(cnv / 2, cnv / 2, 900, 16)
 
-    ba
+    fill(0, 0, 0)
+    square(cnv * move.x / 8, cnv * move.y / 8, cnv / 25, 6)
+
 
 }
