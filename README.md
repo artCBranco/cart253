@@ -111,7 +111,7 @@ the larger projects and prototype.
      
      
      
-     - **Polka Dot Abstract**
+   - **Polka Dot Abstract**
      
      [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/polkadot)
        
@@ -122,7 +122,7 @@ the larger projects and prototype.
        
        
        
-     - **Gameboy Unadvanced**
+   - **Gameboy Unadvanced**
      
      [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/gameboy-unadvanced)
        
