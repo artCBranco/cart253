@@ -126,7 +126,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/gameboy-unadvanced)
        
-     > ![Gameboy Unadvanced Prototype](./assets/images/gameboy.png)
+     > ![Gameboy Unadvanced Prototype](./assets/images/gameboy.gif)
        
      [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/gameboy-unadvanced)
         
