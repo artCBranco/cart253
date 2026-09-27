@@ -126,7 +126,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/gameboy-unadvanced)
        
-     > ![Polka Dot Abstract Prototype](./assets/images/gameboy.png)
+     > ![Gameboy Unadvanced Prototype](./assets/images/gameboy.png)
        
      [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/gameboy-unadvanced)
         
