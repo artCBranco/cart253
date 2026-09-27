@@ -1,4 +1,4 @@
-# Let There Be Light
+# Let There B... Night!
 
 by Felipe Amorim Castelo Branco
 
@@ -6,7 +6,7 @@ by Felipe Amorim Castelo Branco
 
 ## Description
 
-This is a coded art for the prototype of week 3 "variables". 
+This is a coded art for the prototype of week 3 "variables". It shows the sun setting according to the mouse position
 
 
 ## Attribution

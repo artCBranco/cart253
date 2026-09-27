@@ -12,7 +12,6 @@ A simple drawing board that varies the shape of the brush randomly and the color
 
 This project uses [p5.js](https://p5js.org).
 
-
 ## License
 
 This  is a non-monetized schoolwork and, as such, is protected by the Fair Dealing exception under the Copyright Laws for Educational Projects([Fair Dealing Classroom](https://www.cmec.ca/docs/copyright/CopyrightFairDealingClassroom_EN.pdf)).
