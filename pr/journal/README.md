@@ -51,3 +51,16 @@ Now I can't help but imagine actual frame-by-frame animations are just a step aw
 
 ---
 
+## *Date: 2026-09-27*
+
+The doors have been OPENED!
+
+That's how I felt upon realizing I just made my first videogame. All the endless possibilities I spoke of, so quickly becoming reality. 
+
+Honestly, it wasn't even my objective at first. I started simple, with a prototype just playing around mouseX. Then another one playing with mouseX and mouseY, where I decided it would be fun to have a button to "Save" the image. And well, once you know how to do a button, you know how to make many buttons. 
+
+It's interesting to note that coding is so intuitive for me that the true challenge lies mostly in linguistics. It's easy to know exactly what you want the code to do, it's not even hard to break it down step by step as a computer would do. (Draw, if I press W, go forward 5% of the canvas. Once I reach the bottom right, display a "you win" screen... etc etc). The single most difficult part is figuring out exactly *how* these steps are announced in coding language. What function, what variables to use, the order in which they should appear, if it's a ```=``` or ```:```, all the little details that can and WILL break your code. 
+
+To be fair, it helps having a veteran of coding on my fingertips. I'm usually always asking how to use "this" function or why "that" isn't happening as I expected on the screen to my dad, who worked as a software programmer for a long long time. It's even more helpful that he has a tendency to ramble and explain the "WHY" of every single thing that is on the screen. Ask about a ```let``` function and soon he's explaining ```console.log``` and showing how the computer reads the functions and why the order matters.
+
+Still, [Gameboy Unadvanced](https://artcbranco.github.io/cart253/pr/challenges/variables/gameboy-unadvanced/) and [Polka Dot Abstract](https://artcbranco.github.io/cart253/pr/challenges/variables/polkadot/) are officially my first fully interactive videogames, gameboy even more so. And they were so simple that as I wrote, I was already thinking of improvements. "If I can make the square move, can I make a draw once it reaches x? If I restricted it's movement to the green area, can I restrict it in certain spots to create walls? Can I make Snake?" and I'm very curious to see where these thoughts will take me. 
