@@ -1,4 +1,4 @@
-# Push a Puck
+# Conditionals Challenge
 
 by Felipe Amorim Castelo Branco
 
@@ -6,7 +6,7 @@ by Felipe Amorim Castelo Branco
 
 ## Description
 
-A simple puck pushed by the mouse pointer.
+A simple moving square controlled by the WASD keys. Press SPACEBAR to jump.
 
 ## Attribution
 

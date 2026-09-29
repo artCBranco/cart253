@@ -2,7 +2,7 @@
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/pr/challenges/conditionals)
+[View this project online](https://github.com/artCBranco/cart253/pr/challenges/conditionals/push-puck)
 
 ## Description
 
