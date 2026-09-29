@@ -50,13 +50,23 @@ the larger projects and prototype.
 
  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
-- **Variables**
+- **Variables - Mr. Furious**
 
  [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/mrfurious) 
 
  > ![Mr. Furious Challenge](./assets/images/mrFurious.gif)
 
  [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/mrfurious)  
+
+<sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+
+- **Conditionals - Push a Puck**
+
+ [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/push-puck) 
+
+ > ![Push a Puck](./assets/images/push-puck.gif)
+
+ [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/push-puck)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
@@ -130,6 +140,37 @@ the larger projects and prototype.
        
      [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/gameboy-unadvanced)
         
+- **Conditionals**
+
+   - **Prototype 1**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/*)
+       
+     > ![1* Prototype](./assets/images/*)
+       
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/*)
+     
+     
+     
+     
+   - **Prototype 2**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/*)
+       
+     > ![2* Prototype](./assets/images/*)
+       
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/*)
+       
+       
+       
+       
+   - **Prototype 3**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/*)
+       
+     > ![3* Prototype](./assets/images/*)
+       
+     [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/*)
 
 ---
 
