@@ -1,12 +1,12 @@
-# Push a Puck
+# Conditionals Challenge
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/pr/challenges/conditionals/push-puck)
+[View this project online](https://github.com/artCBranco/cart253/pr/challenges/conditionals)
 
 ## Description
 
-A simple puck pushed by the mouse pointer.
+A simple moving square controlled by the WASD keys. Press SPACEBAR to jump.
 
 ## Attribution
 
