@@ -30,6 +30,22 @@ function setup() {
     textAlign(CENTER, CENTER)
 }
 
+// First text upon boot ("waking up")
+function drawWake() {
+    fill(255, 255, 255)
+    text('You wake in a strange dungeon,', width / 2, height / 2 * 1.25)
+    text('face pressed into cold floor.', width / 2, height / 2 * 1.35)
+}
+// Repeated string for CTAs
+function drawDo() {
+    text('What do you do?', width / 2, height / 2 * 1.3)
+}
+
+function drawOpt1() {
+    text('face pressed into cold floor.', width / 2, height / 2 * 1.35)
+}
+
+
 function draw() {
 
 
