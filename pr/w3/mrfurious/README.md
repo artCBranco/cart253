@@ -1,0 +1,23 @@
+# Variables - Mr.Red
+
+by Felipe A. Castelo Branco and Felipe S. Paiva
+
+[View this project online](https://artcbranco.github.io/cart253/pr/w3/mrfurious)
+
+## Description
+
+This project creates Mr Red using variables
+
+## Screenshot(s)
+
+> ![Hello World Challenge](./assets/images/3-mrFurious.png)
+
+## Attribution
+
+This project uses [p5.js](https://p5js.org).
+
+The entire [js code](https://pippinbarr.com/cart253/topics/hello-world/version-control-workflow-example/js/script.js) was offered by Pippin Barr as part of the CART253 course.
+
+## License
+
+This  is a non-monetized schoolwork and, as such, is protected by the Fair Dealing exception under the Copyright Laws for Educational Projects([Fair Dealing Classroom](https://www.cmec.ca/docs/copyright/CopyrightFairDealingClassroom_EN.pdf)).

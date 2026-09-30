@@ -32,41 +32,41 @@ the larger projects and prototype.
 
 - **Hello World**
 
- [View Online](https://artcbranco.github.io/cart253/pr/challenges/hello-world)
+ [View Online](https://artcbranco.github.io/cart253/pr/w1/hello-world)
 
- > ![Hello World Challenge](./assets/images/hello-world.png)
+ > ![Hello World Challenge](./assets/images/1-hello-world.png)
 
- [View Code](https://github.com/artCBranco/cart253/pr/challenges/hello-world)
+ [View Code](https://github.com/artCBranco/cart253/pr/w1/hello-world)
 
  <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 - **Instructions - City Skyline**
 
- [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/city-skyline)
+ [View Online](https://artcbranco.github.io/cart253/pr/w2/city-skyline)
 
- > ![City Skyline Challenge](./assets/images/city-skyline.png)
+ > ![Instructions Challenge - City Skyline](./assets/images/2-city-skyline.png)
 
- [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/city-skyline)
+ [View Code](https://github.com/artCBranco/cart253/pr/w2/city-skyline)
 
  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
 - **Variables - Mr. Furious**
 
- [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/mrfurious) 
+ [View Online](https://artcbranco.github.io/cart253/pr/w2/mrfurious) 
 
- > ![Mr. Furious Challenge](./assets/images/mrFurious.gif)
+ > ![Variables Challenge - Mr. Furious](./assets/images/3-mrFurious.gif)
 
- [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/mrfurious)  
+ [View Code](https://github.com/artCBranco/cart253/pr/w2/mrfurious)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
 
 - **Conditionals - Push a Puck**
 
- [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/push-puck) 
+ [View Online](https://artcbranco.github.io/cart253/pr/w4/push-puck) 
 
- > ![Push a Puck](./assets/images/push-puck.gif)
+ > ![Conditionals Challenge - Push a Puck](./assets/images/4-push-puck.gif)
 
- [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/push-puck)  
+ [View Code](https://github.com/artCBranco/cart253/pr/w4/push-puck)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
@@ -79,32 +79,32 @@ the larger projects and prototype.
      
     - **The Emojinaut**
     
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/emojinaut)
+     [View Online](https://artcbranco.github.io/cart253/pr/w2/emojinaut)
     
-     > ![The Emojinaut Prototype](./assets/images/emojinaut.png)
+     > ![Instructions Prototype - The Emojinaut](./assets/images/2-emojinaut.png)
     
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/emojinaut)
+     [View Code](https://github.com/artCBranco/cart253/pr/w2/emojinaut)
      
      
      
     - **Calm Horizons**
     
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/calm-horizons)
+     [View Online](https://artcbranco.github.io/cart253/pr/w2/calm-horizons)
     
-     > ![Calm Horizons Prototype](./assets/images/calm-horizons.png)
+     > ![Instructions Prototype - Calm Horizons](./assets/images/2-calm-horizons.png)
      
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/calm-horizons)
+     [View Code](https://github.com/artCBranco/cart253/pr/w2/calm-horizons)
      
      
      
      
     - **Charge**
     
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/instructions/charge)
+     [View Online](https://artcbranco.github.io/cart253/pr/w2/charge)
     
-     > ![Charge Prototype](./assets/images/charge.gif)
+     > ![Instructions Prototype - Charge](./assets/images/2-charge.gif)
     
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/instructions/charge)
+     [View Code](https://github.com/artCBranco/cart253/pr/w2/charge)
 
 
 
@@ -112,33 +112,33 @@ the larger projects and prototype.
 
    - **Let there be... Night!**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/let-there-be)
+     [View Online](https://artcbranco.github.io/cart253/pr/w2/let-there-be)
        
-     > ![Let there be... Night! Prototype](./assets/images/lettherebe.gif)
+     > ![Variables Prototype - Let there be... Night!](./assets/images/2-lettherebe.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/let-there-be)
+     [View Code](https://github.com/artCBranco/cart253/pr/w3/let-there-be)
      
      
      
      
    - **Polka Dot Abstract**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/polkadot)
+     [View Online](https://artcbranco.github.io/cart253/pr/w3/polkadot)
        
-     > ![Polka Dot Abstract Prototype](./assets/images/polkadot.png)
+     > ![Variables Prototype - Polka Dot Abstract](./assets/images/3-polkadot.png)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/polkadot)
+     [View Code](https://github.com/artCBranco/cart253/pr/w3/polkadot)
        
        
        
        
    - **Gameboy Unadvanced**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/variables/gameboy-unadvanced)
+     [View Online](https://artcbranco.github.io/cart253/pr/w3/gameboy-unadvanced)
        
-     > ![Gameboy Unadvanced Prototype](./assets/images/gameboy.gif)
+     > ![Variables Prototype - Gameboy Unadvanced](./assets/images/3-gameboy.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/variables/gameboy-unadvanced)
+     [View Code](https://github.com/artCBranco/cart253/pr/w3/gameboy-unadvanced)
      
      
         
@@ -146,33 +146,33 @@ the larger projects and prototype.
 
    - **Prototype 1**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w4/*)
        
-     > ![1* Prototype](./assets/images/*)
+     > ![Conditionals Prototype - 1*](./assets/images/4-*)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/*)
+     [View Code](https://github.com/artCBranco/cart253/pr/w4/*)
      
      
      
      
    - **Prototype 2**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w4/*)
        
-     > ![2* Prototype](./assets/images/*)
+     > ![Conditionals Prototype - 2*](./assets/images/4-*)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/*)
+     [View Code](https://github.com/artCBranco/cart253/pr/w4/*)
        
        
        
        
    - **Prototype 3**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/challenges/conditionals/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w4/*)
        
-     > ![3* Prototype](./assets/images/*)
+     > ![Conditionals Prototype - 3*](./assets/images/4-*)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/challenges/conditionals/*)
+     [View Code](https://github.com/artCBranco/cart253/pr/w4/*)
 
 ---
 
