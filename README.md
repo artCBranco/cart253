@@ -36,7 +36,7 @@ the larger projects and prototype.
 
  > ![Hello World Challenge](./assets/images/1-hello-world.png)
 
- [View Code](https://github.com/artCBranco/cart253/pr/w1/hello-world)
+ [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w1/hello-world)
 
  <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
@@ -46,7 +46,7 @@ the larger projects and prototype.
 
  > ![Instructions Challenge - City Skyline](./assets/images/2-city-skyline.png)
 
- [View Code](https://github.com/artCBranco/cart253/pr/w2/city-skyline)
+ [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/city-skyline)
 
  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
 
@@ -56,7 +56,7 @@ the larger projects and prototype.
 
  > ![Variables Challenge - Mr. Furious](./assets/images/3-mrFurious.gif)
 
- [View Code](https://github.com/artCBranco/cart253/pr/w2/mrfurious)  
+ [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/mrfurious)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
 
@@ -66,7 +66,7 @@ the larger projects and prototype.
 
  > ![Conditionals Challenge - Push a Puck](./assets/images/4-push-puck.gif)
 
- [View Code](https://github.com/artCBranco/cart253/pr/w4/push-puck)  
+ [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/push-puck)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
@@ -83,7 +83,7 @@ the larger projects and prototype.
     
      > ![Instructions Prototype - The Emojinaut](./assets/images/2-emojinaut.png)
     
-     [View Code](https://github.com/artCBranco/cart253/pr/w2/emojinaut)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/emojinaut)
      
      
      
@@ -93,7 +93,7 @@ the larger projects and prototype.
     
      > ![Instructions Prototype - Calm Horizons](./assets/images/2-calm-horizons.png)
      
-     [View Code](https://github.com/artCBranco/cart253/pr/w2/calm-horizons)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/calm-horizons)
      
      
      
@@ -104,7 +104,7 @@ the larger projects and prototype.
     
      > ![Instructions Prototype - Charge](./assets/images/2-charge.gif)
     
-     [View Code](https://github.com/artCBranco/cart253/pr/w2/charge)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/charge)
 
 
 
@@ -116,7 +116,7 @@ the larger projects and prototype.
        
      > ![Variables Prototype - Let there be... Night!](./assets/images/2-lettherebe.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/w3/let-there-be)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/let-there-be)
      
      
      
@@ -127,7 +127,7 @@ the larger projects and prototype.
        
      > ![Variables Prototype - Polka Dot Abstract](./assets/images/3-polkadot.png)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/w3/polkadot)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/polkadot)
        
        
        
@@ -138,7 +138,7 @@ the larger projects and prototype.
        
      > ![Variables Prototype - Gameboy Unadvanced](./assets/images/3-gameboy.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/w3/gameboy-unadvanced)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/gameboy-unadvanced)
      
      
         
@@ -150,7 +150,7 @@ the larger projects and prototype.
        
      > ![Conditionals Prototype - 1*](./assets/images/4-*)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/w4/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/*)
      
      
      
@@ -161,7 +161,7 @@ the larger projects and prototype.
        
      > ![Conditionals Prototype - 2*](./assets/images/4-*)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/w4/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/*)
        
        
        
@@ -172,7 +172,7 @@ the larger projects and prototype.
        
      > ![Conditionals Prototype - 3*](./assets/images/4-*)
        
-     [View Code](https://github.com/artCBranco/cart253/pr/w4/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/*)
 
 ---
 
