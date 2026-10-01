@@ -17,7 +17,7 @@ let fade = 255;
 //Dialogue roller
 let dialog = 0;
 
-
+// Setup function
 function setup() {
     let cnv = createCanvas(cnvS * 1.333, cnvS); //Canvas size: 16:9
     background(bgColor)
@@ -33,7 +33,6 @@ function setup() {
     textSize(width * 0.025)
     textAlign(CENTER, CENTER)
 }
-/*
 
 // First text upon boot ("waking up")
 function drawBoot() {
@@ -98,36 +97,49 @@ function drawHint(fade) {
     pop()
 }
 
-// If mouse is pressed...
-/*function mouseReleased(cnv) {
-    // Background covers the screen
-    fill(0, 0, 0);
-    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS, cnvS);
-    //Draw second text
-    drawCell();
-    //Draw dialogue options
-    drawOpt1();
-    drawOpt2();
-}*/
-
-let size = 0;
 // Draws the canvas
 function draw() {
-
+    fade = fade + 1
+    // Whenever mouse is pressed, advance the dialogue by 1
     if (mouseIsPressed) {
-        size += 20;
+        dialog += 1;
+    }
+    if (dialog < 1) {
+        drawBoot();
+    }
+    else if (dialog == 1) {
+        drawCell();
+    }
+    else if (dialog >= 2) {
+        drawCell();
+        drawOpt1();
+        drawOpt2();
+    }
+    else if (dialog >= 6) {
+        drawOpt3()
     }
 
-    if (size < 1) {
-        fill(0, 255, 0);
-        circle(50, 50, 50, 50);
+
+    if (dialog > 2 && mouseX < cnvS * 1.333 / 2 && mouseY > cnvS / 2 && dialogue < 5) {
+        fill(bgColor)
+        rect(width / 2, height / 2, width, height)
+        drawAnswer1();
+        drawOpt2();
     }
-    else if (size > 1) {
-        fill(255, 0, 0);
-        circle(50, 50, 50 * size, 50 * size);
+    else if (dialog > 2 && mouseX > cnvS * 1.333 / 2 && mouseY > cnvS / 2 && dialogue < 5) {
+        fill(bgColor)
+        rect(width / 2, height / 2, width, height)
+        drawAnswer2();
+        drawOpt1();
     }
+
+
+    /*
+        if (mousePressed > 6) {
+            reset();
+        }
+    */
 }
-
 /*drawWake()
 if (mouseX < cnv * 1.333 / 2 && mouseY < cnv / 2) {
 drawAnswer1()
