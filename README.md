@@ -144,13 +144,13 @@ the larger projects and prototype.
         
 - **Conditionals**
 
-   - **Prototype 1**
+   - **Dungeon**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w4/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w4/dungeon)
        
-     > ![Conditionals Prototype - 1*](./assets/images/4-*)
+     > ![Conditionals Prototype - Dungeon](./assets/images/4-dungeon)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/dungeon)
      
      
      
