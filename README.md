@@ -64,7 +64,7 @@ the larger projects and prototype.
 
  [View Online](https://artcbranco.github.io/cart253/pr/w4/push-puck) 
 
- > ![Conditionals Challenge - Push a Puck](./assets/images/4-push-puck.gif)
+ > ![Conditionals Challenge - Push a Puck](./assets/images/4-pushpuck.gif)
 
  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/push-puck)  
 
