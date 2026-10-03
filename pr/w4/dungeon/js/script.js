@@ -1,9 +1,8 @@
 /**
+ * Duungeon
+ * By Felipe Amorimm Castelo Branco
  * 
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A short CHYOA/RPG graphic novel about someone in a dungeon. Press the mouse to continue the dialogue
  */
 
 "use strict";
@@ -14,14 +13,12 @@ const cnvS = 600;
 const bgColor = 30;
 //Dialogue roller
 let dialog = 0;
-
-
-
-
+//hint fade in
+let fade = 255;
 
 // Setup function
 function setup() {
-    let cnv = createCanvas(cnvS * 1.333, cnvS); //Canvas size: 16:9
+    createCanvas(cnvS * 1.333, cnvS); //Canvas size: 16:9
     background(bgColor)
 
     // Shape Settings
@@ -35,6 +32,65 @@ function setup() {
     textSize(width * 0.025)
     textAlign(CENTER, CENTER)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Visibility controls what buttons appear on screen
+let visible = 0;
+// Draws the function
+function draw() {
+
+    if (mouseIsPressed && mouseX > cnvS / 2) {
+        visible += 1;
+    }
+    // visible 1 = default button; 2 = choice buttons/ 3 = end button
+    if (visible === 1) {
+        displayOpt0();
+    } else if (visible === 2) {
+        displayOpt1()
+        displayOpt2()
+    } else if (visible === 3) {
+        displayOpt3()
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // First text upon boot ("waking up")
 function drawBoot() {
@@ -57,20 +113,26 @@ function drawDo() {
     text('What do you do?', width / 2, height / 2 * 1.3)
 }
 
+// Conntinue button, returns to boot
+function displayOpt0() {
+    fill(255, 255, 255, constrain(fade, 0, 255))
+    text('[Continue.]', width / 2, height / 2 * 1.55)
+}
+
 // First option button
-function drawOpt1() {
+function displayOpt1() {
     fill(255, 255, 255, constrain(fade, 0, 255))
     text('[Call for help.]', width / 4, height / 2 * 1.55)
 }
 
 // Second option button
-function drawOpt2() {
+function displayOpt2() {
     fill(255, 255, 255, constrain(fade, 0, 255))
     text('[Look for a way out.]', width / 4 * 3, height / 2 * 1.55)
 }
 
 // Third option button, returns to boot
-function drawOpt3() {
+function displayOpt3() {
     fill(255, 255, 255, constrain(fade, 0, 255))
     text('[Go to sleep.]', width / 2, height / 2 * 1.55)
 }
@@ -99,10 +161,6 @@ function drawHint(fade) {
     pop()
 }
 
-function displayUI() {
-    if (UI.visible)
-
-}
 
 
 
