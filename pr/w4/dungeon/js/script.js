@@ -22,7 +22,7 @@ function setup() {
     background(bgColor)
 
     // Shape Settings
-    rectMode(CENTER)
+    //rectMode(CENTER)
     noStroke()
     frameRate(12)
 
@@ -39,13 +39,9 @@ function setup() {
 
 
 
-
-
-
-
-
-
-
+// MouseSpot controls the location of the button.
+// 0 = FALSE, 1 = LEFT button, 2 = CENTER, 3 = RIGHT
+let mouseSpot;
 
 
 
@@ -53,20 +49,55 @@ function setup() {
 let visible = 0;
 // Draws the function
 function draw() {
-
-    if (mouseIsPressed && mouseX > cnvS / 2) {
-        visible += 1;
+    // Load the appropriate button according to where the mouse is.
+    if (mouseY > cnvS * 0.75 && mouseY < cnvS * 0.8 && mouseX > cnvS * 0.15 && cnvS * 0.5) {
+        mouseSpot = 1;
+    } else if (mouseY > cnvS * 0.75 && mouseY < cnvS * 0.8 && mouseX > cnvS * 0.525 && cnvS * 0.825) {
+        mouseSpot = 2;
+    } else if (mouseY > cnvS * 0.75 && mouseY < cnvS * 0.8 && mouseX > cnvS * 0.78 && cnvS * 1.22) {
+        mouseSpot = 3;
     }
+    // If mouse is pressed on left screen, show Answer 1
+    if (mouseSpot = 1 && mouseIsPressed) {
+        visible = 1;
+    }
+    //If mouse is pressed on the center, show ending dialogue
+    else if (mouseSpot = 2 && mouseIsPressed) {
+        visible = 3;
+    }
+    // if mouse is pressed on the right side, show answer 2
+    else if (mouseSpot = 3 && mouseIsPressed) {
+        visible = 2;
+    } else {
+        visible = 0;
+    }
+
+    //Buttons Y = .75, .8
+    //left button
+    // X = 0.15, 0.5
+    // Middle button
+    // X = 0.525, 0.825
+    // Right button
+    // X = 0.78, 1.22
+    // drawDo()
+
+
     // visible 1 = default button; 2 = choice buttons/ 3 = end button
     if (visible === 1) {
-        displayOpt0();
-    } else if (visible === 2) {
-        displayOpt1()
-        displayOpt2()
-    } else if (visible === 3) {
-        displayOpt3()
+        displayAnswer1();
+        fill(255, 0, 0)
+        sq(500, 500, 500)
+    } else {
+        displayDo();
     }
-
+    if (visible === 3) {
+        displayAnswer2();
+    } else {
+        displayDo();
+    }
+    displayOpt1();
+    displayOpt2();
+    displayOpt0();
 }
 
 
@@ -99,7 +130,7 @@ function drawBoot() {
     text('face pressed into cold floor.', width / 2, height / 2 * 1.35)
 }
 
-// Second text upon boot ("waking up")
+// Second text upon boot ("Where you are")
 function drawCell() {
     background(bgColor)
     fill(255, 255, 255, constrain(fade, 0, 255))
@@ -107,7 +138,7 @@ function drawCell() {
 }
 
 // Repeated string for CTAs
-function drawDo() {
+function displayDo() {
     background(bgColor)
     fill(255, 255, 255, constrain(fade, 0, 255))
     text('What do you do?', width / 2, height / 2 * 1.3)
@@ -138,18 +169,18 @@ function displayOpt3() {
 }
 
 // Answer to Option 1
-function drawAnswer1() {
+function displayAnswer1() {
     fill(255, 255, 255, constrain(fade, 0, 255))
     text('No one answers.', width / 2, height / 2 * 1.3)
 }
 // Answer to Option 2
-function drawAnswer2() {
+function displayAnswer2() {
     fill(255, 255, 255, constrain(fade, 0, 255))
     text('You are stuck in this cell.', width / 2, height / 2 * 1.3)
 }
 
 // Hint that appears on top right of the page.
-function drawHint(fade) {
+function displayHint(fade) {
     // Text
     fill(255, 255, 255, constrain(fade, 0, 255))
     text('Crying is a', width / 4 * 3, height / 4)
