@@ -9,13 +9,15 @@
 "use strict";
 
 //Canvas resolution
-let cnvS = 600;
+const cnvS = 600;
 //Background color
-let bgColor = 30;
-//Fade in;Fade Out
-let fade = 255;
+const bgColor = 30;
 //Dialogue roller
 let dialog = 0;
+
+
+
+
 
 // Setup function
 function setup() {
@@ -97,6 +99,19 @@ function drawHint(fade) {
     pop()
 }
 
+function displayUI() {
+    if (UI.visible)
+
+}
+
+
+
+
+
+
+
+
+/*
 // Draws the canvas
 function draw() {
     fade = fade + 1
@@ -132,46 +147,6 @@ function draw() {
         drawAnswer2();
         drawOpt1();
     }
-
-
-    /*
-        if (mousePressed > 6) {
-            reset();
-        }
-    */
-}
-/*drawWake()
-if (mouseX < cnv * 1.333 / 2 && mouseY < cnv / 2) {
-drawAnswer1()
-drawOpt2()
-}
-
-
-/*if (frameCount > 12 * 12) {
-fade = 0
-fade = fade + 5
-drawCell()
-}
-if (frameCount > 12 * 24) {
-fade = fade + 5
-drawOpt1()
-drawOpt2()
-}
-
-
-
-if (frameCount > 12 * 12) {
-fade = fade + 5
-drawHint()
-}
-
-/*drawWake()
-drawDo()
-drawOpt1()
-drawOpt2()
-drawOpt3()
-drawAnswer1()
-drawAnswer2()*/
 
 
 /*You wake in a strange dungeon, face pressed into cold floor. 
