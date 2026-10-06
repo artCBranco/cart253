@@ -1,6 +1,6 @@
 /**
  * The Only Move Is Not To Play
- * Code by Pippin Barr, challenge by Felipe Amorim CAstelo Branco and Felipe S. Paiva.
+ * Code by Pippin Barr, challenge by Felipe Amorim CAstelo Branco, Felipe S. Paiva and Konstantinos Christodoulakis
  * 
  * 
  *
@@ -12,19 +12,20 @@
 // Current score
 let score = 0;
 
+//if tab is not focused
+let focused = false;
+
 // Is the game over?
 let gameOver = false;
+let connection;
 
-/**
- * Create the canvas
- */
+// Create the Canvas
 function setup() {
     createCanvas(400, 400);
+    connection = navigator.onLine;
 }
 
-/**
- * Update the score and display the UI
- */
+//Update the score and display the UI
 function draw() {
     background("#87ceeb");
 
@@ -34,11 +35,21 @@ function draw() {
         score += 0.05;
     }
     displayUI();
+
+    if (connection !== navigator.onLine) {
+        gameOver = true;
+        console.log('connection changed!', connection, navigator.onLine);
+    }
+
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            gameOver = true
+        }
+    });
 }
 
-/**
- * Show the game over message if needed, and the current score
- */
+
+//Show the game over message if needed, and the current score
 function displayUI() {
     if (gameOver) {
         push();
@@ -51,9 +62,7 @@ function displayUI() {
     displayScore();
 }
 
-/**
- * Display the score
- */
+//Display the score
 function displayScore() {
     push();
     textSize(48);
@@ -62,3 +71,20 @@ function displayScore() {
     text(floor(score), width / 2, height / 2);
     pop();
 }
+
+function lose() {
+    gameOver = true;
+}
+
+window.addEventListener("click", (event) => {
+    lose();
+});
+
+window.addEventListener("mousemove", (event) => {
+    lose();
+});
+
+window.addEventListener("keydown", (event) => {
+    lose();
+});
+

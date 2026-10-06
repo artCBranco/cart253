@@ -1,6 +1,6 @@
 # The Only Move Is Not To Play
 
-Code by Pippin Barr. Challenge by Felipe Amorim Castelo Branco and Felipe S. Paiva
+Code by Pippin Barr. Challenge by Felipe Amorim Castelo Branco, Felipe S. Paiva and Konstantinos Christodoulakis
 
 [View this project online](https://github.com/artCBranco/cart253/pr/w5/do-not-move)
 
