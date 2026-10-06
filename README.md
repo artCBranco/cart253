@@ -148,7 +148,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/dungeon)
        
-     > ![Conditionals Prototype - Dungeon](./assets/images/4-dungeon)
+     > ![Conditionals Prototype - Dungeon](./assets/images/4-dungeon.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/dungeon)
      
@@ -157,11 +157,11 @@ the larger projects and prototype.
      
    - **Prototype 2**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w4/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w4/pen)
        
-     > ![Conditionals Prototype - 2*](./assets/images/4-*)
+     > ![Conditionals Prototype - 2*](./assets/images/4-pen)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/pen)
        
        
        

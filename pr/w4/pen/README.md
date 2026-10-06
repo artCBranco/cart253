@@ -1,23 +1,23 @@
-# TITLE OF PROJECT
+# Pen Drawing
 
-AUTHOR NAME
+by Felipe Amorim Castelo Branco
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://github.com/artCBranco/cart253/tree/main/pr/w4/pen)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This program lets the user draw with the mouse. Pressing SPACEBAR will erase the drawing. Pressing S will save it as an image. 
+
+## Screenshot(s)
+
+> ![Conditionals Prototype - Pen Drawing](./assets/images/4-pen.gif)
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
-> - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
+This project uses [p5.js](https://p5js.org).
 
 ## License
 
-This bit could include the license you want to apply to your work. For example:
+This  is a non-monetized schoolwork and, as such, is protected by the Fair Dealing exception under the Copyright Laws for Educational Projects([Fair Dealing Classroom](https://www.cmec.ca/docs/copyright/CopyrightFairDealingClassroom_EN.pdf)).
 
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+The background image was created and is owned by me, Felipe Amorim Castelo Branco, I own full rights to this vectorial illustration.

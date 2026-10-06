@@ -10,7 +10,7 @@ You awaken in a cold dungeon cell, what do you do? This project made in P5.js ex
 
 ## Screenshot(s)
 
-> ![Conditionals Prototype - Dungeon](./assets/images/4-dungeon.png)
+> ![Conditionals Prototype - Dungeon](./assets/images/4-dungeon.gif)
 
 ## Attribution
 
