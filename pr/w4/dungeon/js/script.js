@@ -2,7 +2,8 @@
  * Duungeon
  * By Felipe Amorimm Castelo Branco
  * 
- * A short CHYOA/RPG graphic novel about someone in a dungeon. Press the mouse to continue the dialogue
+ * A short CHYOA/RPG graphic novel about someone in a dungeon. Press the mouse to continue the dialogue.
+ * 
  */
 
 "use strict";
@@ -16,10 +17,13 @@ let dialog = 0;
 // Hint fade-in
 let fade = 255
 
+
+
+
 // Setup function
 function setup() {
     createCanvas(cnvS * 1.333, cnvS); //Canvas size: 16:9
-    background(bgColor)
+    background(bgColor, bgColor, bgColor, 0)
 
     // Shape Settings
     rectMode(CENTER)
@@ -53,7 +57,7 @@ const opt1 = "[Call for help.]"
 const opt2 = "[Look for a way out.]"
 const answer1 = "No one answers."
 const answer2 = "You are stuck in this cell."
-const reset = "[Go to sleep]"
+const reset = "[Go to sleep.]"
 
 
 
@@ -97,6 +101,7 @@ function drawDo() {
 
 
 
+// function that draws the Answer to the first dialog
 function drawAnswer1() {
     // Draws a dark background to hide the last dialogue
     fill(30, 30, 30)
@@ -122,6 +127,7 @@ function drawDo2() {
 
 
 
+// Function that draws the Answer to the second dialog
 function drawAnswer2() {
     // Draws a dark background to hide the last dialogue
     fill(30, 30, 30)
@@ -134,7 +140,7 @@ function drawAnswer2() {
 
 
 
-// Function that draws the 2nd option dialog
+// Function that draws the 3rd option dialog
 function drawDo3() {
     // Draws a dark background to hide the last dialogue
     fill(30, 30, 30)
@@ -147,11 +153,27 @@ function drawDo3() {
 
 
 
+// Hint that appears on top right of the page.
+function displayHint(fade) {
+    fade = 255
+    // Text
+    fill(255, 255, 255, constrain(fade, 0, 255))
+    text('Crying is a', width / 4 * 3, height / 4)
+    text(' free action.', width / 4 * 3, height / 4 * 1.15)
+    //  Bracket
+    push()
+    textSize(width * 0.09)
+    text(']', width / 4 * 3.46, height / 4 * 1.05)
+    pop()
+}
+
+
+
 // Main Draw function
 function draw() {
 
-    fade = 255
-    // IF statements that make the dialog run
+
+    // IF statements that make the dialog run on mouseclick
     if (dialog == 0) {
         drawBoot()
     } else if (dialog == 1) {
@@ -165,25 +187,12 @@ function draw() {
         displayHint()
     } else if (dialog == 5) {
         drawAnswer2()
+        displayHint()
     } else if (dialog == 6) {
         drawDo3()
+        displayHint()
     } else if (dialog == 7) {
         dialog = 0;
     }
-
-
-
 }
 
-// Hint that appears on top right of the page.
-function displayHint(fade) {
-    // Text
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('Crying is a', width / 4 * 3, height / 4)
-    text(' free action.', width / 4 * 3, height / 4 * 1.15)
-    //  Bracket
-    push()
-    textSize(width * 0.09)
-    text(']', width / 4 * 3.46, height / 4 * 1.05)
-    pop()
-}

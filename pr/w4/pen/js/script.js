@@ -29,9 +29,8 @@ function setup() {
 */
 function draw() {
     if (keyCode === 32) {
-        window.location.reload;
+        clear();
     }
-
 }
 function mouseDragged() {
     fill(0, 0, 0)
