@@ -112,9 +112,9 @@ the larger projects and prototype.
 
    - **Let there be... Night!**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w2/let-there-be)
+     [View Online](https://artcbranco.github.io/cart253/pr/w3/let-there-be)
        
-     > ![Variables Prototype - Let there be... Night!](./assets/images/2-lettherebe.gif)
+     > ![Variables Prototype - Let there be... Night!](./assets/images/3-lettherebe.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/let-there-be)
      
