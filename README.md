@@ -169,7 +169,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/pen)
        
-     > ![Conditionals Prototype - Pen Draw](/assets/images/4-pen.gif)
+     > ![Conditionals Prototype - Pen Draw](/assets/images/4-pen.png)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/pen)
        

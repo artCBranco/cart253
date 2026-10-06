@@ -10,7 +10,7 @@ This program lets the user draw with the mouse. Pressing SPACEBAR will erase the
 
 ## Screenshot(s)
 
-> ![Conditionals Prototype - Pen Drawing](/assets/images/4-pen.gif)
+> ![Conditionals Prototype - Pen Drawing](/assets/images/4-pen.png)
 
 ## Attribution
 
