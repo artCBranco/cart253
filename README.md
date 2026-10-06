@@ -52,7 +52,7 @@ the larger projects and prototype.
 
 - **Variables - Mr. Furious**
 
- [View Online](https://artcbranco.github.io/cart253/pr/w2/mrfurious) 
+ [View Online](https://artcbranco.github.io/cart253/pr/w3/mrfurious) 
 
  > ![Variables Challenge - Mr. Furious](./assets/images/3-mrFurious.gif)
 
@@ -159,7 +159,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/pen)
        
-     > ![Conditionals Prototype - 2*](./assets/images/4-pen)
+     > ![Conditionals Prototype - Pen Draw](./assets/images/4-pen)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/pen)
        
