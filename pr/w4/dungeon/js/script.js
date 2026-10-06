@@ -13,6 +13,8 @@ const cnvS = 600;
 const bgColor = 30;
 //Dialogue roller
 let dialog = 0;
+// Hint fade-in
+let fade = 255
 
 // Setup function
 function setup() {
@@ -42,16 +44,16 @@ function mouseClicked() {
 
 
 // All the dialogue strings, summarized
-let boot1 = "You wake in a strange dungeon,"
-let boot2 = "face pressed into cold floor."
-let opt0 = "[Continue.]"
-let dialog1 = "You are in a cell."
-let whatDo = "What do you do?"
-let opt1 = "[Call for help.]"
-let opt2 = "[Look for a way out.]"
-let answer1 = "No one answers."
-let answer2 = "You are stuck in this cell."
-let reset = "[Go to sleep]"
+const boot1 = "You wake in a strange dungeon,"
+const boot2 = "face pressed into cold floor."
+const opt0 = "[Continue.]"
+const dialog1 = "You are in a cell."
+const whatDo = "What do you do?"
+const opt1 = "[Call for help.]"
+const opt2 = "[Look for a way out.]"
+const answer1 = "No one answers."
+const answer2 = "You are stuck in this cell."
+const reset = "[Go to sleep]"
 
 
 
@@ -120,7 +122,7 @@ function drawDo2() {
 
 
 
-function drawAnswer1() {
+function drawAnswer2() {
     // Draws a dark background to hide the last dialogue
     fill(30, 30, 30)
     rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
@@ -133,7 +135,7 @@ function drawAnswer1() {
 
 
 // Function that draws the 2nd option dialog
-function drawDo2() {
+function drawDo3() {
     // Draws a dark background to hide the last dialogue
     fill(30, 30, 30)
     rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
@@ -145,111 +147,32 @@ function drawDo2() {
 
 
 
-
+// Main Draw function
 function draw() {
+
+    fade = 255
+    // IF statements that make the dialog run
     if (dialog == 0) {
         drawBoot()
     } else if (dialog == 1) {
         drawDialog1()
+    } else if (dialog == 2) {
+        drawDo()
+    } else if (dialog == 3) {
+        drawAnswer1()
+    } else if (dialog == 4) {
+        drawDo2()
+        displayHint()
+    } else if (dialog == 5) {
+        drawAnswer2()
+    } else if (dialog == 6) {
+        drawDo3()
+    } else if (dialog == 7) {
+        dialog = 0;
     }
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-// First text upon boot ("waking up")
-function displayBoot() {
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('You wake in a strange dungeon,', width / 2, height / 2 * 1.25)
-    text('face pressed into cold floor.', width / 2, height / 2 * 1.35)
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
-}
-
-// Second text upon boot ("Where you are")
-function displayCell() {
-    background(bgColor)
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('You are in a cell.', width / 2, height / 2 * 1.3)
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
-}
-
-// Repeated string for CTAs
-function displayDo() {
-    background(bgColor)
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('What do you do?', width / 2, height / 2 * 1.3)
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
-}
-
-// Conntinue button, returns to boot
-function displayOpt0() {
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('[Continue.]', width / 2, height / 2 * 1.55)
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
-}
-
-// First option button
-function displayOpt1() {
-    return text('[Call for help.]', width / 4, height / 2 * 1.55)
-}
-
-// Second option button
-function displayOpt2() {
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('[Look for a way out.]', width / 4 * 3, height / 2 * 1.55)
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
-}
-
-// Third option button, returns to boot
-function displayOpt3() {
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('[Go to sleep.]', width / 2, height / 2 * 1.55)
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
-}
-
-// Answer to Option 1
-function displayAnswer1() {
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('No one answers.', width / 2, height / 2 * 1.3)
-
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
-}
-// Answer to Option 2
-function displayAnswer2() {
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('You are stuck in this cell.', width / 2, height / 2 * 1.3)
-
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnv / 2, 300, 300)
 }
 
 // Hint that appears on top right of the page.
@@ -264,83 +187,3 @@ function displayHint(fade) {
     text(']', width / 4 * 3.46, height / 4 * 1.05)
     pop()
 }
-
-
-
-
-
-
-
-
-
-/*
-// Draws the canvas
-function draw() {
-    fade = fade + 1
-    // Whenever mouse is pressed, advance the dialogue by 1
-    if (mouseIsPressed) {
-        dialog += 1;
-    }
-    if (dialog < 1) {
-        drawBoot();
-    }
-    else if (dialog == 1) {
-        drawCell();
-    }
-    else if (dialog >= 2) {
-        drawCell();
-        drawOpt1();
-        drawOpt2();
-    }
-    else if (dialog >= 6) {
-        drawOpt3()
-    }
-
-
-    if (dialog > 2 && mouseX < cnvS * 1.333 / 2 && mouseY > cnvS / 2 && dialogue < 5) {
-        fill(bgColor)
-        rect(width / 2, height / 2, width, height)
-        drawAnswer1();
-        drawOpt2();
-    }
-    else if (dialog > 2 && mouseX > cnvS * 1.333 / 2 && mouseY > cnvS / 2 && dialogue < 5) {
-        fill(bgColor)
-        rect(width / 2, height / 2, width, height)
-        drawAnswer2();
-        drawOpt1();
-    }
-
-
-/*You wake in a strange dungeon, face pressed into cold floor.
-The room is bare and dark, cobbled stone walls and rusted bars.
-You are in a cell.
-What do you do?
-[Call for help]
-No one answers
-[Look for a way out]
-You are stuck in this cell.
-[Go to sleep]
-Hint: Crying is a free action
-*/
-//Buttons Y = .75, .8
-//left button
-// X = 0.15, 0.5
-// Middle button
-// X = 0.525, 0.825
-// Right button
-// X = 0.78, 1.22
-// drawDo()
-
-//displayAnswer1()
-/*
-
-    displayOpt2();
-    displayOpt0();
-    */
-
-// MouseSpot controls the location of the button.
-// 0 = FALSE, 1 = LEFT button, 2 = CENTER, 3 = RIGHT
-////let mouseSpot;
-
-// Visibility controls what buttons appear on screen
-//let visible = 0;
