@@ -12,9 +12,18 @@ const cnvS = 600;
 //Background color
 const bgColor = 30;
 //Dialogue roller
-let dialog = 0;
-//hint fade in
-let fade = 255;
+
+
+let boot1 = "You wake in a strange dungeon,"
+let boot2 = "face pressed into cold floor."
+let opt0 = "[Continue.]"
+let dialog1 = "You are in a cell."
+let whatDo = "What do you do?"
+let opt1 = "[Call for help.]"
+let opt2 = "[Look for a way out.]"
+let answer1 = "No one answers."
+let answer2 = "You are stuck in this cell."
+let reset = "yu suck"
 
 // Setup function
 function setup() {
@@ -32,18 +41,40 @@ function setup() {
     textSize(width * 0.025)
     textAlign(CENTER, CENTER)
 }
-
-let button = displayOpt1()
-function mouseClicked(button) {
-    displayAnswer1()
+// Function that draws the first text
+function drawBoot() {
+    fill(255, 255, 255)
+    text(boot1, width / 2, height / 2)
+    text(boot2, width / 2, height / 2 * 1.1)
+    text(opt0, width / 2, height / 2 * 1.45)
 }
-
-
+// Function that draws the second text
+function drawDialog1() {
+    fill(255, 255, 255)
+    text(dialog1, width / 2, height / 2)
+    text(opt0, width / 2, height / 2 * 1.45)
+}
+// Function that draws the options dialog
+function drawDialog1() {
+    fill(255, 255, 255)
+    text(whatDo, width / 2, height / 2)
+    text(opt1, width / 2, height / 2 * 1.45)
+}
 
 
 function draw() {
+    let dialog = 0; s
+    // Whenever mouse is pressed, advance the dialogue by 1
+    if (mousePressed) {
+        dialog += 1;
+    }
 
-    displayOpt1()
+    if (dialog == 0) {
+        drawBoot()
+        drawOpt0()
+    } else if (dialog == 1) {
+        drawCell()
+    }
 }
 
 
@@ -60,8 +91,7 @@ function draw() {
 
 
 
-
-
+/*
 
 
 
@@ -106,10 +136,7 @@ function displayOpt0() {
 
 // First option button
 function displayOpt1() {
-    fill(255, 255, 255, constrain(fade, 0, 255))
-    text('[Call for help.]', width / 4, height / 2 * 1.55)
-    fill(255, 0, 0)
-    rect(cnvS / 2, cnvS / 2, 300, 300)
+    return text('[Call for help.]', width / 4, height / 2 * 1.55)
 }
 
 // Second option button
@@ -137,7 +164,7 @@ function displayAnswer1() {
 
 
     fill(255, 0, 0)
-    rect(cnvS / 2, cnv / 2, 300, 300)
+    rect(cnvS / 2, cnvS / 2, 300, 300)
 }
 // Answer to Option 2
 function displayAnswer2() {
@@ -229,42 +256,6 @@ Hint: Crying is a free action
 
 //displayAnswer1()
 /*
-    // Load the appropriate button according to where the mouse is.
-    if (mouseY > cnvS * 0.75 && mouseY < cnvS * 0.8 && mouseX > cnvS * 0.15 && cnvS * 0.5) {
-        mouseSpot = 1;
-    } else if (mouseY > cnvS * 0.75 && mouseY < cnvS * 0.8 && mouseX > cnvS * 0.525 && cnvS * 0.825) {
-        mouseSpot = 2;
-    } else if (mouseY > cnvS * 0.75 && mouseY < cnvS * 0.8 && mouseX > cnvS * 0.78 && cnvS * 1.22) {
-        mouseSpot = 3;
-    }
-    // If mouse is pressed on left screen, show Answer 1
-    if (mouseSpot = 1 && mouseIsPressed) {
-        visible = 1;
-    }
-    //If mouse is pressed on the center, show ending dialogue
-    else if (mouseSpot = 2 && mouseIsPressed) {
-        visible = 3;
-    }
-    // if mouse is pressed on the right side, show answer 2
-    else if (mouseSpot = 3 && mouseIsPressed) {
-        visible = 2;
-    }
-    // if nothing is pressed, don't display anything.
-    else {
-        visible = 0;
-    }
-    // visible 1 = default button; 2 = choice buttons/ 3 = end button
-    if (visible === 1) {
-        displayAnswer1();
-    } else if (visible === 3) {
-        fill(0, 0, 255)
-        rect(500, 500, 500, 500)
-        // displayAnswer2();
-    } else if (visible === 2) {
-        displayAnswer2();
-    } else {
-        //displayDo();
-    }
 
     displayOpt2();
     displayOpt0();
