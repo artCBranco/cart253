@@ -10,7 +10,7 @@ A simple moving square controlled by the WASD keys. Press SPACEBAR to jump.
 
 ## Screenshot(s)
 
-> ![Variables Prototype - Gameboy Unadvanced](./assets/images/3-gameboy-unadvanced.gif)
+> ![Variables Prototype - Gameboy Unadvanced](/assets/images/3-gameboy-unadvanced.gif)
 
 ## Attribution
 

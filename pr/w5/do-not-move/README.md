@@ -10,7 +10,7 @@ A game where your score increases so long as you do nothing.
 
 ## Screenshot(s)
 
-> ![Events Challenge - The Only Move Is Not To Play](./assets/5-donotmove.gif)
+> ![Events Challenge - The Only Move Is Not To Play](/assets/5-donotmove.gif)
 
 ## Attribution
 

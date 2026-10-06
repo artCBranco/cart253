@@ -10,7 +10,7 @@ This project creates Mr Red using variables
 
 ## Screenshot(s)
 
-> ![Hello World Challenge](./assets/images/3-mrFurious.png)
+> ![Hello World Challenge](/assets/images/3-mrFurious.png)
 
 ## Attribution
 

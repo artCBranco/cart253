@@ -44,7 +44,7 @@ the larger projects and prototype.
 
  [View Online](https://artcbranco.github.io/cart253/pr/w2/city-skyline)
 
- > ![Instructions Challenge - City Skyline](./assets/images/2-city-skyline.png)
+ > ![Instructions Challenge - City Skyline](/assets/images/2-city-skyline.png)
 
  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/city-skyline)
 
@@ -54,7 +54,7 @@ the larger projects and prototype.
 
  [View Online](https://artcbranco.github.io/cart253/pr/w3/mrfurious) 
 
- > ![Variables Challenge - Mr. Furious](./assets/images/3-mrFurious.gif)
+ > ![Variables Challenge - Mr. Furious](/assets/images/3-mrFurious.gif)
 
  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/mrfurious)  
 
@@ -64,7 +64,7 @@ the larger projects and prototype.
 
  [View Online](https://artcbranco.github.io/cart253/pr/w4/push-puck) 
 
- > ![Conditionals Challenge - Push a Puck](./assets/images/4-pushpuck.gif)
+ > ![Conditionals Challenge - Push a Puck](/assets/images/4-pushpuck.gif)
 
  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/push-puck)  
 
@@ -74,7 +74,7 @@ the larger projects and prototype.
 
  [View Online](https://artcbranco.github.io/cart253/pr/w5/do-not-move) 
 
- > ![Events Challenge - The Only Move Is Not To Play](./assets/images/5-donotmove.gif)
+ > ![Events Challenge - The Only Move Is Not To Play](/assets/images/5-donotmove.gif)
 
  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/do-not-move)  
 
@@ -91,7 +91,7 @@ the larger projects and prototype.
     
      [View Online](https://artcbranco.github.io/cart253/pr/w2/emojinaut)
     
-     > ![Instructions Prototype - The Emojinaut](./assets/images/2-emojinaut.png)
+     > ![Instructions Prototype - The Emojinaut](/assets/images/2-emojinaut.png)
     
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/emojinaut)
      
@@ -101,7 +101,7 @@ the larger projects and prototype.
     
      [View Online](https://artcbranco.github.io/cart253/pr/w2/calm-horizons)
     
-     > ![Instructions Prototype - Calm Horizons](./assets/images/2-calm-horizons.png)
+     > ![Instructions Prototype - Calm Horizons](/assets/images/2-calm-horizons.png)
      
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/calm-horizons)
      
@@ -112,7 +112,7 @@ the larger projects and prototype.
     
      [View Online](https://artcbranco.github.io/cart253/pr/w2/charge)
     
-     > ![Instructions Prototype - Charge](./assets/images/2-charge.gif)
+     > ![Instructions Prototype - Charge](/assets/images/2-charge.gif)
     
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/charge)
 
@@ -124,7 +124,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w3/let-there-be)
        
-     > ![Variables Prototype - Let there be... Night!](./assets/images/3-lettherebe.gif)
+     > ![Variables Prototype - Let there be... Night!](/assets/images/3-lettherebe.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/let-there-be)
      
@@ -135,7 +135,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w3/polkadot)
        
-     > ![Variables Prototype - Polka Dot Abstract](./assets/images/3-polkadot.png)
+     > ![Variables Prototype - Polka Dot Abstract](/assets/images/3-polkadot.png)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/polkadot)
        
@@ -146,7 +146,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w3/gameboy-unadvanced)
        
-     > ![Variables Prototype - Gameboy Unadvanced](./assets/images/3-gameboy.gif)
+     > ![Variables Prototype - Gameboy Unadvanced](/assets/images/3-gameboy.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/gameboy-unadvanced)
      
@@ -158,18 +158,18 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/dungeon)
        
-     > ![Conditionals Prototype - Dungeon](./assets/images/4-dungeon.gif)
+     > ![Conditionals Prototype - Dungeon](/assets/images/4-dungeon.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/dungeon)
      
      
      
      
-   - **Prototype 2**
+   - **Calligraphy**
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/pen)
        
-     > ![Conditionals Prototype - Pen Draw](./assets/images/4-pen.gif)
+     > ![Conditionals Prototype - Pen Draw](/assets/images/4-pen.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/pen)
        
@@ -180,7 +180,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/)
        
-     > ![Conditionals Prototype - 3*](./assets/images/4-*)
+     > ![Conditionals Prototype - 3*](/assets/images/4-*)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/*)
      
@@ -192,7 +192,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/*)
        
-     > ![Conditionals Prototype - Dungeon](./assets/images/*.gif)
+     > ![Conditionals Prototype - Dungeon](/assets/images/*.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/*)
      
@@ -203,7 +203,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/*)
        
-     > ![Conditionals Prototype - Pen Draw](./assets/images/5-*.gif)
+     > ![Conditionals Prototype - Pen Draw](/assets/images/5-*.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/*)
        
@@ -214,7 +214,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/*)
        
-     > ![Conditionals Prototype - 3*](./assets/images/5-*)
+     > ![Conditionals Prototype - 3*](/assets/images/5-*)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/*)
 

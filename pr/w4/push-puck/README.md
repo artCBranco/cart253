@@ -10,7 +10,7 @@ In this project, whe made it so the puck is pushed through the mouse and has to 
 
 ## Screenshot(s)
 
-> ![Conditionals Challenge - Push Puck](./assets/images/4-pushpuck.gif)
+> ![Conditionals Challenge - Push Puck](/assets/images/4-pushpuck.gif)
 
 ## Attribution
 

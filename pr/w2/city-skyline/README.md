@@ -10,7 +10,7 @@ This is a vector/code art for the class challenge of week 2 "instructions". It d
 
 ## Screenshot
 
-> ![Instructions Challenge - City Skyline](./assets/images/2-city-skyline.png)
+> ![Instructions Challenge - City Skyline](/assets/images/2-city-skyline.png)
 
 
 ## Attribution

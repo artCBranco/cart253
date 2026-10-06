@@ -29,7 +29,6 @@ function keyPressed() {
 
 //function draw: Currently empty
 function draw() {
-
 }
 
 function mouseDragged() {

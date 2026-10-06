@@ -10,7 +10,7 @@ This is a vector/code art for the instructions prototype of week 2 "instructions
 
 ## Screenshot
 
-> ![Instructions Prototype - Calm Horizons](../assets/images/2-calm-horizons.png)
+> ![Instructions Prototype - Calm Horizons](/assets/images/2-calm-horizons.png)
 
 ## Attribution
 

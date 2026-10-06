@@ -11,7 +11,7 @@ This is a vector/code art for the prototype of week 2 "instructions". This is an
 
 ## Screenshot(s)
 
-> ![Instructions Prototype - Emojinaut](./assets/images/2-emojinaut.png)
+> ![Instructions Prototype - Emojinaut](/assets/images/2-emojinaut.png)
 
 ## Attribution
 

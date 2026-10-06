@@ -1,4 +1,4 @@
-# Pen Drawing
+# Calligraphy
 
 by Felipe Amorim Castelo Branco
 
@@ -6,11 +6,11 @@ by Felipe Amorim Castelo Branco
 
 ## Description
 
-This program lets the user draw with the mouse. Pressing SPACEBAR will erase the drawing. Pressing S will save it as an image. 
+This program lets the user draw with the mouse. Pressing SPACEBAR will erase the drawing. 
 
 ## Screenshot(s)
 
-> ![Conditionals Prototype - Pen Drawing](./assets/images/4-pen.gif)
+> ![Conditionals Prototype - Pen Drawing](/assets/images/4-pen.gif)
 
 ## Attribution
 

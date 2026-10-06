@@ -10,7 +10,7 @@ This is a vector/code art for the prototype of week 2 "instructions". It display
 
 ## Screenshot
 
-> ![Instructions Prototype - Charge](./assets/images/2-charge.gif)
+> ![Instructions Prototype - Charge](/assets/images/2-charge.gif)
 
 
 ## Attribution

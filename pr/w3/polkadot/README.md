@@ -10,7 +10,7 @@ A simple drawing board that varies the shape of the brush randomly and the color
 
 ## Screenshot(s)
 
-> ![Variables Prototype - Polka Dot Abstract](./assets/images/3-polkadot.png)
+> ![Variables Prototype - Polka Dot Abstract](/assets/images/3-polkadot.png)
 
 ## Attribution
 
