@@ -12,18 +12,7 @@ const cnvS = 600;
 //Background color
 const bgColor = 30;
 //Dialogue roller
-
-
-let boot1 = "You wake in a strange dungeon,"
-let boot2 = "face pressed into cold floor."
-let opt0 = "[Continue.]"
-let dialog1 = "You are in a cell."
-let whatDo = "What do you do?"
-let opt1 = "[Call for help.]"
-let opt2 = "[Look for a way out.]"
-let answer1 = "No one answers."
-let answer2 = "You are stuck in this cell."
-let reset = "yu suck"
+let dialog = 0;
 
 // Setup function
 function setup() {
@@ -41,39 +30,127 @@ function setup() {
     textSize(width * 0.025)
     textAlign(CENTER, CENTER)
 }
+
+
+
+// Function to run when mouse is clicked
+function mouseClicked() {
+    // Whenever mouse is pressed, advance the dialogue by 1
+    dialog += 1;
+}
+
+
+
+// All the dialogue strings, summarized
+let boot1 = "You wake in a strange dungeon,"
+let boot2 = "face pressed into cold floor."
+let opt0 = "[Continue.]"
+let dialog1 = "You are in a cell."
+let whatDo = "What do you do?"
+let opt1 = "[Call for help.]"
+let opt2 = "[Look for a way out.]"
+let answer1 = "No one answers."
+let answer2 = "You are stuck in this cell."
+let reset = "[Go to sleep]"
+
+
+
 // Function that draws the first text
 function drawBoot() {
+    // Draws a dark background to hide the last dialogue
+    fill(30, 30, 30)
+    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
+    // Draws the text
     fill(255, 255, 255)
     text(boot1, width / 2, height / 2)
     text(boot2, width / 2, height / 2 * 1.1)
     text(opt0, width / 2, height / 2 * 1.45)
 }
+
+
+
 // Function that draws the second text
 function drawDialog1() {
+    // Draws a dark background to hide the last dialogue
+    fill(30, 30, 30)
+    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
+    // Draws the text
     fill(255, 255, 255)
     text(dialog1, width / 2, height / 2)
     text(opt0, width / 2, height / 2 * 1.45)
 }
-// Function that draws the options dialog
-function drawDialog1() {
+
+
+
+// Function that draws the 1st option dialog
+function drawDo() {
+    // Draws a dark background to hide the last dialogue
+    fill(30, 30, 30)
+    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
+    // Draws the text
     fill(255, 255, 255)
     text(whatDo, width / 2, height / 2)
     text(opt1, width / 2, height / 2 * 1.45)
 }
 
 
-function draw() {
-    let dialog = 0; s
-    // Whenever mouse is pressed, advance the dialogue by 1
-    if (mousePressed) {
-        dialog += 1;
-    }
 
+function drawAnswer1() {
+    // Draws a dark background to hide the last dialogue
+    fill(30, 30, 30)
+    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
+    // Draws the text
+    fill(255, 255, 255)
+    text(answer1, width / 2, height / 2)
+    text(opt0, width / 2, height / 2 * 1.45)
+}
+
+
+
+// Function that draws the 2nd option dialog
+function drawDo2() {
+    // Draws a dark background to hide the last dialogue
+    fill(30, 30, 30)
+    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
+    // Draws the text
+    fill(255, 255, 255)
+    text(whatDo, width / 2, height / 2)
+    text(opt2, width / 2, height / 2 * 1.45)
+}
+
+
+
+function drawAnswer1() {
+    // Draws a dark background to hide the last dialogue
+    fill(30, 30, 30)
+    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
+    // Draws the text
+    fill(255, 255, 255)
+    text(answer2, width / 2, height / 2)
+    text(opt0, width / 2, height / 2 * 1.45)
+}
+
+
+
+// Function that draws the 2nd option dialog
+function drawDo2() {
+    // Draws a dark background to hide the last dialogue
+    fill(30, 30, 30)
+    rect(cnvS * 1.333 / 2, cnvS / 2, cnvS * 1.333, cnvS)
+    // Draws the text
+    fill(255, 255, 255)
+    text(whatDo, width / 2, height / 2)
+    text(reset, width / 2, height / 2 * 1.45)
+}
+
+
+
+
+function draw() {
     if (dialog == 0) {
         drawBoot()
-        drawOpt0()
     } else if (dialog == 1) {
-        drawCell()
+        drawDialog1()
     }
 }
 
