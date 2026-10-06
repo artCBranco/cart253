@@ -13,7 +13,7 @@ The project is meant to explore what a GitHub repository is, what code looks lik
 
 ## Screenshot(s)
 
-> ![Hello World Challenge](./assets/images/1-hello-world.png)
+> ![Hello World Challenge](../assets/images/1-hello-world.png)
 
 ## Attribution
 
