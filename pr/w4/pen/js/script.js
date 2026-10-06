@@ -2,10 +2,8 @@
  * Pen Draw
  * by Felipe Amorim Castelo Branco
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This program lets the user draw with the mouse. Pressing SPACEBAR will erase the drawing. Pressing S will save it as an image. 
  */
-
 "use strict";
 
 // Size and color of the Canvas
@@ -24,18 +22,18 @@ function setup() {
 
 // If SPACEBAR is pressed, clear the drawing
 //function clearDraw() {
+function keyPressed() {
+    background(bg)
+}
 
 
-
-
+//function draw: Currently empty
 function draw() {
-    if (key == 'w') {
-        clear();
-    }//
+
 }
 
 function mouseDragged() {
     fill(0, 0, 0)
-    rect(mouseX, mouseY, 15, 35)
+    rect(mouseX, mouseY, 5, 35)
 }
 
