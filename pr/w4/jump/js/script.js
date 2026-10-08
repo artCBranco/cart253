@@ -1,8 +1,8 @@
 /**
- * Jump
+ * Toggle It
  * by Felipe Amorim Castelo Branco
  * 
- * Charge your jump. Jump Higher.
+ * Switch between a dark and a light mode
  */
 
 "use strict";
