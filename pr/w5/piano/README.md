@@ -2,7 +2,7 @@
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/tree/main/pr/w4/piano)
+[View this project online](https://github.com/artCBranco/cart253/tree/main/pr/w5/piano)
 
 ## Description
 
@@ -10,7 +10,7 @@ This program lets the user play a simple piano.
 
 ## Screenshot(s)
 
-> ![Conditionals Prototype - Pianinho](/assets/images/4-piano.gif)
+> ![Events Prototype - Pianinho](/assets/images/5-piano.gif)
 
 ## Attribution
 

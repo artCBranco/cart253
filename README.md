@@ -188,13 +188,14 @@ the larger projects and prototype.
      
 - **Events**
 
-   - **Prototype 1**
+   - **Pianinho**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w5/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w5/piano)
        
-     > ![Conditionals Prototype - Dungeon](/assets/images/*.gif)
+     > ![Conditionals Prototype - Pianinho](/assets/images/5-piano.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/piano)
+     
      
      
      
