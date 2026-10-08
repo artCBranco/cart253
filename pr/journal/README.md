@@ -66,3 +66,11 @@ To be fair, it helps having a veteran of coding on my fingertips. I'm usually al
 Still, [Gameboy Unadvanced](https://artcbranco.github.io/cart253/pr/challenges/variables/gameboy-unadvanced/) and [Polka Dot Abstract](https://artcbranco.github.io/cart253/pr/challenges/variables/polkadot/) are officially my first fully interactive videogames, gameboy even more so. And they were so simple that as I wrote, I was already thinking of improvements. "If I can make the square move, can I make a draw once it reaches x? If I restricted it's movement to the green area, can I restrict it in certain spots to create walls? Can I make Snake?" and I'm very curious to see where these thoughts will take me. 
 
 ---
+
+## *Date: 2026-10-06*
+
+This week, I ran head first into a wall. Then I headbutted it again, hoping to open a path. Meanwhile, there was a door right beside it. 
+
+It frustrated me, I spent a long time looking up things in advance only to miss what was directly in front of me. And the unused code (trasformed in comments to disable them) piled up and up at the bottom of the document until I didn't recognize what was going on in my own code. It wasn't as good of a week as the other ones... BUT I got it working in the end! Not in the way I wanted it and not as complex as I wanted it, but it works! I think the hardest part of these projects every week is knowing how to judge whether an idea is easy, doable or impossible to be done within the time limit. I get very easily carried away by thinking literally "anything" is possible, which is something I should probably work on. Not to say "do the bare minimum" but to learn how to look at a plan and say "yeah, I think I need to scale back some features on this to make it fearsible."
+
+Anyway. Projects are almost done, and I'm ready to start next week's prototypes. 
