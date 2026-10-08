@@ -8,11 +8,12 @@
 "use strict";
 
 // Canvas Size
-let cnvS = 1080
+let cnvS = 600
 // Canvas ratio. Vertical < 1 < Horizontal
 let cnvW = 1.6
 //Canvas color 
-let bgColor = 20
+let bgColor = 20;
+let keyColor = 255;
 
 // Keyboard keys. the "sus" are the black keys
 let keyC;
@@ -53,13 +54,18 @@ function setup() {
     background(bgColor)
 
     // Basic settings
-    noStroke()
+    rectMode(CENTER)
 
-
+    //Text settings
+    textFont('Arial')
+    textSize(24)
 }
 
 
 // Creates the draw
 function draw() {
-
+    fill(keyColor)
+    strokeWeight(8)
+    stroke(255, 0, 0)
+    rect(cnvS * cnvW / 24 * 2, cnvS / 2, cnvS * cnvW / 12, cnvS)
 }
