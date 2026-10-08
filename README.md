@@ -176,13 +176,13 @@ the larger projects and prototype.
        
        
        
-   - **Prototype 3**
+   - **Pianinho**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w4/)
+     [View Online](https://artcbranco.github.io/cart253/pr/w4/piano)
        
-     > ![Conditionals Prototype - 3*](/assets/images/4-*)
+     > ![Conditionals Prototype - Pianinho](/assets/images/4-piano.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/piano)
      
      
      
