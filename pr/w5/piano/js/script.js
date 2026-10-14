@@ -47,7 +47,7 @@ function setup() {
 let note;
 let som;
 let amp;
-
+let playing;
 // Creates the draw
 function draw() {
     // calls for the responsive piano function
@@ -55,10 +55,15 @@ function draw() {
     drawSwitch()
 
     som = 440;
-    amp = 0.1
+    //amp = 0.1
     note = new p5.Oscillator(som, `sine`);
-    note.start()
-    note.amp(amp)
+    //note.start()
+    //note.amp(amp)
+    if (playing === true) {
+        note.start()
+    } else if (playing === false) {
+        note.stop()
+    }
 }
 
 
@@ -68,6 +73,7 @@ function drawSwitch() {
     switch (key) {
         case 'a':
             prs = 0;
+            playing = true;
             break;
         case 'w':
             prs = 1
@@ -104,6 +110,7 @@ function drawSwitch() {
             break;
         default:
             prs = -2;
+            playing = false;
             break;
     }
 }
