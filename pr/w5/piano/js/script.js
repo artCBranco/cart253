@@ -15,9 +15,11 @@ let cnvS = 600
 // Canvas ratio. Vertical < 1 < Horizontal
 let cnvW = 1.6
 //Canvas color and black keys color
-let bgColor = 20;
+let bgColor = 40;
+// Key roundness
+let round = 32;
 // White keys color
-let keyColor = 255;
+let keyColor = 240;
 // Stroke and key press highlight color
 let strColor = 150;
 // Key press position
@@ -25,26 +27,15 @@ let prs;
 
 
 
-// Keyboard keys. the "sus" (Sustenido) are the black keys
-let noteC;
-let noteCsus;
-let noteD;
-let noteDsus
-let noteE;
-let noteF;
-let noteFsus;
-let noteG;
-let noteGsus
-let noteA;
-let noteAsus;
-let noteB;
+
 
 // Sets up the function
 function setup() {
+
     //Create Canvas
     createCanvas(cnvS * cnvW, cnvS)
     // Canvas background (black keys) color
-    background(bgColor)
+    background(strColor)
 
     //Text settings
     textFont('Arial')
@@ -53,16 +44,30 @@ function setup() {
 }
 
 
+let note;
+let som;
+let amp;
 
 // Creates the draw
 function draw() {
+    // calls for the responsive piano function
+    drawPiano()
+    drawSwitch()
 
-    noteC = new p5.Oscillator(261.63, `sine`)
-    // Configures the piano controls
+    som = 440;
+    amp = 0.1
+    note = new p5.Oscillator(som, `sine`);
+    note.start()
+    note.amp(amp)
+}
+
+
+
+// Configures the piano controls
+function drawSwitch() {
     switch (key) {
         case 'a':
             prs = 0;
-
             break;
         case 'w':
             prs = 1
@@ -98,10 +103,18 @@ function draw() {
             prs = 12
             break;
         default:
-            prs = 14;
+            prs = -2;
             break;
     }
+}
 
+
+
+/*
+* Function that assembles the entire piano 
+* with responsive keys. Visuals only, no sound here.
+*/
+function drawPiano() {
     // White Piano Keys
     drawKey(0, "C", "a")
     drawKey(2, "D", "s")
@@ -122,23 +135,12 @@ function draw() {
     drawSharp(7, "G#", "t")
     drawSharp(9, "A#", "y")
     drawSharp(11, "B#", "u")
-
     // Draws the highlight when Black Piano Keys are pressed
     if (prs % 2 !== 0) {
         drawKeyPress(prs)
     }
-    singNotes()
 }
 
-
-
-function singNotes() {
-    if (prs === 0) {
-        noteC.start()
-    } else if (prs === 14) {
-        noteC.stop()
-    }
-}
 
 
 /*
@@ -153,7 +155,7 @@ function drawKey(pos, note, btn) {
     stroke(strColor)
     fill(keyColor)
     // Piano key, ps is defined within function parenthesis.
-    rect(cnvS * cnvW * pos / 14, 0, cnvS * cnvW / 7, cnvS)
+    rect(cnvS * cnvW * pos / 14, 0, cnvS * cnvW / 7, cnvS, 0, 0, round, round)
 
     // Basic text settings
     noStroke()
@@ -176,11 +178,11 @@ function drawKey(pos, note, btn) {
 */
 function drawSharp(pos, note, btn) {
     // Basic piano settings
-    strokeWeight(8)
+    strokeWeight(6)
     stroke(strColor)
     fill(bgColor)
     // Piano key, ps is defined within function parenthesis.
-    rect(cnvS * cnvW * (pos + 1) / 14 - cnvS * 0.075, 0, cnvS * cnvW * .1, cnvS * .6)
+    rect(cnvS * cnvW * (pos + 1) / 14 - cnvS * 0.075, 0, cnvS * cnvW * .1, cnvS * .6, 0, 0, round, round)
 
     // Basic text settings
     noStroke()
@@ -207,14 +209,13 @@ function drawKeyPress(prs) {
         stroke(strColor)
         fill(strColor)
         // Piano key highlight, prs is defined within function parenthesis.
-        rect(cnvS * cnvW * prs / 14, 0, cnvS * cnvW / 7, cnvS)
+        rect(cnvS * cnvW * prs / 14, 0, cnvS * cnvW / 7, cnvS, 0, 0, round, round)
     } else {
         // Basic piano settings
         strokeWeight(8)
         stroke(strColor)
         fill(strColor)
         // Piano key highlight, prs is defined within function parenthesis.
-        rect(cnvS * cnvW * (prs + 1) / 14 - cnvS * 0.075, 0, cnvS * cnvW * .1, cnvS * .6)
+        rect(cnvS * cnvW * (prs + 1) / 14 - cnvS * 0.075, 0, cnvS * cnvW * .1, cnvS * .6, 0, 0, round, round)
     }
 }
-
