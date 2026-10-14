@@ -3,19 +3,26 @@
  * by Felipe Amorim Castelo Branco
  * 
  * This program lets the user play a simple piano.
+ * All the main variables appear at the beginning.
  */
 
 "use strict";
+
+
 
 // Canvas Size
 let cnvS = 600
 // Canvas ratio. Vertical < 1 < Horizontal
 let cnvW = 1.6
-//Canvas color 
+//Canvas color and black keys color
 let bgColor = 20;
+// White keys color
 let keyColor = 255;
-let pressColor = 200;
-let strColor = 150
+// Stroke and key press highlight color
+let strColor = 150;
+// Key press position
+let prs;
+
 
 // Keyboard keys. the "sus" are the black keys
 let noteC;
@@ -63,47 +70,92 @@ function setup() {
     textAlign(CENTER, CENTER)
 }
 
-let prs;
+
 // Creates the draw
 function draw() {
-    drawKey(0, "C")
-    drawKey(1, "D")
-    drawKey(2, "E")
-    drawKey(3, "F")
-    drawKey(4, "G")
-    drawKey(5, "A")
-    drawKey(6, "B")
-    drawKeyPress()
 
+    prs = 2
+    // White Piano Keys
+    drawKey(0, "C")
+    drawKey(2, "D")
+    drawKey(4, "E")
+    drawKey(6, "F")
+    drawKey(8, "G")
+    drawKey(10, "A")
+    drawKey(12, "B")
+    // Draws the highlight when White Piano Keys are pressed
+
+
+    // Black Piano keys
+    drawSharp(1, "D#")
+    drawSharp(3, "E#")
+    drawSharp(7, "G#")
+    drawSharp(9, "A#")
+    drawSharp(11, "B#")
+    // Draws the highlight when Black Piano Keys are pressed
+    drawKeyPress(prs)
 }
 
+/*
+* Draws the white piano keys.
+* Pos is the position onscreen, divided by 7 because 7 notes. 
+* note is the text indicating the piano note
+*/
 function drawKey(pos, note) {
-
-    /*if ( === 1) {
-        fill(pressColor)
-    } else {
-        fill(keyColor)
-    }*/
+    // Basic piano settings
     strokeWeight(8)
     stroke(strColor)
     fill(keyColor)
-    // Create all white keys. Pos = Position on canvas
-    rect(cnvS * cnvW * pos / 7, 0, cnvS * cnvW / 7, cnvS)
+    // Piano key, ps is defined within function parenthesis.
+    rect(cnvS * cnvW * pos / 14, 0, cnvS * cnvW / 7, cnvS)
+
+    // Basic text settings
     noStroke()
     fill(strColor)
-    text(note, cnvS * cnvW * pos / 7 + cnvS * .125, cnvS * 0.9)
+    // Text. Note is defined within function parenthesis.
+    text(note, cnvS * cnvW * pos / 14 + cnvS * .125, cnvS * 0.9)
 }
 
-function drawKeyPress(prs) {
-
-    /*if ( === 1) {
-        fill(pressColor)
-    } else {
-        fill(keyColor)
-    }*/
+/*
+* Draws the black piano keys.
+* Pos is the position onscreen, divided by 7 because 7 notes. 
+* note is the text indicating the piano note
+*/
+function drawSharp(pos, note) {
+    // Basic piano settings
     strokeWeight(8)
     stroke(strColor)
-    fill(pressColor)
-    // Create all white keys. Pos = Position on canvas
-    rect(cnvS * cnvW * prs / 7, 0, cnvS * cnvW / 7, cnvS)
+    fill(bgColor)
+    // Piano key, ps is defined within function parenthesis.
+    rect(cnvS * cnvW * (pos + 1) / 14 - cnvS * 0.075, 0, cnvS * cnvW * .1, cnvS * .6)
+
+    // Basic text settings
+    noStroke()
+    fill(strColor)
+    // Text. Note is defined within function parenthesis.
+    text(note, cnvS * cnvW * (pos + 1) / 14 + cnvS * 0.005, cnvS * cnvW * .325)
 }
+
+/* Highlights the piano key when pressed. 
+* prs is the position of the key pressed, 
+*divided by 7 which is the amount of keys.
+*/
+function drawKeyPress(prs) {
+
+    if (prs % 2 == 0) {
+        // Basic piano settings
+        strokeWeight(8)
+        stroke(strColor)
+        fill(strColor)
+        // Piano key highlight, prs is defined within function parenthesis.
+        rect(cnvS * cnvW * prs / 14, 0, cnvS * cnvW / 7, cnvS)
+    } else {
+        // Basic piano settings
+        strokeWeight(8)
+        stroke(strColor)
+        fill(strColor)
+        // Piano key highlight, prs is defined within function parenthesis.
+        rect(cnvS * cnvW * (prs + 1) / 14 - cnvS * 0.075, 0, cnvS * cnvW * .1, cnvS * .6)
+    }
+}
+
