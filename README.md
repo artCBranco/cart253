@@ -200,13 +200,13 @@ the larger projects and prototype.
      
      
      
-   - **Prototype 2**
+   - **Mouse Counter**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w5/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w5/counter)
        
-     > ![Conditionals Prototype - Pen Draw](/assets/images/5-*.gif)
+     > ![Conditionals Prototype - Pen Draw](/assets/images/5-counter.png)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/counter)
        
        
        
