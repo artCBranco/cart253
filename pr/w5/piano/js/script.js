@@ -24,6 +24,7 @@ let strColor = 150;
 let prs;
 
 
+
 // Keyboard keys. the "sus" are the black keys
 let noteC;
 let noteCsus
@@ -55,14 +56,14 @@ function preload() {
     noteB = loadSound('assets/b.mp3');
 }
 
+
+
 // Sets up the function
 function setup() {
     //Create Canvas
     createCanvas(cnvS * cnvW, cnvS)
     // Canvas background (black keys) color
     background(bgColor)
-
-    // Basic settings
 
     //Text settings
     textFont('Arial')
@@ -71,37 +72,88 @@ function setup() {
 }
 
 
+
 // Creates the draw
 function draw() {
+    // Configures the piano controls
+    switch (key) {
+        case 'a':
+            prs = 0
+            break;
+        case 'w':
+            prs = 1
+            break;
+        case 's':
+            prs = 2
+            break;
+        case 'e':
+            prs = 3
+            break;
+        case 'd':
+            prs = 4
+            break;
+        case 'f':
+            prs = 6
+            break;
+        case 't':
+            prs = 7
+            break;
+        case 'g':
+            prs = 8
+            break;
+        case 'y':
+            prs = 9
+            break;
+        case 'h':
+            prs = 10
+            break;
+        case 'u':
+            prs = 11
+            break;
+        case 'j':
+            prs = 12
+            break;
+        default:
+            prs = 14
+            break;
+    }
 
-    prs = 2
     // White Piano Keys
-    drawKey(0, "C")
-    drawKey(2, "D")
-    drawKey(4, "E")
-    drawKey(6, "F")
-    drawKey(8, "G")
-    drawKey(10, "A")
-    drawKey(12, "B")
-    // Draws the highlight when White Piano Keys are pressed
+    drawKey(0, "C", "a")
+    drawKey(2, "D", "s")
+    drawKey(4, "E", "d")
+    drawKey(6, "F", "f")
+    drawKey(8, "G", "g")
+    drawKey(10, "A", "h")
+    drawKey(12, "B", "j")
 
+    // Draws the highlight when White Piano Keys are pressed
+    if (prs % 2 == 0) {
+        drawKeyPress(prs)
+    }
 
     // Black Piano keys
-    drawSharp(1, "D#")
-    drawSharp(3, "E#")
-    drawSharp(7, "G#")
-    drawSharp(9, "A#")
-    drawSharp(11, "B#")
+    drawSharp(1, "D#", "w")
+    drawSharp(3, "E#", "e")
+    drawSharp(7, "G#", "t")
+    drawSharp(9, "A#", "y")
+    drawSharp(11, "B#", "u")
+
     // Draws the highlight when Black Piano Keys are pressed
-    drawKeyPress(prs)
+    if (prs % 2 !== 0) {
+        drawKeyPress(prs)
+    }
 }
+
+
 
 /*
 * Draws the white piano keys.
 * Pos is the position onscreen, divided by 7 because 7 notes. 
 * note is the text indicating the piano note
+* btn indicates the key to press
 */
-function drawKey(pos, note) {
+function drawKey(pos, note, btn) {
     // Basic piano settings
     strokeWeight(8)
     stroke(strColor)
@@ -114,14 +166,21 @@ function drawKey(pos, note) {
     fill(strColor)
     // Text. Note is defined within function parenthesis.
     text(note, cnvS * cnvW * pos / 14 + cnvS * .125, cnvS * 0.9)
+    push()
+    textSize(24)
+    text(btn, cnvS * cnvW * pos / 14 + cnvS * .125, cnvS * 0.8)
+    pop()
 }
+
+
 
 /*
 * Draws the black piano keys.
 * Pos is the position onscreen, divided by 7 because 7 notes. 
 * note is the text indicating the piano note
+* btn indicates the key to press
 */
-function drawSharp(pos, note) {
+function drawSharp(pos, note, btn) {
     // Basic piano settings
     strokeWeight(8)
     stroke(strColor)
@@ -134,14 +193,20 @@ function drawSharp(pos, note) {
     fill(strColor)
     // Text. Note is defined within function parenthesis.
     text(note, cnvS * cnvW * (pos + 1) / 14 + cnvS * 0.005, cnvS * cnvW * .325)
+    push()
+    fill(strColor)
+    textSize(24)
+    text(btn, cnvS * cnvW * (pos + 1) / 14 + cnvS * 0.005, cnvS * cnvW * .25)
+    pop()
 }
+
+
 
 /* Highlights the piano key when pressed. 
 * prs is the position of the key pressed, 
 *divided by 7 which is the amount of keys.
 */
 function drawKeyPress(prs) {
-
     if (prs % 2 == 0) {
         // Basic piano settings
         strokeWeight(8)
