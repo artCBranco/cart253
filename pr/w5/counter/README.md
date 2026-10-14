@@ -1,8 +1,8 @@
-# Counter
+# Click Counter
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/tree/main/pr/w5/count)
+[View this project online](https://github.com/artCBranco/cart253/tree/main/pr/w5/counter)
 
 ## Description
 
@@ -10,7 +10,7 @@ This program counts the clicks. Remove the mouse to start over
 
 ## Screenshot(s)
 
-> ![Events Prototype - Pianinho](/assets/images/5-count.png)
+> ![Events Prototype - Pianinho](/assets/images/5-counter.png)
 
 ## Attribution
 

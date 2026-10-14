@@ -25,9 +25,9 @@ let prs;
 
 
 
-// Keyboard keys. the "sus" are the black keys
+// Keyboard keys. the "sus" (Sustenido) are the black keys
 let noteC;
-let noteCsus
+let noteCsus;
 let noteD;
 let noteDsus
 let noteE;
@@ -38,25 +38,6 @@ let noteGsus
 let noteA;
 let noteAsus;
 let noteB;
-
-// Prepares the audio for playing
-function preload() {
-    // All the keyboard sounds
-    noteC = loadSound('assets/c.mp3');
-    noteCsus = loadSound('assets/c-sus.mp3');
-    noteD = loadSound('assets/d.mp3');
-    noteDsus = loadSound('assets/d-sus.mp3');
-    noteE = loadSound('assets/e.mp3');
-    noteF = loadSound('assets/f.mp3');
-    noteFsus = loadSound('assets/f-sus.mp3');
-    noteG = loadSound('assets/g.mp3');
-    noteGsus = loadSound('assets/g-sus.mp3');
-    noteA = loadSound('assets/a.mp3');
-    noteAsus = loadSound('assets/a-sus.mp3');
-    noteB = loadSound('assets/b.mp3');
-}
-
-
 
 // Sets up the function
 function setup() {
@@ -75,10 +56,13 @@ function setup() {
 
 // Creates the draw
 function draw() {
+
+    noteC = new p5.Oscillator(261.63, `sine`)
     // Configures the piano controls
     switch (key) {
         case 'a':
-            prs = 0
+            prs = 0;
+
             break;
         case 'w':
             prs = 1
@@ -114,7 +98,7 @@ function draw() {
             prs = 12
             break;
         default:
-            prs = 14
+            prs = 14;
             break;
     }
 
@@ -143,8 +127,18 @@ function draw() {
     if (prs % 2 !== 0) {
         drawKeyPress(prs)
     }
+    singNotes()
 }
 
+
+
+function singNotes() {
+    if (prs === 0) {
+        noteC.start()
+    } else if (prs === 14) {
+        noteC.stop()
+    }
+}
 
 
 /*

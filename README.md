@@ -169,7 +169,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/pen)
        
-     > ![Conditionals Prototype - Pen Draw](/assets/images/4-pen.png)
+     > ![Conditionals Prototype - Calligraphy](/assets/images/4-pen.png)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/pen)
        
@@ -180,7 +180,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w4/toggle)
        
-     > ![Conditionals Prototype - Pianinho](/assets/images/4-toggle.gif)
+     > ![Conditionals Prototype - Toggle It](/assets/images/4-toggle.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/toggle)
      
@@ -200,11 +200,11 @@ the larger projects and prototype.
      
      
      
-   - **Mouse Counter**
+   - **Click Counter**
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/counter)
        
-     > ![Conditionals Prototype - Pen Draw](/assets/images/5-counter.png)
+     > ![Conditionals Prototype - CLick Counter](/assets/images/5-counter.png)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/counter)
        
