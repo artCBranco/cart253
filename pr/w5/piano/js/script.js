@@ -15,6 +15,7 @@ let cnvW = 1.6
 let bgColor = 20;
 let keyColor = 255;
 let pressColor = 200;
+let strColor = 150
 
 // Keyboard keys. the "sus" are the black keys
 let noteC;
@@ -58,23 +59,25 @@ function setup() {
 
     //Text settings
     textFont('Arial')
-    textSize(24)
+    textSize(48)
+    textAlign(CENTER, CENTER)
 }
 
-
+let prs;
 // Creates the draw
 function draw() {
+    drawKey(0, "C")
+    drawKey(1, "D")
+    drawKey(2, "E")
+    drawKey(3, "F")
+    drawKey(4, "G")
+    drawKey(5, "A")
+    drawKey(6, "B")
+    drawKeyPress()
 
-    drawKey(0)
-    drawKey(1)
-    drawKey(2)
-    drawKey(3)
-    drawKey(4)
-    drawKey(5)
-    drawKey(6)
 }
 
-function drawKey(pos) {
+function drawKey(pos, note) {
 
     /*if ( === 1) {
         fill(pressColor)
@@ -82,8 +85,25 @@ function drawKey(pos) {
         fill(keyColor)
     }*/
     strokeWeight(8)
-    stroke(255, 0, 0)
-
+    stroke(strColor)
+    fill(keyColor)
     // Create all white keys. Pos = Position on canvas
     rect(cnvS * cnvW * pos / 7, 0, cnvS * cnvW / 7, cnvS)
+    noStroke()
+    fill(strColor)
+    text(note, cnvS * cnvW * pos / 7 + cnvS * .125, cnvS * 0.9)
+}
+
+function drawKeyPress(prs) {
+
+    /*if ( === 1) {
+        fill(pressColor)
+    } else {
+        fill(keyColor)
+    }*/
+    strokeWeight(8)
+    stroke(strColor)
+    fill(pressColor)
+    // Create all white keys. Pos = Position on canvas
+    rect(cnvS * cnvW * prs / 7, 0, cnvS * cnvW / 7, cnvS)
 }
