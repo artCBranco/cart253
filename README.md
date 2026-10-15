@@ -192,7 +192,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/piano)
        
-     > ![Conditionals Prototype - Pianinho](/assets/images/5-piano.gif)
+     > ![Events Prototype - Pianinho](/assets/images/5-piano.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/piano)
      
@@ -204,7 +204,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/counter)
        
-     > ![Conditionals Prototype - CLick Counter](/assets/images/5-counter.png)
+     > ![Events Prototype - CLick Counter](/assets/images/5-counter.png)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/counter)
        
@@ -215,7 +215,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/*)
        
-     > ![Conditionals Prototype - 3*](/assets/images/5-*)
+     > ![Events Prototype - 3*](/assets/images/5-*)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/*)
 

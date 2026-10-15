@@ -10,7 +10,7 @@ This program counts the clicks. Remove the mouse to start over
 
 ## Screenshot(s)
 
-> ![Events Prototype - Pianinho](/assets/images/5-counter.png)
+> ![Events Prototype - Click Counter](/assets/images/5-counter.png)
 
 ## Attribution
 
