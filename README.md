@@ -204,7 +204,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/counter)
        
-     > ![Events Prototype - CLick Counter](/assets/images/5-counter.png)
+     > ![Events Prototype - Click Counter](/assets/images/5-counter.png)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/counter)
        

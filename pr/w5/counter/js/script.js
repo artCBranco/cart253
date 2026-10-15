@@ -7,8 +7,8 @@
 
 "use strict";
 // Canvas resolution. Height in pixels and horizontal ratio
-let cnvS = 600
-let cnvW = 1
+let cnvS = 600;
+let cnvW = 1;
 let click = 0;
 function setup() {
     // Creates the Canvas

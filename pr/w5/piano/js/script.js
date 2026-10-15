@@ -9,9 +9,9 @@
 "use strict";
 
 // Canvas Size
-const cnvS = 900
+const cnvS = 900;
 // Canvas ratio. Vertical < 1 < Horizontal
-const cnvW = 2
+const cnvW = 2;
 // number of keys
 const nmb = 20;
 //Canvas color and black keys color
@@ -32,14 +32,14 @@ let note;
 // Sets up the function
 function setup() {
     //Create Canvas
-    createCanvas(cnvS * cnvW, cnvS)
+    createCanvas(cnvS * cnvW, cnvS);
     // Canvas background
-    background(strColor)
+    background(strColor);
 
     //Text settings
-    textFont('Arial')
-    textSize(32)
-    textAlign(CENTER, CENTER)
+    textFont('Arial');
+    textSize(32);
+    textAlign(CENTER, CENTER);
 
     // Creates the sound
     note = new p5.Oscillator(440, `sine`);
@@ -50,9 +50,9 @@ function setup() {
 // Creates the draw
 function draw() {
     // draws the responsive piano function
-    drawPiano()
+    drawPiano();
     // Configures the piano controls
-    drawSwitch()
+    drawSwitch();
 }
 
 
@@ -124,33 +124,33 @@ function drawSwitch() {
 */
 function drawPiano() {
     // White Piano Keys
-    drawKey(0, "C", "a")
-    drawKey(2, "D", "s")
-    drawKey(4, "E", "d")
-    drawKey(6, "F", "f")
-    drawKey(8, "G", "g")
-    drawKey(10, "A", "h")
-    drawKey(12, "B", "j")
-    drawKey(14, "C", "k")
-    drawKey(16, "D", "l")
-    drawKey(18, "E", ";")
+    drawKey(0, "C", "a");
+    drawKey(2, "D", "s");
+    drawKey(4, "E", "d");
+    drawKey(6, "F", "f");
+    drawKey(8, "G", "g");
+    drawKey(10, "A", "h");
+    drawKey(12, "B", "j");
+    drawKey(14, "C", "k");
+    drawKey(16, "D", "l");
+    drawKey(18, "E", ";");
 
     // Draws the highlight when White Piano Keys are pressed
     if (prs % 2 == 0) {
-        drawKeyPress(prs)
+        drawKeyPress(prs);
     }
 
     // Black Piano keys
-    drawSharp(1, "C#", "w")
-    drawSharp(3, "D#", "e")
-    drawSharp(7, "F#", "t")
-    drawSharp(9, "G#", "y")
-    drawSharp(11, "A#", "u")
-    drawSharp(15, "C#", "o")
-    drawSharp(17, "D#", "p")
+    drawSharp(1, "C#", "w");
+    drawSharp(3, "D#", "e");
+    drawSharp(7, "F#", "t");
+    drawSharp(9, "G#", "y");
+    drawSharp(11, "A#", "u");
+    drawSharp(15, "C#", "o");
+    drawSharp(17, "D#", "p");
     // Draws the highlight when Black Piano Keys are pressed
     if (prs % 2 !== 0) {
-        drawKeyPress(prs)
+        drawKeyPress(prs);
     }
 }
 
@@ -163,20 +163,20 @@ function drawPiano() {
 */
 function drawKey(pos, note, btn) {
     // Basic piano settings
-    strokeWeight(8)
-    stroke(strColor)
-    fill(keyColor)
+    strokeWeight(8);
+    stroke(strColor);
+    fill(keyColor);
     // Piano key, ps is defined within function parenthesis.
-    rect(cnvS * cnvW * pos / nmb, -round, cnvS * cnvW / 10, cnvS, 0, 0, round, round)
+    rect(cnvS * cnvW * pos / nmb, -round, cnvS * cnvW / 10, cnvS, 0, 0, round, round);
 
     // Basic text settings
-    noStroke()
-    fill(strColor)
+    noStroke();
+    fill(strColor);
     // Text. Note is defined within function parenthesis.
-    text(note, cnvS * cnvW * pos / nmb + cnvS / 9.5, cnvS * 0.9)
+    text(note, cnvS * cnvW * pos / nmb + cnvS / 9.5, cnvS * 0.9);
     push()
-    textSize(18)
-    text(btn, cnvS * cnvW * pos / nmb + cnvS * .1, cnvS * 0.8)
+    textSize(18);
+    text(btn, cnvS * cnvW * pos / nmb + cnvS * .1, cnvS * 0.8);
     pop()
 }
 
@@ -190,21 +190,21 @@ function drawKey(pos, note, btn) {
 */
 function drawSharp(pos, note, btn) {
     // Basic piano settings
-    strokeWeight(6)
-    stroke(strColor)
-    fill(bgColor)
+    strokeWeight(6);
+    stroke(strColor);
+    fill(bgColor);
     // Piano key, ps is defined within function parenthesis.
-    rect(cnvS * cnvW * (pos + 1) / nmb - cnvS * 1.5 / nmb, -round, cnvS * .15, cnvS * .6, 0, 0, round, round)
+    rect(cnvS * cnvW * (pos + 1) / nmb - cnvS * 1.5 / nmb, -round, cnvS * .15, cnvS * .6, 0, 0, round, round);
 
     // Basic text settings
     noStroke()
     fill(strColor)
     // Text. Note is defined within function parenthesis.
-    text(note, cnvS * cnvW * (pos + 1) / nmb, cnvS * .475)
+    text(note, cnvS * cnvW * (pos + 1) / nmb, cnvS * .475);
     push()
-    fill(strColor)
-    textSize(18)
-    text(btn, cnvS * cnvW * (pos + 1) / nmb, cnvS * .375)
+    fill(strColor);
+    textSize(18);
+    text(btn, cnvS * cnvW * (pos + 1) / nmb, cnvS * .375);
     pop()
 }
 
@@ -217,18 +217,18 @@ function drawSharp(pos, note, btn) {
 function drawKeyPress(prs) {
     if (prs % 2 == 0) {
         // Basic piano settings
-        strokeWeight(8)
-        stroke(strColor)
-        fill(strColor)
+        strokeWeight(8);
+        stroke(strColor);
+        fill(strColor);
         // Piano key highlight, prs is defined within function parenthesis.
-        rect(cnvS * cnvW * prs / nmb, -round, cnvS * cnvW / 10, cnvS, 0, 0, round, round)
+        rect(cnvS * cnvW * prs / nmb, -round, cnvS * cnvW / 10, cnvS, 0, 0, round, round);
     } else {
         // Basic piano settings
-        strokeWeight(8)
-        stroke(strColor)
-        fill(strColor)
+        strokeWeight(8);
+        stroke(strColor);
+        fill(strColor);
         // Piano key highlight, prs is defined within function parenthesis.
-        rect(cnvS * cnvW * (prs + 1) / nmb - cnvS * 1.5 / nmb, 0, cnvS * .15, cnvS * .6, 0, 0, round, round)
+        rect(cnvS * cnvW * (prs + 1) / nmb - cnvS * 1.5 / nmb, 0, cnvS * .15, cnvS * .6, 0, 0, round, round);
     }
 }
 
@@ -237,40 +237,40 @@ function drawKeyPress(prs) {
 // Translate press to a note
 function getPress(key) {
     if (key == "a")
-        return "C"
+        return "C";
     if (key == "w")
-        return "Cs"
+        return "Cs";
     if (key == "s")
-        return "D"
+        return "D";
     if (key == "e")
-        return "Ds"
+        return "Ds";
     if (key == "d")
-        return "E"
+        return "E";
     if (key == "f")
-        return "F"
+        return "F";
     if (key == "t")
-        return "Fs"
+        return "Fs";
     if (key == "g")
-        return "G"
+        return "G";
     if (key == "y")
-        return "Gs"
+        return "Gs";
     if (key == "h")
-        return "A"
+        return "A";
     if (key == "u")
-        return "As"
+        return "As";
     if (key == "j")
-        return "B"
+        return "B";
     if (key == "k")
-        return "C2"
+        return "C2";
     if (key == "o")
-        return "C2s"
+        return "C2s";
     if (key == "l")
-        return "D2"
+        return "D2";
     if (key == "p")
-        return "D2s"
+        return "D2s";
     if (key == ";")
-        return "E2"
-    return ""
+        return "E2";
+    return "";
 }
 
 
@@ -278,40 +278,40 @@ function getPress(key) {
 // Translate note to a frequency in Hertz
 function getFreq(press) {
     if (press === "C")
-        return 261.63
+        return 261.63;
     if (press === "Cs")
-        return 277.18
+        return 277.18;
     if (press == "D")
-        return 293.66
+        return 293.66;
     if (press === "Ds")
-        return 311.13
+        return 311.13;
     if (press === "E")
-        return 329.63
+        return 329.63;
     if (press == "F")
-        return 349.23
+        return 349.23;
     if (press === "Fs")
-        return 369.99
+        return 369.99;
     if (press === "G")
-        return 392
+        return 392;
     if (press == "Gs")
-        return 415.3
+        return 415.3;
     if (press === "A")
-        return 440
+        return 440;
     if (press === "As")
-        return 466.16
+        return 466.16;
     if (press == "B")
-        return 493.88
+        return 493.88;
     if (press === "C2")
-        return 523.25
+        return 523.25;
     if (press === "C2s")
-        return 554.37
+        return 554.37;
     if (press == "D2")
-        return 587.33
+        return 587.33;
     if (press === "D2s")
-        return 622.25
+        return 622.25;
     if (press === "E2")
-        return 659.25
-    return 0
+        return 659.25;
+    return 0;
 }
 
 
@@ -319,11 +319,9 @@ function getFreq(press) {
 // If key is pressed, start the sound.
 function keyPressed(event) {
     // Change frequency according to key pressed
-    note.freq(
-        getFreq(getPress(event.key)))
-
+    note.freq(getFreq(getPress(event.key)));
     // Start sound
-    note.start()
+    note.start();
 }
 
 
@@ -331,5 +329,5 @@ function keyPressed(event) {
 // If key is released, stop the sound.
 function keyReleased() {
     // Stop sound
-    note.stop()
+    note.stop();
 }
