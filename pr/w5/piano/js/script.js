@@ -50,15 +50,18 @@ let amp;
 let playing;
 // Creates the draw
 function draw() {
-    // calls for the responsive piano function
+    // draws the responsive piano function
     drawPiano()
     drawSwitch()
 
-    som = 440;
-    //amp = 0.1
+
+
+    // Creates the sound.
     note = new p5.Oscillator(som, `sine`);
-    //note.start()
-    //note.amp(amp)
+    // Frequency in Hertz
+    som = 440;
+    // If key is pressed, playing = true.
+    // Otherwise, playing = false
     if (playing === true) {
         note.start()
     } else if (playing === false) {
