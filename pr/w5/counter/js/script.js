@@ -12,7 +12,7 @@
 // Canvas resolution. Height in pixels and horizontal ratio
 let cnvS = 600;
 let cnvW = 1;
-let count;
+let count = 0;
 
 
 
@@ -23,6 +23,7 @@ function setup() {
     background(0, 150, 150)
 
     //Text settings
+    rectMode(CENTER)
     textFont('Arial');
     textSize(64);
     textAlign(CENTER, CENTER);
@@ -32,18 +33,13 @@ function setup() {
 
 // Draw function
 function draw() {
-    count = 0;
-    window.addEventListener("click", (event) => {
-        Count()
-    });
+    drawClicker();
 
     document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
             Zero();
         }
     })
-    drawClicker();
-
 }
 
 
@@ -51,10 +47,11 @@ function draw() {
 // Draws the counter
 function drawClicker() {
     fill(0, 150, 150);
-    rect(cnvS * cnvW, cnvS);
+    rect(cnvS * cnvW / 2, cnvS / 2, cnvS * cnvW, cnvS);
     fill(0, 0, 0);
     text(count, cnvS * cnvW / 2, cnvS * .6);
     text('Click Counter', cnvS * cnvW / 2, cnvS * .35);
+
 }
 
 
@@ -66,3 +63,6 @@ function Zero() {
     count = 0;
 }
 
+window.addEventListener("click", (event) => {
+    Count()
+});
