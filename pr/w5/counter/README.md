@@ -6,7 +6,7 @@ by Felipe Amorim Castelo Branco
 
 ## Description
 
-This program counts the clicks. Remove the mouse to start over
+A simple Click Counter using event listener. Click to raise the counter, Rightclick to lower the counter. It restarts when the window is minimized. 
 
 ## Screenshot(s)
 
