@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Flappy Bird
+ * Felipe Amorim Castelo Branco
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * In this game, users control a little flying bird. By pressing any key, they keep the bird in the air.
  */
 
 "use strict";
@@ -66,6 +65,7 @@ function setup() {
 }
 
 
+
 // Draw function
 function draw() {
 
@@ -84,6 +84,7 @@ function draw() {
 }
 
 
+
 // Flappy appearance
 function drawFlappy() {
     fill(bg.r, bg.g, bg.b)
@@ -92,11 +93,14 @@ function drawFlappy() {
     square(cnvS * cnvW / 2, flappy.pos + flappy.size - jump, flappy.size, flappy.round)
 }
 
+
+
 // When any key is pressed, jump
 function keyPressed() {
     jump = jump + cnvS / 10 * dif
     count = count + 1
 }
+
 
 
 // Loss screen
@@ -110,5 +114,4 @@ function loss() {
     text('total jumps:', cnvS / 2 * cnvW, cnvS / 2 * 1.2)
     text(count, cnvS / 2 * cnvW, cnvS / 2 * 1.4)
     pop()
-
 }

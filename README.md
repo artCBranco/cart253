@@ -213,11 +213,43 @@ the larger projects and prototype.
        
    - **Prototype 3**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w5/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w5/flappy)
        
-     > ![Events Prototype - 3*](/assets/images/5-*)
+     > ![Events Prototype - 3*](/assets/images/5-flappy.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/flappy)
+     
+     
+     
+     - **WIP**
+
+       - **Prototype 1**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+       
+     > ![WIP Prototype - 1*](/assets/images/6-*)
+       
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
+     
+     
+     
+       - **Prototype 2**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+       
+     > ![WIP Prototype - 2*](/assets/images/6-*)
+       
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
+     
+     
+     
+       - **Prototype 3**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+       
+     > ![WIP Prototype - 3*](/assets/images/6-*)
+       
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
 
 ---
 
