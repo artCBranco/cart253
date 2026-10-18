@@ -6,31 +6,40 @@
  */
 
 "use strict";
+
+
+
 // Canvas ratio and resolution
 let cnvS = 900;
 let cnvW = 1.6;
 
 
+// Important Variables
 
 // Count how many jumps total for the Lose() screen
 let count = 0;
 // Initial jump (Flappy height)
-let jump = 200;
-// difficulty (jumps get smaller)
-let dif = 1;
+let jump = cnvS / 3;
+// Difficulty (Jump Height)
+let dif = 2.5;
+// Gravity (Falling Speed)
+let grav = 2;
+// summarizes flappy current position
+let pos = flappy.base + flappy.size - jump;
+
+
+
 // Player proprieties
 let flappy = {
     //Color
     color: {
-        r: 0,
-        g: 0,
-        b: 0,
+        r: 150,
+        g: 150,
+        b: 150,
     },
 
-    // How fast it falls
-    speed: 2,
     // Vertical position
-    pos: cnvS,
+    base: cnvS,
 
     // Shape settings
     size: cnvS / 28,
@@ -39,11 +48,12 @@ let flappy = {
 
 
 
+
 // background color
 let bg = {
-    r: 240,
-    g: 240,
-    b: 200,
+    r: 60,
+    g: 60,
+    b: 60,
 }
 
 
@@ -71,14 +81,14 @@ function draw() {
 
     // Gravity
     if (jump > 0) {
-        jump -= jump / 60
+        jump = jump - 1 * grav
     }
 
     //   Flappy bird
     drawFlappy()
 
     // Loss conditions
-    if (flappy.pos < 0 && flappy.pos > cnvS) {
+    if (pos < 0 && pos > cnvS) {
         loss()
     }
 }
@@ -87,17 +97,20 @@ function draw() {
 
 // Flappy appearance
 function drawFlappy() {
+    //Background Square (Hides previous draws)
     fill(bg.r, bg.g, bg.b)
-    square(cnvS * cnvW / 2, flappy.pos + flappy.size - jump, cnvS, flappy.round)
+    square(cnvS * cnvW / 2, pos, cnvS)
+
+    // Flappy bird. Vertical position (pos) is variable.
     fill(flappy.r, flappy.g, flappy.b)
-    square(cnvS * cnvW / 2, flappy.pos + flappy.size - jump, flappy.size, flappy.round)
+    square(cnvS * cnvW / 2, pos, flappy.size, flappy.round)
 }
 
 
 
-// When any key is pressed, jump
+// When any key is pressed, jump.
 function keyPressed() {
-    jump = jump + cnvS / 10 * dif
+    jump = jump + (cnvS * dif) / grav
     count = count + 1
 }
 
@@ -105,10 +118,11 @@ function keyPressed() {
 
 // Loss screen
 function loss() {
-    fill(bg.r, bg.g, bg.b)
-    square(cnvS * cnvW / 2, flappy.pos + flappy.size - jump, cnvS, flappy.round)
+    //Draws "You Lose"
     fill(flappy.r, flappy.g, flappy.b)
     text("You lose!", cnvS / 2 * cnvW, cnvS / 2 * 0.9)
+
+    // Draws Jump Counter
     push()
     textSize(48)
     text('total jumps:', cnvS / 2 * cnvW, cnvS / 2 * 1.2)
