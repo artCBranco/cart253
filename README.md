@@ -79,6 +79,16 @@ the larger projects and prototype.
  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/do-not-move)  
 
 <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+
+- **Functions - Bouncy Ball Ball Bonanza**
+
+ [View Online](https://artcbranco.github.io/cart253/pr/w6/bounce) 
+
+ > ![Functions Challenge - Bouncy Ball Ball Bonanza](/assets/images/6-bounce.gif)
+
+ [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/bounce)  
+
+<sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
        
        
