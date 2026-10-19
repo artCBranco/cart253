@@ -34,9 +34,9 @@ let dist;
 let flappy = {
     //Color
     color: {
-        r: 255,
-        g: 0,
-        b: 0,
+        r: 60,
+        g: 60,
+        b: 60,
     },
 
     // Vertical position
