@@ -32,63 +32,68 @@ the larger projects and prototype.
 
 - **Hello World**
 
- [View Online](https://artcbranco.github.io/cart253/pr/w1/hello-world)
+  [View Online](https://artcbranco.github.io/cart253/pr/w1/hello-world)
 
- > ![Hello World Challenge](./assets/images/1-hello-world.png)
+   > ![Hello World Challenge](./assets/images/1-hello-world.png)
 
- [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w1/hello-world)
+  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w1/hello-world)
 
- <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
+  <sub>Teammate for the Hello World Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
+
 
 - **Instructions - City Skyline**
 
- [View Online](https://artcbranco.github.io/cart253/pr/w2/city-skyline)
+   [View Online](https://artcbranco.github.io/cart253/pr/w2/city-skyline)
 
- > ![Instructions Challenge - City Skyline](/assets/images/2-city-skyline.png)
+  > ![Instructions Challenge - City Skyline](/assets/images/2-city-skyline.png)
 
- [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/city-skyline)
+  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/city-skyline)
 
- <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
+  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub>
+
 
 - **Variables - Mr. Furious**
 
- [View Online](https://artcbranco.github.io/cart253/pr/w3/mrfurious) 
+   [View Online](https://artcbranco.github.io/cart253/pr/w3/mrfurious) 
 
- > ![Variables Challenge - Mr. Furious](/assets/images/3-mrFurious.gif)
+  > ![Variables Challenge - Mr. Furious](/assets/images/3-mrFurious.gif)
 
- [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/mrfurious)  
+  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w3/mrfurious)  
 
-<sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+
 
 - **Conditionals - Push a Puck**
 
- [View Online](https://artcbranco.github.io/cart253/pr/w4/push-puck) 
+   [View Online](https://artcbranco.github.io/cart253/pr/w4/push-puck) 
 
- > ![Conditionals Challenge - Push a Puck](/assets/images/4-pushpuck.gif)
+  > ![Conditionals Challenge - Push a Puck](/assets/images/4-pushpuck.gif)
 
- [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/push-puck)  
+  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w4/push-puck)  
 
-<sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+
 
 - **Events - The Only Move Is Not To Play**
 
- [View Online](https://artcbranco.github.io/cart253/pr/w5/do-not-move) 
+  [View Online](https://artcbranco.github.io/cart253/pr/w5/do-not-move) 
 
- > ![Events Challenge - The Only Move Is Not To Play](/assets/images/5-donotmove.gif)
+  > ![Events Challenge - The Only Move Is Not To Play](/assets/images/5-donotmove.gif)
 
- [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/do-not-move)  
+   [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/do-not-move)  
 
-<sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+
 
 - **Functions - Bouncy Ball Ball Bonanza**
 
- [View Online](https://artcbranco.github.io/cart253/pr/w6/bounce) 
+  [View Online](https://artcbranco.github.io/cart253/pr/w6/bounce) 
 
- > ![Functions Challenge - Bouncy Ball Ball Bonanza](/assets/images/6-bounce.gif)
+  > ![Functions Challenge - Bouncy Ball Ball Bonanza](/assets/images/6-bounce.gif)
 
- [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/bounce)  
+  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/bounce)  
 
-<sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
+  <sub>Teammate for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/)</sub> 
        
        
        
@@ -99,33 +104,33 @@ the larger projects and prototype.
      
     - **The Emojinaut**
     
-     [View Online](https://artcbranco.github.io/cart253/pr/w2/emojinaut)
+       [View Online](https://artcbranco.github.io/cart253/pr/w2/emojinaut)
     
-     > ![Instructions Prototype - The Emojinaut](/assets/images/2-emojinaut.png)
+      > ![Instructions Prototype - The Emojinaut](/assets/images/2-emojinaut.png)
     
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/emojinaut)
+      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/emojinaut)
      
      
      
     - **Calm Horizons**
     
-     [View Online](https://artcbranco.github.io/cart253/pr/w2/calm-horizons)
+      [View Online](https://artcbranco.github.io/cart253/pr/w2/calm-horizons)
     
-     > ![Instructions Prototype - Calm Horizons](/assets/images/2-calm-horizons.png)
-     
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/calm-horizons)
+       > ![Instructions Prototype - Calm Horizons](/assets/images/2-calm-horizons.png)
+       
+       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/calm-horizons)
      
      
      
      
     - **Charge**
     
-     [View Online](https://artcbranco.github.io/cart253/pr/w2/charge)
+      [View Online](https://artcbranco.github.io/cart253/pr/w2/charge)
     
-     > ![Instructions Prototype - Charge](/assets/images/2-charge.gif)
-    
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/charge)
-
+      > ![Instructions Prototype - Charge](/assets/images/2-charge.gif)
+     
+       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w2/charge)
+  
 
 
 - **Variables**
@@ -221,39 +226,39 @@ the larger projects and prototype.
        
        
        
-   - **Prototype 3**
+   - **Flappy Bird**
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/flappy)
        
-     > ![Events Prototype - 3*](/assets/images/5-flappy.gif)
+     > ![Events Prototype - Flappy Bird](/assets/images/5-flappy.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/flappy)
      
      
      
-     - **WIP**
+- **Functions**
 
-       - **Prototype 1**
+    - **Prototype 1**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+       [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
        
-     > ![WIP Prototype - 1*](/assets/images/6-*)
+       > ![WIP Prototype - 1*](/assets/images/6-*)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
+       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
      
      
      
-       - **Prototype 2**
+    - **Prototype 2**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+       [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
        
-     > ![WIP Prototype - 2*](/assets/images/6-*)
+       > ![WIP Prototype - 2*](/assets/images/6-*)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
+       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
      
      
      
-       - **Prototype 3**
+    - **Prototype 3**
      
      [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
        
