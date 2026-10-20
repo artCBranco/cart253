@@ -108,3 +108,4 @@ function checkOverlap(rectA, rectB) {
         rectA.y + rectA.height / 2 > rectB.y - rectB.height / 2 &&
         rectA.y - rectA.height / 2 < rectB.y + rectB.height / 2);
 }
+
