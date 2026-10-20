@@ -1,6 +1,6 @@
 # Bouncy Ball Ball Bonanza
 
-Code by Pippin Barr. Challenge by Felipe Amorim Castelo Branco and...
+Code by Pippin Barr. Challenge by Felipe Amorim Castelo Branco and... konstantinos christodoulakis, Felipe Paiva
 
 [View this project online](https://github.com/artCBranco/cart253/tree/main/pr/w6/bounce)
 

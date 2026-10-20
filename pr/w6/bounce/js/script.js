@@ -19,15 +19,31 @@ const ball = {
         y: 10
     }
 };
-
+// Our ball
+const ball2 = {
+    x: 280,
+    y: 20,
+    width: 10,
+    height: 10,
+    velocity: {
+        x: 0,
+        y: 10
+    }
+};
 // Our paddle
 const paddle = {
+    x: 100,
+    y: 290,
+    width: 80,
+    height: 10
+};
+// Our paddle2
+const paddle2 = {
     x: 300,
     y: 280,
     width: 80,
     height: 10
 };
-
 /**
  * Create the canvas
 */
@@ -43,18 +59,38 @@ function draw() {
     background("#87ceeb");
 
     movePaddle(paddle);
+
     moveBall(ball);
+    moveBall(ball2);
 
     handleBounce(ball, paddle);
+    handleBounce(ball2, paddle);
+    handleBounce(ball, paddle2);
+    handleBounce(ball2, paddle2);
 
-    drawPaddle(paddle);
+    drawPaddle(paddle, "red");
+    drawPaddle(paddle2, "blue");
     drawBall(ball);
+    drawBall(ball2);
 }
 
 /**
  * Moves the paddle
  */
 function movePaddle(paddle) {
+    switch (key) {
+        case 'd':
+            paddle.x += 10
+            break;
+        case 'a':
+            paddle.x -= 10
+            break;
+        case 'l':
+            paddle2.x += 10
+            break;
+        case 'j':
+            paddle2.x -= 10
+    }
 
 }
 
@@ -62,7 +98,11 @@ function movePaddle(paddle) {
  * Moves the ball passed in as a parameter
  */
 function moveBall(ball) {
-
+    push()
+    ball.velocity.y += 0.5
+    ball.x += ball.velocity.x
+    ball.y += ball.velocity.y
+    pop()
 }
 
 /**
@@ -70,18 +110,26 @@ function moveBall(ball) {
  */
 function handleBounce(ball, paddle) {
 
+    push()
+    if (checkOverlap(ball, paddle)) {
+        console.log('Hit the paddle!');
+        ball.velocity.y *= -1;
+    }
+    pop()
 }
 
 /**
  * Draws the specified paddle on the canvas
  */
-function drawPaddle(paddle) {
+function drawPaddle(paddle, clr) {
+    // ball.velocity.x += 1
     push();
     rectMode(CENTER);
     noStroke();
-    fill("pink");
+    fill(clr);
     rect(paddle.x, paddle.y, paddle.width, paddle.height);
     pop();
+
 }
 
 /**
