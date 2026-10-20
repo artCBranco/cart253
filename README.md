@@ -89,7 +89,7 @@ the larger projects and prototype.
 
   [View Online](https://artcbranco.github.io/cart253/pr/w6/bounce) 
 
-  > ![Functions Challenge - Bouncy Ball Ball Bonanza](/assets/images/6-bounce.gif)
+  > ![Functions Challenge - Bouncy Ball Ball Bonanza](/assets/images/6-bounce.png)
 
   [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/bounce)  
 
