@@ -2,51 +2,84 @@
  * Gameboy Unadvanced
  * by Felipe Amorim Castelo Branco
  * 
- * A simple moving square. It can jump.
+ * An improvement from the last project. "(Unchanged)" in comments shows the old code.
  */
 
 "use strict";
 
-// Canvas resolution
-let cnv = 800;
 
-// Horizontal and Vertical Grid
-let ad = 3;
-let ws = 3;
 
-function setup() {
-    //Square Canvas
-    createCanvas(cnv, cnv)
-    background(100, 100, 100)
+//Canvas resolution (Reworked)
+let cnvS = 1080;
+// Canvas resolution (Added). Vertical < 1 < Horizontal
+let cnvW = 0.75
 
-    // text settings
-    fill(0, 0, 0)
-    textFont('Lucida Sans', map(cnv, 0, 1080, 4, 26))
-    textAlign(CENTER)
 
-    // Base settings
-    noStroke()
-    rectMode(CENTER)
+
+//Game font used
+let police = "Lucida Sans"
+
+// Controls the color palette of the game(Added)
+let palette = {
+    // Background Color
+    bg: 100,
+    // 3D depth color
+    depth: 90,
+    // Screen color
+    screen: {
+        r: 117,
+        g: 166,
+        b: 72,
+    },
+    txt: 0,
 }
 
-/**
-     * Draws the movable square controlled by the player. All is calculated as percentage of canvas.
-     * ws = adds to the vertical position
-     * ad = adds to the horizontal position
-     * moveX = Is the horizontal position
-     * moveY = Is the vertical position
-     */
-function drawSquare() {
+// Horizontal and Vertical Movement (Reworked)
+let ad = cnvS * 0.00375;
+let ws = cnvS * 0.00375;
 
-    // draws the movement limit of the square
-    let moveX = 0.35 * constrain(ad, 3, 20)
-    let moveY = 0.35 * constrain(ws, 3, 20)
+// draws the movement limit of the square(Reworked)
+let moveX = 0.35 * constrain(ad, cnvS * 0.00375, cnvS * 0.025)
+let moveY = 0.35 * constrain(ws, cnvS * 0.00375, cnvS * 0.025)
 
-    /**
-     * Game Controls
+
+
+
+
+
+// Set up function (Reworked)
+function setup() {
+    //Square Canvas (Reworked)
+    createCanvas(cnvS * cnvW, cnvS)
+    background(palette.bg)
+
+    // text settings (Reworked)
+
+    // Text FOnt Variable defined above. Also maps a max text-size according to the screen resolution
+    textFont(police, map(cnvS, 8, 1080, 4, 26))
+    textAlign(CENTER)
+
+    // Base settings (Unchanged)
+    noStroke()
+    rectMode(CENTER)
+
+
+    // Any code to run at Setup (Added)
+
+
+}
+
+
+
+
+
+
+/** Game Controls
      * ws = changes the vertical position
      * ad = changes the horizontal position
+     * (Unchanged)
      */
+function keyPressed() {
     switch (key) {
         case 'w':
             ws -= 0.35;
@@ -67,55 +100,106 @@ function drawSquare() {
             break;
         default:
             break;
-
-    }
-
-    //movable squared
-    fill(0, 0, 0)
-    square(cnv * moveX / 8, cnv * moveY / 8, cnv / 25, cnv / 150)
-
-    //Win Condition
-    if (moveX == 7 && moveY == 7) {
-        //Screen Depth
-        fill(90, 90, 90)
-        square(cnv * 0.4885, cnv * 0.4885, cnv * 0.845, cnv / 150)
-        //Green Screen
-        fill(117, 166, 72)
-        square(cnv / 2, cnv / 2, cnv * 0.82, cnv / 150)
-
-        //Win Title
-        push()
-        fill(0, 0, 0)
-        textSize(map(cnv, 0, 1080, 12, 64))
-        text("Congratulations", cnv / 2, cnv / 2)
-        text("you won!", cnv / 2, cnv * 0.575)
-        textFont('Lucida Sans', map(cnv, 0, 1080, 4, 26))
-        text("Press [R] to restart", cnv / 2, cnv * 0.625)
-        pop()
     }
 }
 
 
+// Draw Function (Reworked)
 function draw() {
+    // Background (Reworked)
+    drawBg()
+    //Draw Game Control Guide
+    drawGuide()
+    // Draws the objective
+    drawPoint()
+    //Player (Reworked)
+    drawPlayer()
 
-    //Screen Depth
-    fill(90, 90, 90)
-    square(cnv * 0.4885, cnv * 0.4885, cnv * 0.845, cnv / 150)
-    //Green Screen
-    fill(117, 166, 72)
-    square(cnv / 2, cnv / 2, cnv * 0.82, cnv / 150)
+}
 
-    //Game Guide
-    fill(0, 0, 0)
-    text("To move the square:", cnv * 0.75, cnv * 0.15)
-    text("[W] [A] [S] [D]", cnv * 0.75, cnv * 0.18)
 
-    //Player
-    drawSquare()
 
+/*
+ * Draws the movable square controlled by the player. All is calculated as percentage of canvas.
+ * moveX = Is the horizontal position
+ * moveY = Is the vertical position
+ * (Reworked)
+ */
+function drawPlayer() {
+    // Movable square (Reworked)
+    fill(palette.txt)
+    square(cnvS * cnvW * moveX / 2, cnvS * moveY / 8, cnvS * 0.00375, cnvS * 0.1875)
+}
+
+
+
+// Draws the Objective (Reworked)
+function drawPoint() {
     //Objective
-    fill(0, 0, 0)
-    square(cnv * 0.875, cnv * 0.875, cnv / 25, cnv / 150)
+    fill(palette.txt)
+    square(cnvS * cnvW * 0.875, cnvS * 0.875, cnvS * 0.00375, cnvS * 0.1875)
 
 
 }
+
+// Draw the Background (Reworked)
+function drawBg() {
+    //3D Depth
+    fill(palette.depth)
+    square(cnvS * cnvW * 0.49, cnvS * 0.38, cnvS * 0.67, cnvS * 0.0075)
+    //Green Screen
+    fill(palette.screen.r, palette.screen.g, palette.screen.b)
+    square(cnvS * cnvW * 0.5, cnvS * 0.37, cnvS * 0.65, cnvS * 0.0075)
+}
+
+
+
+// Draws the Game Control Guide (Reworekd)
+function drawGuide() {
+    fill(palette.txt)
+    text("To move the square:", cnvS * cnvW * 0.7, cnvS * .12)
+    text("[W] [A] [S] [D]", cnvS * cnvW * 0.7, cnvS * 0.16)
+}
+
+
+
+// Win Screen (Reworked)
+function drawWin() {
+    //Background
+    drawBg()
+
+    //Text color
+    fill(palette.txt)
+
+    // Title text
+    push()
+    textSize(map(cnvS * cnvW, 0, 1080, 12, 64))
+    text("Congratulations,", cnvS * cnvW * 0.5, cnvS * 0.3)
+    text("you won!", cnvS * cnvW * 0.5, cnvS * 0.36)
+    pop()
+
+    //Smaller restart suggestion
+    text("Press [R] to restart", cnvS * cnvW * 0.5, cnvS * 0.5)
+}
+
+
+
+// Loss Screen (Added)
+function loss() {
+    //Background
+    drawBg()
+
+    //Text color
+    fill(palette.txt)
+
+    // Title text
+    push()
+    textSize(map(cnvS * cnvW, 0, 1080, 12, 64))
+    text("Oh no!", cnvS * cnvW * 0.5, cnvS * 0.3)
+    text("You lost...", cnvS * cnvW * 0.5, cnvS * 0.36)
+    pop()
+
+    //Smaller restart suggestion
+    text("Press [R] to restart", cnvS * cnvW * 0.5, cnvS * 0.5)
+}
+

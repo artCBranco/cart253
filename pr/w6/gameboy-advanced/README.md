@@ -1,4 +1,4 @@
-# Gameboy Unadvanced
+# Gameboy Advanced
 
 by Felipe Amorim Castelo Branco
 
@@ -6,7 +6,7 @@ by Felipe Amorim Castelo Branco
 
 ## Description
 
-A simple moving square controlled by the WASD keys. Press SPACEBAR to jump.
+In improved version of the last project. A minigame where a square is controlled by the WASD keys. Press SPACEBAR to jump.
 
 ## Screenshot(s)
 
