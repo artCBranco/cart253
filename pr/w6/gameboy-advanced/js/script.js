@@ -14,27 +14,30 @@
 
 "use strict";
 
-
+let count = 0;
 
 //Canvas resolution (Reworked)
 let cnvS = 1080;
 // Canvas resolution (Added). Vertical < 1 < Horizontal
 let cnvW = 0.75;
 
+// Gameboy pixel size. X <25, Y<24
+let pxlX = 0.0325;
+let pxlY = 0.025;
+
 // Initial X and Y of the Player (added)
 let iAd = .095;
 let iWs = 0.065;
+
 // Horizontal and Vertical Movement of the Player (Reworked)
 let ad = .095;
 let ws = 0.065;
 
 //Horizontal and vertical location of Obstacles
-let objX = .095;
-let objY = 0.065;
+let pointX = .095;
+let pointY = 0.065;
 
-// Gameboy pixel size. X <25, Y<24
-let pxlX = 0.0325;
-let pxlY = 0.025;
+let prs;
 
 //Game font used (Added)
 let police = "Lucida Sans"
@@ -51,11 +54,23 @@ let palette = {
         b: 72,
     },
     txt: 0,
+    btn: {
+        r: 255,
+        g: 0,
+        b: 0,
+    },
+    shdw: {
+        r: 150,
+        g: 0,
+        b: 0,
+
+    },
+    prs: {
+        r: 200,
+        g: 0,
+        b: 0,
+    },
 }
-
-
-
-
 
 
 // Set up function (Reworked)
@@ -77,51 +92,28 @@ function setup() {
 
 
     // Any code to run at Setup (Added)
+    push()
+    textSize(map(cnvS, 8, 2160, 4, 32))
+    text("Restart [R]", cnvS * cnvW * 0.75, cnvS * 0.825)
+    pop()
 }
-
 
 
 // Draw Function (Reworked)
 function draw() {
-
-
 
     // Background (Reworked)
     drawBg()
     //Draw Game Control Guide
     drawGuide()
     // Draws the objective
-    drawPoint(0, 0, 1)
-    drawPoint(1, 1, 1)
-    drawPoint(2, 2, 1)
-    drawPoint(3, 3, 1)
-    drawPoint(4, 4, 1)
-    drawPoint(5, 5, 1)
-    drawPoint(6, 6, 1)
-    drawPoint(7, 7, 1)
-    drawPoint(8, 8, 1)
-    drawPoint(9, 9, 1)
-    drawPoint(10, 10, 1)
-    drawPoint(11, 11, 1)
-    drawPoint(12, 12, 1)
-    drawPoint(13, 13, 1)
-    drawPoint(14, 14, 1)
-    drawPoint(15, 15, 1)
-    drawPoint(16, 16, 1)
-    drawPoint(17, 17, 1)
-    drawPoint(18, 18, 1)
-    drawPoint(19, 19, 1)
-    drawPoint(20, 20, 1)
-    drawPoint(21, 21, 1)
-    drawPoint(22, 22, 1)
-    drawPoint(23, 23, 1)
-    drawPoint(24, 24, 1)
-    drawPoint(25, 25, 1)
+    drawWall1(7, 5)
     //Player (Reworked)
     drawPlayer()
     //Game Controls
     //gameSwitch()
     limitScreen()
+    drawConsole()
 
 }
 
@@ -138,14 +130,14 @@ function limitScreen() {
         ws = iWs + pxlY * 25
     }
     // limits the Goal to be within the Gameboy border
-    if (objX < pxlX) {
-        objX = pxlX
-    } else if (objX > pxlX * 25) {
-        objX = pxlX * 25
-    } else if (objY < pxlY) {
-        objY = pxlY
-    } else if (objY > pxlY * 25) {
-        objY = pxlY * 25
+    if (pointX < pxlX) {
+        pointX = pxlX
+    } else if (pointX > pxlX * 25) {
+        pointX = pxlX * 25
+    } else if (pointY < pxlY) {
+        pointY = pxlY
+    } else if (pointY > pxlY * 25) {
+        pointY = pxlY * 25
     }
 }
 
@@ -159,24 +151,31 @@ function keyPressed() {
          * ad = changes the horizontal position
          * (Unchanged)
          */
+    prs = 0;
     switch (key) {
         case 'w':
             ws -= pxlY;
+            prs = 3;
             break;
         case 's':
             ws += pxlY;
+            prs = 4;
             break;
         case 'a':
             ad -= pxlX;
+            prs = 1;
             break;
         case 'd':
             ad += pxlX;
+            prs = 2;
             break;
         case 'r':
             ad = .095;
             ws = 0.065;
+            prs = 5;
             break;
         default:
+            prs = 0;
             break;
     }
 
@@ -204,13 +203,22 @@ function drawPlayer(moveX, moveY) {
 // Draws the Objective (Reworked)
 function drawPoint(x, y, objSize) {
     // To eventually change the size of the goal. Currently unused
+    // draws the movement limit of the square(Reworked)
+    let piX = constrain(x, 0, 25);
+    let piY = constrain(y, 0, 25);
+
     //Objective
     fill(palette.txt)
-    square(cnvS * cnvW * (objX + pxlX * x), cnvS * (objY + pxlY * y), cnvS * 0.025 * objSize, cnvS * 0.0035)
+    square(cnvS * cnvW * (pointX + pxlX * piX), cnvS * (pointY + pxlY * piY), cnvS * 0.025 * objSize, cnvS * 0.0035)
 }
 
 
-
+function drawWall1(x, y, wSize) {
+    drawPoint(x, y, 1)
+    drawPoint(x + 1, y, 1)
+    drawPoint(x + 2, y, 1)
+    drawPoint(x + 3, y, 1)
+}
 
 
 
@@ -269,3 +277,56 @@ function loss() {
     text("Press [R] to restart", cnvS * cnvW * 0.5, cnvS * 0.5)
 }
 
+function drawBtn(x, y) {
+    /*
+        rect(cnvS * cnvW * (0.09 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
+        rect(cnvS * cnvW * (0.285 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
+        rect(cnvS * cnvW * (0.185 + x), cnvS * (0.8 + y), cnvS * 0.05, cnvS * 0.07)
+        rect(cnvS * cnvW * (0.185 + x), cnvS * (0.95 + y), cnvS * 0.05, cnvS * 0.07)
+        */
+
+    push()
+    if (prs === 1) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnvS * cnvW * (0.145 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
+    pop()
+    push()
+    if (prs === 2) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnvS * cnvW * (0.225 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
+    pop()
+    push()
+    if (prs === 3) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnvS * cnvW * (0.185 + x), cnvS * (0.845 + y), cnvS * 0.05, cnvS * 0.07)
+    pop()
+    push()
+    if (prs === 4) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnvS * cnvW * (0.185 + x), cnvS * (0.9 + y), cnvS * 0.05, cnvS * 0.07)
+    pop()
+    push()
+    if (prs === 5) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnvS * cnvW * (0.7 + x), cnvS * (0.875 + y), cnvS * 0.11, cnvS * 0.05, cnvS * 0.005)
+    pop()
+    fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    square(cnvS * cnvW * (0.185 + x), cnvS * (0.875 + y), cnvS * 0.05)
+    if (prs > 0 && !keyIsPressed) {
+        prs = 0;
+    }
+}
+
+function drawConsole() {
+    fill(palette.shdw.r, palette.shdw.g, palette.shdw.b)
+    drawBtn(0.06, 0.005)
+    fill(palette.btn.r, palette.btn.g, palette.btn.b)
+    drawBtn(0.05, 0)
+    fill(palette.txt)
+
+}
