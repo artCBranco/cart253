@@ -173,6 +173,7 @@ function setup() {
 // Draw Function  
 function draw() {
 
+
     // Background  
     drawBg()
     //Draw Game Control Guide
@@ -195,6 +196,10 @@ function draw() {
         loss()
         noLoop()
     }
+
+    //3D detail 
+    fill(palette.depth)
+    rect(cnv * 0.99, cnvS / 2, cnv * 0.02, cnvS)
 }
 
 
