@@ -142,7 +142,7 @@ let pointY = cornerY;
 
 // Defines the limits of the screen
 const borderX = cornerX + pxlX * maxPixel;
-const borderY = cornerY + pxlY * maxPixel
+const borderY = cornerY + pxlY * maxPixel;
 
 // KeyPress counter, used in Switch and `drawButtonBack()`
 let prs;
@@ -159,7 +159,7 @@ function setup() {
 
     // Text Variable defined above. Also maps a max text-size according to the screen resolution
     textFont(typo.type, map(cnvS, offset, maxRes, offset, typo.size.h2))
-    textAlign(CENTER)
+    textAlign(CENTER, CENTER)
 
     // Base settings (Unchanged)
     noStroke()
@@ -177,7 +177,7 @@ function draw() {
     drawBg()
     //Draw Game Control Guide
     drawGuide()
-    // Draws the objective
+    // Draws the objectives
     drawObstacles()
     //Player  
     drawPlayer()
@@ -188,14 +188,28 @@ function draw() {
     drawBtn(0, 0, 1)
 
     //loss()
+    if (playerX() === borderX && playerY() === borderY) {
+        drawWin()
+        noLoop()
+    } else if (playerX() === cornerX && playerY() === cornerY) {
+        loss()
+        noLoop()
+    }
 }
 
 
 
+
+
+// Draws objects in the green screen
 function drawObstacles() {
-    drawWall(0, 3, 4)
+    drawPoint(0, 0, 1)
+    drawPoint(25, 25, 1)
 }
 
+
+
+//Draws green Screen pixel border (UNUSED)
 function drawFrontier() {
     drawWall(23, 23, 5)
     drawWall(20, 25, 0)
@@ -231,6 +245,26 @@ function drawFrontier() {
     drawWall(25, 20, 1)
 }
 
+
+
+
+
+// Returns the player X position
+function playerX(playX) {
+    playX = constrain(ad, cornerX, borderX);
+    return playX;
+}
+
+// Returns the player Y position
+function playerY(plaY) {
+    plaY = constrain(ws, cornerY, borderY);
+    return plaY;
+}
+
+
+
+
+
 /*
  * Draws the movable square controlled by the player. 
  * moveX = Is the horizontal position
@@ -238,8 +272,8 @@ function drawFrontier() {
  */
 function drawPlayer(moveX, moveY) {
     // draws the movement limit of the square 
-    moveX = constrain(ad, cornerX, borderX);
-    moveY = constrain(ws, cornerY, borderY);
+    moveX = playerX();
+    moveY = playerY();
     // Movable square  
     fill(typo.ink)
     square(cnv * moveX, cnvS * moveY, cnvS * pxlY, offQuart)
@@ -440,8 +474,8 @@ function drawWin() {
     // Text Size
     textSize(map(cnvS, offset, maxRes, offset, typo.size.h1))
     // Dialogues
-    text(typo.str.win1, cnv * half, typo.line1)
-    text(typo.str.win2, cnv * half, typo.line2)
+    text(typo.str.win1, cnv / 2, cnv * typo.line1)
+    text(typo.str.win2, cnv / 2, cnv * typo.line2)
     pop()
 
     //Smaller restart suggestion
@@ -534,6 +568,7 @@ function keyPressed() {
             ad = cornerX + pxlX;
             ws = cornerY + pxlY;
             prs = 5;
+            loop()
             break;
         default:
             prs = 0;
@@ -541,21 +576,7 @@ function keyPressed() {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
+/*TO BE ADDED:
 function checkOverlap() {
     // Check overlap
 
