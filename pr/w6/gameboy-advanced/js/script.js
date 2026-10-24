@@ -9,7 +9,7 @@
  * 
  * Green Screen corners:
  * {X:0.095, Y:0.065, X:0.905, Y:0.675}
- * Gameboy Pixel size: 0.035
+ * Gameboy Pixel size: 25x25
  */
 
 "use strict";
@@ -21,11 +21,20 @@ let cnvS = 1080;
 // Canvas resolution (Added). Vertical < 1 < Horizontal
 let cnvW = 0.75;
 
-// Horizontal and Vertical Movement (Reworked)
+// Initial X and Y of the Player (added)
+let iAd = .095;
+let iWs = 0.065;
+// Horizontal and Vertical Movement of the Player (Reworked)
 let ad = .095;
 let ws = 0.065;
-// Gameboy pixel size
-let pxl = 0.035;
+
+//Horizontal and vertical location of Obstacles
+let objX = .095;
+let objY = 0.065;
+
+// Gameboy pixel size. X <25, Y<24
+let pxlX = 0.0325;
+let pxlY = 0.025;
 
 //Game font used (Added)
 let police = "Lucida Sans"
@@ -66,6 +75,7 @@ function setup() {
     rectMode(CENTER)
 
 
+
     // Any code to run at Setup (Added)
 }
 
@@ -73,20 +83,71 @@ function setup() {
 
 // Draw Function (Reworked)
 function draw() {
+
+
+
     // Background (Reworked)
     drawBg()
     //Draw Game Control Guide
     drawGuide()
     // Draws the objective
-    //drawPoint()
+    drawPoint(0, 0, 1)
+    drawPoint(1, 1, 1)
+    drawPoint(2, 2, 1)
+    drawPoint(3, 3, 1)
+    drawPoint(4, 4, 1)
+    drawPoint(5, 5, 1)
+    drawPoint(6, 6, 1)
+    drawPoint(7, 7, 1)
+    drawPoint(8, 8, 1)
+    drawPoint(9, 9, 1)
+    drawPoint(10, 10, 1)
+    drawPoint(11, 11, 1)
+    drawPoint(12, 12, 1)
+    drawPoint(13, 13, 1)
+    drawPoint(14, 14, 1)
+    drawPoint(15, 15, 1)
+    drawPoint(16, 16, 1)
+    drawPoint(17, 17, 1)
+    drawPoint(18, 18, 1)
+    drawPoint(19, 19, 1)
+    drawPoint(20, 20, 1)
+    drawPoint(21, 21, 1)
+    drawPoint(22, 22, 1)
+    drawPoint(23, 23, 1)
+    drawPoint(24, 24, 1)
+    drawPoint(25, 25, 1)
     //Player (Reworked)
     drawPlayer()
     //Game Controls
     //gameSwitch()
+    limitScreen()
+
 }
 
 
-
+function limitScreen() {
+    // Limits the AD and WS number to the Gameboy borders
+    if (ad < pxlX) {
+        ad = iAd
+    } else if (ad > iAd + pxlX * 25) {
+        ad = iAd + pxlX * 25
+    } else if (ws < pxlY) {
+        ws = iWs
+    } else if (ws > iWs + pxlY * 25) {
+        ws = iWs + pxlY * 25
+    }
+    // limits the Goal to be within the Gameboy border
+    if (objX < pxlX) {
+        objX = pxlX
+    } else if (objX > pxlX * 25) {
+        objX = pxlX * 25
+    } else if (objY < pxlY) {
+        objY = pxlY
+    } else if (objY > pxlY * 25) {
+        objY = pxlY * 25
+    }
+}
 
 
 
@@ -100,16 +161,16 @@ function keyPressed() {
          */
     switch (key) {
         case 'w':
-            ws -= pxl;
+            ws -= pxlY;
             break;
         case 's':
-            ws += pxl;
+            ws += pxlY;
             break;
         case 'a':
-            ad -= pxl;
+            ad -= pxlX;
             break;
         case 'd':
-            ad += pxl;
+            ad += pxlX;
             break;
         case 'r':
             ad = .095;
@@ -119,18 +180,7 @@ function keyPressed() {
             break;
     }
 
-    // Limits the AD and WS number to the Gameboy borders
-    if (ad < 0.095) {
-        ad = 0.095
-    } else if (ad > 0.905) {
-        ad = 0.905
-    } else if (ws < 0.065) {
-        ws = 0.065
-    } else if (ws > 0.675) {
-        ws = 0.675
-    }
 }
-
 
 
 
@@ -144,42 +194,42 @@ function keyPressed() {
  */
 function drawPlayer(moveX, moveY) {
     // draws the movement limit of the square(Reworked)
-    moveX = constrain(ad, 0.095, 0.905);
-    moveY = constrain(ws, 0.065, 0.675);
+    moveX = constrain(ad, iAd, (iAd + pxlX * 25));
+    moveY = constrain(ws, iWs, (iWs + pxlY * 25));
     // Movable square (Reworked)
     fill(palette.txt)
     square(cnvS * cnvW * moveX, cnvS * moveY, cnvS * 0.025, cnvS * 0.0035)
 }
 
 // Draws the Objective (Reworked)
-function drawPoint() {
+function drawPoint(x, y, objSize) {
+    // To eventually change the size of the goal. Currently unused
     //Objective
     fill(palette.txt)
-    square(cnvS * cnvW * 0.875, cnvS * 0.875, cnvS * 0.00375, cnvS * 0.1875)
-
-
+    square(cnvS * cnvW * (objX + pxlX * x), cnvS * (objY + pxlY * y), cnvS * 0.025 * objSize, cnvS * 0.0035)
 }
+
+
+
+
+
 
 // Draw the Background (Reworked)
 function drawBg() {
     //3D Depth
     fill(palette.depth)
-    square(cnvS * cnvW * 0.49, cnvS * 0.38, cnvS * 0.67, cnvS * 0.0075)
+    rect(cnvS * cnvW * 0.4865, cnvS * 0.39, cnvS * 0.68, cnvS * 0.69, cnvS * 0.0075)
     //Green Screen
     fill(palette.screen.r, palette.screen.g, palette.screen.b)
-    square(cnvS * cnvW * 0.5, cnvS * 0.37, cnvS * 0.65, cnvS * 0.0075)
+    rect(cnvS * cnvW * 0.5, cnvS * 0.38, cnvS * 0.66, cnvS * 0.67, cnvS * 0.0075)
 }
-
-
 
 // Draws the Game Control Guide (Reworekd)
 function drawGuide() {
     fill(palette.txt)
     text("To move the square:", cnvS * cnvW * 0.7, cnvS * .12)
-    text(ad, cnvS * cnvW * 0.7, cnvS * 0.16)
+    text("[W] [A] [S] [D]", cnvS * cnvW * 0.7, cnvS * 0.16)
 }
-
-//[W] [A] [S] [D]
 
 // Win Screen (Reworked)
 function drawWin() {
@@ -200,8 +250,6 @@ function drawWin() {
     text("Press [R] to restart", cnvS * cnvW * 0.5, cnvS * 0.5)
 }
 
-
-
 // Loss Screen (Added)
 function loss() {
     //Background
@@ -217,7 +265,7 @@ function loss() {
     text("You lost...", cnvS * cnvW * 0.5, cnvS * 0.36)
     pop()
 
-    //Smaller restart suggestion
+    //Smaller restart suggestion 
     text("Press [R] to restart", cnvS * cnvW * 0.5, cnvS * 0.5)
 }
 
