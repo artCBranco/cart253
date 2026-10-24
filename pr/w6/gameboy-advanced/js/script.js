@@ -3,46 +3,61 @@
  * by Felipe Amorim Castelo Branco
  * 
  * An improvement from the last project. "(Unchanged)" in comments shows the old code.
- * 
- * Magic Numbers
- * All is calculated as percentage of canvas.
- * 
- * Green Screen corners:
- * {X:0.095, Y:0.065, X:0.905, Y:0.675}
- * Gameboy Pixel size: 25x25
+ * Gameboy Screen Resolution: 25x25
  */
 
 "use strict";
 
-let count = 0;
+//Canvas resolution 
+const cnvS = 900;
+// Canvas resolution. Vertical < 1 < Horizontal
+const cnvW = 0.75;
 
-//Canvas resolution (Reworked)
-let cnvS = 1080;
-// Canvas resolution (Added). Vertical < 1 < Horizontal
-let cnvW = 0.75;
 
-// Gameboy pixel size. X <25, Y<24
-let pxlX = 0.0325;
-let pxlY = 0.025;
 
-// Initial X and Y of the Player (added)
-let iAd = .095;
-let iWs = 0.065;
 
-// Horizontal and Vertical Movement of the Player (Reworked)
-let ad = .095;
-let ws = 0.065;
 
-//Horizontal and vertical location of Obstacles
-let pointX = .095;
-let pointY = 0.065;
 
-let prs;
+//Anything related to Typography
+const typo = {
+    // Font
+    type: "Lucida Sans",
+    ink: 0,
+    size: {
+        h1: 64,
+        h2: 48,
+        h3: 32,
+        h4: 26,
 
-//Game font used (Added)
-let police = "Lucida Sans"
+    },
+    // All the text strings
+    str: {
+        win1: "Congratulations,",
+        win2: "you won!",
+        reset: "Press [R] to restart",
+        button: "restart [R]",
+        lose1: "Oh no!",
+        lose2: "You lost...",
+        guide1: "To move the square:",
+        guide2: "[W] [A] [S] [D]",
+    },
+    // Line Height
+    line1: 0.3,
+    line2: 0.36,
+    // Button Guide text
+    guide: {
+        //Position on Canvas
+        x: 0.7,
+        // Line Height
+        line1: .12,
+        line2: .16,
+    },
+}
+
+
+
 // Controls the color palette of the game(Added)
-let palette = {
+const palette = {
     // Background Color
     bg: 100,
     // 3D depth color
@@ -53,18 +68,20 @@ let palette = {
         g: 166,
         b: 72,
     },
-    txt: 0,
+    // Button color
     btn: {
         r: 255,
         g: 0,
         b: 0,
     },
+    // Button 3d Side color
     shdw: {
         r: 150,
         g: 0,
         b: 0,
 
     },
+    // Color of button when pressed
     prs: {
         r: 200,
         g: 0,
@@ -73,73 +90,133 @@ let palette = {
 }
 
 
-// Set up function (Reworked)
+
+
+
+// Gameboy pixel size. 
+const pxlX = 0.0325;
+const pxlY = 0.025;
+// Maximum Pixel size
+const maxPixel = 25;
+
+//Max resolution
+const maxRes = 2160;
+
+// Offset number, also used as MinRes
+const offset = 8;
+const half = 0.5;
+
+// Top Right corners of the screen
+const cornerX = 0.095;
+const cornerY = 0.065;
+
+
+
+
+
+//Calculations
+
+// Canvas Width
+const cnv = cnvS * cnvW;
+
+// Half of the Offset value
+const offHalf = offset * half;
+// Used as rounded corners
+const offQuart = offset * (half * half);
+
+// Used in Green Screen
+const screenHeight = half - (cornerY + cornerX - pxlY);
+const screenSize = half + cornerY + cornerX;
+
+
+// Horizontal and Vertical Movement of the Player
+let ad = cornerX;
+let ws = cornerY;
+
+// Horizontal and Vertical initial position of the Points
+let pointX = cornerX;
+let pointY = cornerY;
+
+// Defines the limits of the screen
+const borderX = cornerX + pxlX * maxPixel;
+const borderY = cornerY + pxlY * maxPixel
+
+// KeyPress counter, used in Switch and `drawButtonBack()`
+let prs;
+
+
+
+
+
+// Set up function
 function setup() {
-    //Square Canvas (Reworked)
-    createCanvas(cnvS * cnvW, cnvS)
+    //Canvas
+    createCanvas(cnv, cnvS)
     background(palette.bg)
 
-    // text settings (Reworked)
-
-    // Text FOnt Variable defined above. Also maps a max text-size according to the screen resolution
-    textFont(police, map(cnvS, 8, 2160, 4, 48))
+    // Text Variable defined above. Also maps a max text-size according to the screen resolution
+    textFont(typo.type, map(cnvS, offset, maxRes, offset, typo.size.h2))
     textAlign(CENTER)
 
     // Base settings (Unchanged)
     noStroke()
     rectMode(CENTER)
 
-
-
     // Any code to run at Setup (Added)
     push()
-    textSize(map(cnvS, 8, 2160, 4, 32))
-    text("Restart [R]", cnvS * cnvW * 0.75, cnvS * 0.825)
+    textSize(map(cnvS, offset, maxRes, offset, typo.size.h4))
+    text(typo.str.button, cnv * 0.75, cnvS * 0.825)
     pop()
 }
 
 
-// Draw Function (Reworked)
+// Draw Function  
 function draw() {
 
-    // Background (Reworked)
+    // Background  
     drawBg()
     //Draw Game Control Guide
     drawGuide()
     // Draws the objective
-    drawWall1(7, 5)
-    //Player (Reworked)
+    drawWall(7, 5, 0)
+    //Player  
     drawPlayer()
     //Game Controls
     //gameSwitch()
     limitScreen()
-    drawConsole()
-
+    drawBtn(0.05, 0)
+    //loss()
 }
+
+
+
 
 
 function limitScreen() {
     // Limits the AD and WS number to the Gameboy borders
     if (ad < pxlX) {
-        ad = iAd
-    } else if (ad > iAd + pxlX * 25) {
-        ad = iAd + pxlX * 25
+        ad = cornerX
+    } else if (ad > borderX) {
+        ad = borderX
     } else if (ws < pxlY) {
-        ws = iWs
-    } else if (ws > iWs + pxlY * 25) {
-        ws = iWs + pxlY * 25
+        ws = cornerY
+    } else if (ws > borderY) {
+        ws = borderY
     }
+
     // limits the Goal to be within the Gameboy border
     if (pointX < pxlX) {
         pointX = pxlX
-    } else if (pointX > pxlX * 25) {
-        pointX = pxlX * 25
+    } else if (pointX > borderX) {
+        pointX = borderX
     } else if (pointY < pxlY) {
         pointY = pxlY
-    } else if (pointY > pxlY * 25) {
-        pointY = pxlY * 25
+    } else if (pointY > borderY) {
+        pointY = borderY
     }
 }
+
+
 
 
 
@@ -170,15 +247,14 @@ function keyPressed() {
             prs = 2;
             break;
         case 'r':
-            ad = .095;
-            ws = 0.065;
+            ad = cornerX;
+            ws = cornerY;
             prs = 5;
             break;
         default:
             prs = 0;
             break;
     }
-
 }
 
 
@@ -189,73 +265,171 @@ function keyPressed() {
  * Draws the movable square controlled by the player. 
  * moveX = Is the horizontal position
  * moveY = Is the vertical position
- * (Reworked)
  */
 function drawPlayer(moveX, moveY) {
-    // draws the movement limit of the square(Reworked)
-    moveX = constrain(ad, iAd, (iAd + pxlX * 25));
-    moveY = constrain(ws, iWs, (iWs + pxlY * 25));
-    // Movable square (Reworked)
-    fill(palette.txt)
-    square(cnvS * cnvW * moveX, cnvS * moveY, cnvS * 0.025, cnvS * 0.0035)
+    // draws the movement limit of the square 
+    moveX = constrain(ad, cornerX, borderX);
+    moveY = constrain(ws, cornerY, borderY);
+    // Movable square  
+    fill(typo.ink)
+    square(cnvS * cnvW * moveX, cnvS * moveY, cnvS * pxlY, offQuart)
 }
 
-// Draws the Objective (Reworked)
+// Draws the Objective  
 function drawPoint(x, y, objSize) {
     // To eventually change the size of the goal. Currently unused
-    // draws the movement limit of the square(Reworked)
-    let piX = constrain(x, 0, 25);
-    let piY = constrain(y, 0, 25);
+    // draws the movement limit of the square 
+    let piX = constrain(x, 0, maxPixel);
+    let piY = constrain(y, 0, maxPixel);
 
     //Objective
-    fill(palette.txt)
-    square(cnvS * cnvW * (pointX + pxlX * piX), cnvS * (pointY + pxlY * piY), cnvS * 0.025 * objSize, cnvS * 0.0035)
-}
-
-
-function drawWall1(x, y, wSize) {
-    drawPoint(x, y, 1)
-    drawPoint(x + 1, y, 1)
-    drawPoint(x + 2, y, 1)
-    drawPoint(x + 3, y, 1)
+    fill(typo.ink)
+    square(cnvS * cnvW * (pointX + pxlX * piX), cnvS * (pointY + pxlY * piY), cnvS * pxlY * objSize, offQuart)
 }
 
 
 
-// Draw the Background (Reworked)
+
+
+//Creates prepared walls 
+function drawWall(x, y, type) {
+    if (type === 0) {
+        drawPoint(x, y, 1)
+        drawPoint(x + 1, y, 1)
+        drawPoint(x + 2, y, 1)
+        drawPoint(x + 3, y, 1)
+    }
+    if (type === 1) {
+        drawPoint(x, y, 1)
+        drawPoint(x, y + 1, 1)
+        drawPoint(x, y + 2, 1)
+        drawPoint(x, y + 3, 1)
+    }
+}
+
+
+
+
+// Draw the 3D back of the buttons
+function drawBtnBack(x, y) {
+    fill(palette.shdw.r, palette.shdw.g, palette.shdw.b)
+    rect(cnv * (0.145 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05, cnvS * 0.01)
+    rect(cnv * (0.225 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05, cnvS * 0.01)
+    rect(cnv * (0.185 + x), cnvS * (0.845 + y), cnvS * 0.05, cnvS * 0.07, cnvS * 0.01)
+    rect(cnv * (0.185 + x), cnvS * (0.9 + y), cnvS * 0.05, cnvS * 0.07, cnvS * 0.01)
+    rect(cnv * (0.7 + x), cnvS * (0.875 + y), cnvS * 0.11, cnvS * 0.05, cnvS * 0.005)
+}
+
+
+
+
+
+// Draws the reactive buttons at the bottom of the screen
+function drawBtn(x, y) {
+    push()
+    drawBtnBack(0.06, 0.005)
+    pop()
+    fill(palette.btn.r, palette.btn.g, palette.btn.b)
+    push()
+    if (prs === 1) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnv * (0.145 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05, cnvS * 0.01)
+    pop()
+    push()
+    if (prs === 2) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnv * (0.225 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05, cnvS * 0.01)
+    pop()
+    push()
+    if (prs === 3) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnv * (0.185 + x), cnvS * (0.845 + y), cnvS * 0.05, cnvS * 0.07, cnvS * 0.01)
+    pop()
+    push()
+    if (prs === 4) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnv * (0.185 + x), cnvS * (0.9 + y), cnvS * 0.05, cnvS * 0.07, cnvS * 0.01)
+    pop()
+    push()
+    if (prs === 5) {
+        fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    }
+    rect(cnv * (0.7 + x), cnvS * (0.875 + y), cnvS * 0.11, cnvS * 0.05, cnvS * 0.005)
+    pop()
+    // fill(palette.prs.r, palette.prs.g, palette.prs.b)
+    square(cnv * (0.185 + x), cnvS * (0.875 + y), cnvS * 0.05, cnvS * 0.0075)
+    if (prs > 0 && !keyIsPressed) {
+        prs = 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Draw the Background  
 function drawBg() {
     //3D Depth
     fill(palette.depth)
-    rect(cnvS * cnvW * 0.4865, cnvS * 0.39, cnvS * 0.68, cnvS * 0.69, cnvS * 0.0075)
+    square(cnv * half - offHalf, cnvS * (screenHeight) + offset, cnvS * (screenSize) + offset + map(cnvS, 0, maxRes * half, 0, offset), offset)
     //Green Screen
     fill(palette.screen.r, palette.screen.g, palette.screen.b)
-    rect(cnvS * cnvW * 0.5, cnvS * 0.38, cnvS * 0.66, cnvS * 0.67, cnvS * 0.0075)
+    square(cnv * half, cnvS * (screenHeight) + offHalf + map(cnvS, 0, maxRes * half, 0, offset), cnvS * (screenSize) + offset, offset)
 }
 
 // Draws the Game Control Guide (Reworekd)
 function drawGuide() {
-    fill(palette.txt)
-    text("To move the square:", cnvS * cnvW * 0.7, cnvS * .12)
-    text("[W] [A] [S] [D]", cnvS * cnvW * 0.7, cnvS * 0.16)
+    fill(typo.ink)
+    text(typo.str.guide1, cnv * typo.guide.x, cnvS * typo.guide.line1)
+    text(typo.str.guide2, cnv * typo.guide.x, cnvS * typo.guide.line2)
 }
 
-// Win Screen (Reworked)
+// Win Screen  
 function drawWin() {
     //Background
     drawBg()
 
     //Text color
-    fill(palette.txt)
+    fill(typo.ink)
 
     // Title text
     push()
-    textSize(map(cnvS * cnvW, 0, 1080, 12, 64))
-    text("Congratulations,", cnvS * cnvW * 0.5, cnvS * 0.3)
-    text("you won!", cnvS * cnvW * 0.5, cnvS * 0.36)
+    // Text Size
+    textSize(map(cnvS, offset, maxRes, offset, typo.size.h1))
+    // Dialogues
+    text(typo.str.win1, cnv * half, typo.line1)
+    text(typo.str.win2, cnv * half, typo.line2)
     pop()
 
     //Smaller restart suggestion
-    text("Press [R] to restart", cnvS * cnvW * 0.5, cnvS * 0.5)
+    textSize(map(cnv, offset, maxRes, offset, typo.size.h3))
+    text(typo.str.reset, cnv * half, cnvS * half)
 }
 
 // Loss Screen (Added)
@@ -264,69 +438,19 @@ function loss() {
     drawBg()
 
     //Text color
-    fill(palette.txt)
+    fill(typo.ink)
 
     // Title text
     push()
-    textSize(map(cnvS * cnvW, 0, 1080, 12, 64))
-    text("Oh no!", cnvS * cnvW * 0.5, cnvS * 0.3)
-    text("You lost...", cnvS * cnvW * 0.5, cnvS * 0.36)
+    // Text Size
+    textSize(map(cnv, offset, maxRes, offset, typo.size.h1))
+    // Dialogues
+    text(typo.str.lose1, cnv * half, cnvS * typo.line1)
+    text(typo.str.lose2, cnv * half, cnvS * typo.line2)
     pop()
 
-    //Smaller restart suggestion 
-    text("Press [R] to restart", cnvS * cnvW * 0.5, cnvS * 0.5)
+    //Smaller restart suggestion
+    textSize(map(cnv, offset, maxRes, offset, typo.size.h3))
+    text(typo.str.reset, cnv * half, cnvS * half)
 }
 
-function drawBtn(x, y) {
-    /*
-        rect(cnvS * cnvW * (0.09 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
-        rect(cnvS * cnvW * (0.285 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
-        rect(cnvS * cnvW * (0.185 + x), cnvS * (0.8 + y), cnvS * 0.05, cnvS * 0.07)
-        rect(cnvS * cnvW * (0.185 + x), cnvS * (0.95 + y), cnvS * 0.05, cnvS * 0.07)
-        */
-
-    push()
-    if (prs === 1) {
-        fill(palette.prs.r, palette.prs.g, palette.prs.b)
-    }
-    rect(cnvS * cnvW * (0.145 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
-    pop()
-    push()
-    if (prs === 2) {
-        fill(palette.prs.r, palette.prs.g, palette.prs.b)
-    }
-    rect(cnvS * cnvW * (0.225 + x), cnvS * (0.875 + y), cnvS * 0.07, cnvS * 0.05)
-    pop()
-    push()
-    if (prs === 3) {
-        fill(palette.prs.r, palette.prs.g, palette.prs.b)
-    }
-    rect(cnvS * cnvW * (0.185 + x), cnvS * (0.845 + y), cnvS * 0.05, cnvS * 0.07)
-    pop()
-    push()
-    if (prs === 4) {
-        fill(palette.prs.r, palette.prs.g, palette.prs.b)
-    }
-    rect(cnvS * cnvW * (0.185 + x), cnvS * (0.9 + y), cnvS * 0.05, cnvS * 0.07)
-    pop()
-    push()
-    if (prs === 5) {
-        fill(palette.prs.r, palette.prs.g, palette.prs.b)
-    }
-    rect(cnvS * cnvW * (0.7 + x), cnvS * (0.875 + y), cnvS * 0.11, cnvS * 0.05, cnvS * 0.005)
-    pop()
-    fill(palette.prs.r, palette.prs.g, palette.prs.b)
-    square(cnvS * cnvW * (0.185 + x), cnvS * (0.875 + y), cnvS * 0.05)
-    if (prs > 0 && !keyIsPressed) {
-        prs = 0;
-    }
-}
-
-function drawConsole() {
-    fill(palette.shdw.r, palette.shdw.g, palette.shdw.b)
-    drawBtn(0.06, 0.005)
-    fill(palette.btn.r, palette.btn.g, palette.btn.b)
-    drawBtn(0.05, 0)
-    fill(palette.txt)
-
-}
