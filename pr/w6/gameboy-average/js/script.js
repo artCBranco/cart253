@@ -1,8 +1,8 @@
 /**
- * Gameboy Unadvanced
+ * Gameboy average
  * by Felipe Amorim Castelo Branco
  * 
- * An improvement from the last project. "(Unchanged)" in comments shows the old code.
+ * An improvement from the last project.
  * Gameboy Screen Resolution: 25x25
  */
 
@@ -39,7 +39,7 @@ const typo = {
         lose1: "Oh no!",
         lose2: "You lost...",
         guide1: "To move the square:",
-        guide2: "[W] [A] [S] [D]",
+        guide2: "[ W ] [ A ] [ S ] [ D ]",
     },
     // Line Height
     line1: 0.3,
@@ -50,11 +50,9 @@ const typo = {
         x: 0.7,
         // Line Height
         line1: .12,
-        line2: .16,
+        line2: .155,
     },
 }
-
-
 
 // Controls the color palette of the game(Added)
 const palette = {

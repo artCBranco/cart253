@@ -242,13 +242,13 @@ the larger projects and prototype.
      
 - **Functions**
 
-    - **Prototype 1**
+    - **Gameboy Average**
      
-       [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+       [View Online](https://artcbranco.github.io/cart253/pr/w6/gameboy-average)
        
-       > ![WIP Prototype - 1*](/assets/images/6-*)
+       > ![WIP Prototype - 1*](/assets/images/6-gameboy-average.gif)
        
-       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
+       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/gameboy-average)
      
      
      

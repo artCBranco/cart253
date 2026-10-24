@@ -1,8 +1,8 @@
-# Gameboy Advanced
+# Gameboy Average
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/pr/w3/gameboy-unadvanced)
+[View this project online](https://github.com/artCBranco/cart253/pr/w6/gameboy-average)
 
 ## Description
 
@@ -10,7 +10,7 @@ In improved version of the last project. A minigame where a square is controlled
 
 ## Screenshot(s)
 
-> ![Variables Prototype - Gameboy Unadvanced](/assets/images/3-gameboy-unadvanced.gif)
+> ![Variables Prototype - Gameboy Unadvanced](/assets/images/6-gameboy-average.gif)
 
 ## Attribution
 
