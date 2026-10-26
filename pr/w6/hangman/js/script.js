@@ -21,6 +21,7 @@ function setup() {
 
     //Basic settings
     noStroke()
+    angleMode(DEGREES)
 
 }
 
@@ -40,7 +41,12 @@ function draw() {
     rect(cnv * 0.4, cnvS * (quarter), cnvS * line, cnv * (quarter * half * half))
     head(0)
     body(0)
-    limbLeft()
+    armLeft()
+    armRight()
+    legLeft()
+    legRight()
+    armRight()
+    heart(1, 1, 1000)
 }
 
 function head() {
@@ -53,12 +59,35 @@ function body() {
     text(life, cnvS / 2, cnvS / 2)
     text(answer, cnvS / 2, cnvS * 0.7)
 }
-function limbLeft() {
+function armLeft() {
     fill(255)
-    rotate(45)
-    rect(cnv * 0.45, cnvS * 0.00001, cnvS * line, cnvS * quarter)
+    push()
+    rotate(30)
+    rect(cnv * 0.49, cnvS * 0.08, cnvS / 2 * line, cnvS / 2 * quarter)
+    pop()
+}
+function armRight() {
+    fill(255)
+    push()
+    rotate(-30)
+    rect(cnv * 0.2095, cnvS * 0.73, cnvS / 2 * line, cnvS / 2 * quarter)
+    pop()
 
+}
 
+function legLeft() {
+    fill(255)
+    push()
+    rotate(20)
+    rect(cnv * 0.5, cnvS * 0.33, cnvS / 2 * line, cnvS * 0.6 * quarter)
+    pop(0)
+}
+function legRight() {
+    fill(255)
+    push()
+    rotate(-20)
+    rect(cnv * 0.255, cnvS * 0.78, cnvS / 2 * line, cnvS * 0.6 * quarter)
+    pop()
 }
 
 function keyPressed() {
