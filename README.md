@@ -252,13 +252,13 @@ the larger projects and prototype.
      
      
      
-    - **Prototype 2**
+    - **Hangman's Final Word**
      
-       [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+       [View Online](https://artcbranco.github.io/cart253/pr/w6/hangman)
        
-       > ![WIP Prototype - 2*](/assets/images/6-*)
+       > ![WIP Prototype - 2*](/assets/images/6-hangman.gif)
        
-       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
+       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/hangman)
      
      
      
