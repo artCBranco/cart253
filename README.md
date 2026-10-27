@@ -246,7 +246,7 @@ the larger projects and prototype.
      
        [View Online](https://artcbranco.github.io/cart253/pr/w6/gameboy-average)
        
-       > ![WIP Prototype - 1*](/assets/images/6-gameboy-average.gif)
+       > ![Functions Prototype - Gameboy Average](/assets/images/6-gameboy-average.png)
        
        [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/gameboy-average)
      
@@ -256,7 +256,7 @@ the larger projects and prototype.
      
        [View Online](https://artcbranco.github.io/cart253/pr/w6/hangman)
        
-       > ![WIP Prototype - 2*](/assets/images/6-hangman.gif)
+       > ![Functions Prototype - Hangman's Final Word ](/assets/images/6-hangman.gif)
        
        [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/hangman)
      
@@ -266,7 +266,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
        
-     > ![WIP Prototype - 3*](/assets/images/6-*)
+     > ![Functions Prototype - 3*](/assets/images/6-*)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
 
