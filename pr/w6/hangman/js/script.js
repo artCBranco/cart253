@@ -78,7 +78,6 @@ let answer = {
 
 
 
-
 // Setup function
 function setup() {
     createCanvas(cnv, cnvS)
