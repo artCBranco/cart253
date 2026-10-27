@@ -1,8 +1,7 @@
-/**
- * Hangman's Final Word
+/* Hangman's Final Word
  * by Felipe Amorim Castelo Branco
  * 
- * A simple game with Hangman with only one answer. Press the letters on the keyboard to play.
+ * A simple game of Hangman with only one answer. Press the letters on the keyboard to play.
  * Answer: That which is neverlasting, but endlessly final.
  */
 
@@ -90,16 +89,16 @@ function setup() {
     angleMode(DEGREES)
     translate(cnv / 2, cnvS / 2)
     // Text settings
+    textFont('Silkscreen')
     textSize(128)
-
-    life = 6
+    textAlign(CENTER, CENTER)
+    life = 7;
 }
 
 
 // Main Draw
 function draw() {
-    // Color
-    fill(drawColor)
+
     // Draws the Gallow in which Hangman hangs
     drawGallow()
     // Draws the Hangman
@@ -108,10 +107,8 @@ function draw() {
     drawBlank()
     // Draws the revealed answer if the correct button is pressed. 
     drawAnswer()
+    drawEnd()
 
-    if (life === 0) {
-        life = 6
-    }
 }
 
 
@@ -120,6 +117,11 @@ function draw() {
 
 // Draws the Gallow in which Hangman hangs
 function drawGallow(magic1, magic2) {
+    // Color
+    fill(bgColor)
+    rect(0, 0, cnv, cnvS)
+    // Color
+    fill(drawColor)
     // Magic numbers to draw the Gallow in the left corner of the screen.
     magic1 = 0.15
     magic2 = 0.75
@@ -155,30 +157,30 @@ function drawBlank(magic1, magic2, magic3, magic4) {
 // Draws the revealed answer in the screen.
 function drawAnswer(magic1, magic2, magic3) {
     //Horizontal Position
-    magic1 = 0.3
+    magic1 = 0.325
     // Vertical Position
-    magic2 = 0.4
+    magic2 = 0.35
     // Text Spacing
     magic3 = 0.06
 
     if (answer.e.bol === true) {
-        text("E", cnv * magic1 + cnv * magic3, cnvS * magic2)
-        text("E", cnv * magic1 + cnv * magic3 * 4, cnvS * magic2)
-        text("E", cnv * magic1 + cnv * magic3 * 6, cnvS * magic2)
+        text(answer.e.letter, cnv * magic1 + cnv * magic3, cnvS * magic2)
+        text(answer.e.letter, cnv * magic1 + cnv * magic3 * 4, cnvS * magic2)
+        text(answer.e.letter, cnv * magic1 + cnv * magic3 * 6, cnvS * magic2)
     }
     if (answer.p.bol === true) {
-        text("P", cnv * magic1 + cnv * magic3 * 2, cnvS * magic2)
+        text(answer.p.letter, cnv * magic1 + cnv * magic3 * 2, cnvS * magic2)
     }
     if (answer.h.bol === true) {
-        text("H", cnv * magic1 + cnv * magic3 * 3, cnvS * magic2)
+        text(answer.h.letter, cnv * magic1 + cnv * magic3 * 3, cnvS * magic2)
     } if (answer.m.bol === true) {
-        text("M", cnv * magic1 + cnv * magic3 * 5, cnvS * magic2)
+        text(answer.m.letter, cnv * magic1 + cnv * magic3 * 5, cnvS * magic2)
     } if (answer.r.bol === true) {
-        text("R", cnv * magic1 + cnv * magic3 * 7, cnvS * magic2)
+        text(answer.r.letter, cnv * magic1 + cnv * magic3 * 7, cnvS * magic2)
     } if (answer.a.bol === true) {
-        text("A", cnv * magic1 + cnv * magic3 * 8, cnvS * magic2)
+        text(answer.a.letter, cnv * magic1 + cnv * magic3 * 8, cnvS * magic2)
     } if (answer.l.bol === true) {
-        text("L", cnv * magic1 + cnv * magic3 * 9, cnvS * magic2)
+        text(answer.l.letter, cnv * magic1 + cnv * magic3 * 9, cnvS * magic2)
     }
 }
 
@@ -264,29 +266,27 @@ function legRight(magic1, magic2, magic3) {
 
 // Answer detector switch
 function keyPressed() {
-
-
     // If right answer is pressed: leter is revealed. If wrong, -1 to life.
     switch (key) {
-        case 'e':
+        case (answer.e.letter):
             answer.e.bol = true;
             break;
-        case 'p':
+        case (answer.p.letter):
             answer.p.bol = true;
             break;
-        case 'h':
+        case (answer.h.letter):
             answer.h.bol = true;
             break;
-        case 'm':
+        case (answer.m.letter):
             answer.m.bol = true;
             break;
-        case 'r':
+        case (answer.r.letter):
             answer.r.bol = true;
             break;
-        case 'a':
+        case (answer.a.letter):
             answer.a.bol = true;
             break;
-        case 'l':
+        case (answer.l.letter):
             answer.l.bol = true;
             break;
         default:
@@ -295,14 +295,49 @@ function keyPressed() {
     }
 }
 
+
+
+
+// Draws the end screen 
 function drawEnd() {
-    if (answer.e.bol && answer.p.bol && answer.h.bol && answer.m.bol && answer.r.bol && answer.a.bol && answer.l.bol &&) {
-        text('You Win!', cnv * half, cnvS * half)
-    } else if (life === 0) {
-        text('You Lost!', cnv * half, cnvS * half)
+    // Win condition
+    if (answer.e.bol && answer.p.bol && answer.h.bol && answer.m.bol && answer.r.bol && answer.a.bol && answer.l.bol) {
+
+        // Win condition
+        background(bgColor)
+        fill(drawColor)
+        text('Congratulations!', cnv * half, cnvS * 0.45)
         push()
         textSize(48)
-        text('press [ENTER] to restart', cnv * half, cnvS * 0.6)
+        text('Life is EPHEMEROUS, and so are you!', cnv * half, cnvS * 0.575)
         pop()
+        push()
+        textSize(24)
+        text('Enjoy the rest of your life!', cnv * half, cnvS * 0.65)
+        pop()
+    } else if (life === 0) {
+        // Loss Condition
+        background(bgColor)
+        fill(drawColor)
+        text('You Lost!', cnv * half, cnvS * 0.45)
+        push()
+        textSize(48)
+        text("That's rough, buddy.", cnv * half, cnvS * 0.575)
+        pop()
+        push()
+        textSize(16)
+        text('Life is short, so are your chances.', cnv * half, cnvS * 0.65)
+        pop()
+
+    } else if (life <= 0) {
+        //Restart condition
+        life = 7;
+        answer.e.bol = false;
+        answer.p.bol = false;
+        answer.h.bol = false;
+        answer.m.bol = false;
+        answer.r.bol = false;
+        answer.a.bol = false;
+        answer.l.bol = false;
     }
 }

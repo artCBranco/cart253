@@ -21,13 +21,13 @@ const cnvW = 0.75;
 //Anything related to Typography
 const typo = {
     // Font
-    type: "Lucida Sans",
+    type: "Handjet",
     ink: 0,
     size: {
-        h1: 64,
-        h2: 48,
-        h3: 32,
-        h4: 26,
+        h1: 96,
+        h2: 64,
+        h3: 48,
+        h4: 32,
 
     },
     // All the text strings
