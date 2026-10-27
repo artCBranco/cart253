@@ -89,7 +89,7 @@ function setup() {
     angleMode(DEGREES)
     translate(cnv / 2, cnvS / 2)
     // Text settings
-    textFont('Silkscreen')
+    textFont('Bpmf Huninn')
     textSize(128)
     textAlign(CENTER, CENTER)
     life = 7;
