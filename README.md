@@ -275,13 +275,13 @@ the larger projects and prototype.
      
      
      
-    - **Prototype 3**
+    - **Unending Task**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w6/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w6/sisyphus)
        
-     > ![Functions Prototype - 3*](/assets/images/6-*)
+     > ![Functions Prototype - Unending Task](/assets/images/6-sisyphus)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/sisyphus)
 
 ---
 
