@@ -3,7 +3,7 @@ by <striking>Felipe Amorim Castelo Branco</striking>
 
 ---
 
-## *Date: 2026-09-11*
+## *Journal 1 - Date: 2026-09-11*
 
 Learning to code (even if just with markdown) has been both a huge headache and an extraordinary experience.
 
@@ -27,7 +27,7 @@ Anyway, my deepest apologies for the prose. TL;DR: I'm very excited to learn cod
 
 ---
 
-## *Date: 2026-09-18*
+## *Journal 2 - Date: 2026-09-18*
 
 The "Instructions" challenge was something so familiar that I felt like I was paying back for all the times I said "Illustrator is so easy I could do it blindfolded". Well, now I'm doing illustrator while typing on a dark screen. 
 
@@ -51,7 +51,7 @@ Now I can't help but imagine actual frame-by-frame animations are just a step aw
 
 ---
 
-## *Date: 2026-09-27*
+## *Journal 3 - Date: 2026-09-27*
 
 The doors have been OPENED!
 
@@ -67,7 +67,7 @@ Still, [Gameboy Unadvanced](https://artcbranco.github.io/cart253/pr/challenges/v
 
 ---
 
-## *Date: 2026-10-06*
+## *Journal 4 - Date: 2026-10-06*
 
 This week, I ran head first into a wall. Then I headbutted it again, hoping to open a path. Meanwhile, there was a door right beside it. 
 
@@ -78,8 +78,16 @@ Anyway. Projects are almost done, and I'm ready to start next week's prototypes.
 
 ---
 
-## *Date: 2026-10-18*
+## *Journal 5 - Date: 2026-10-18*
 
 It`s fun to realize how easy the logic behind some of the games works. Flappy bird, for example, the project I chose to recreate for this week's prototype, is nothing more than a square that continuously gets -1 to it`s ```y-axis``` and gets +10 when the player jumps. Even more complex games slowly start to make more sense. I was playing bokura, a 2D platform coop game, earlier today and I realized that platforming is just a moving square displaying an image. Multiple images, actually, depending on the condition. MOve forward? ```movefoward.png```, drag a box around? ```boxdragged.png```, etc. And all the conditions, like the platforms and the abysses that get you killed, are just lines of codes saying "If Y falls from a large height, ```gameOver()```, or if ```y > half the canvas && player x = platform x```,  the player successfully stands on the platform. Thoughts like those are slowly seeping into my subconscious now whenever I play videogames. I *knew* that since I first started playing videogames: Games are made of code. Code works on logic. But one thing is to know about it, understanding what it means and more importantly, the logic behind all that, is another thing entirely. It`s really awesome, and I really gained a new appreciation for all the work that was put into anything made of coding. 
 
 As for this weeks prototypes, I don't have much to say. I had a lot of very frustrating moments when the code didn't work, and a lot of very high emotions when the error was found and the code *did* work. I'm proud of my piano, even if it doesn't fully work the way I expected it to (The sound gets stuck when keys are pressed too fast), and I like the fact that I managed to kinda recreate a famously annoying game. I'm hyped for next week.
+
+---
+
+## *Journal 6 - Date: 2026-10-27*
+
+Getting the chance to go back and improve on a project I worked previously was a very interesting experience. First, I could see just how much I improved and how much more broad my coding vocabulary was compared to just a few short weeks ago. Second, it was a chance to keep going and redesign an unfinished project, which I wanted to do it ever since I stopped working on it. It gave me the idea to take this same project for the next few prototypes and slowly add more and more features to it, until by the end of the session I have a full game. This week, with the array's prototype, I'll add walls to it. Next week, a point system, etc, until it's a complete game from start to finish. If, of course, I'm allowed to do so. I saw on instagram a game designer that worked on several major projects such as OW and WOW comment that one of the biggest problems of learning game design is to try and make a great game. People often try that, and end up frustrated. They should instead just make a game, any game, just to understand the basics, then make it great afterwards. I think that's what I'll end up doing with Gameboy. 
+
+The other project, Hangman, was also interesting. I didn't realize how simple children's games are until I had to translate it into code. Hangman, TicTacToe, rock paper scissors... Now that I know the basics of P5JS, I feel like writing those wouldn't take much at all. A few variables, a draw function and I'd have a functional prototype. It's an interesting thing to think about. 
