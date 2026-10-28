@@ -1,94 +1,120 @@
-/**
- * Arrays B
- * Horse Race???
- * Pippin Barr
- * 
- * Horse race, ideally with a sine wave to make them look cool?
- * Lotsa horses? But start with one horse and generalize to an array?
- * 
- * Finish line
- * Victory screen
- * Timer and showing the time of the winner
- * Display the current leaders
- * Betting!
- * Restart for the next race (keep the same horses so you can develop a relationship)
- * Tamagotchi (look after the horses)
- * Give the horses names (display the names with the horses in the race)
- */
-
+/*Sisyphus
+* Help sisyphus clim the mountain
+*/
 "use strict";
 
-let horseImage = undefined;
+/** Canvas Height */
+let cnvH = 800;
 
-let raceStarted = false;
+/** Canvas ratio: Vertical < 1 < Horizontal */
+let cnvR = 1.6;
 
-const horses = [];
+/** Canvas Width (cnvH * cnvR) */
+let cnvW = cnvH * cnvR;
 
-/**
- * Create a canvas...
-*/
+/** Canvas Color */
+let bgColor = 0;
+
+/** 0.5 */
+let half = 0.5;
+/** 0.25 */
+let squared = half * half;
+
+let mainColor = 190
+/** Font information */
+let typo = {
+    type: 'Lucida Sans',
+    h: 32
+}
+/** Sisyphus properties*/
+let sis = {
+    size: 6.9,
+    img1: undefined,
+    img2: undefined,
+    frame: undefined,
+    txt: 'Help Sisyphus push the bolder to the top!',
+}
+/** Setup function*/
 async function setup() {
-    createCanvas(1400, 10 * 32);
+    createCanvas(cnvW, cnvH);
 
-    horseImage = await loadImage("./assets/images/horse.png");
+    // Basic Settings
+    noStroke()
+    rectMode(CENTER)
 
-    const horse1 = birthHorse(0, 0 * 32);
-    horses.push(horse1);
-    const horse2 = birthHorse(0, 1 * 32);
-    horses.push(horse2);
-    const horse3 = birthHorse(0, 2 * 32);
-    horses.push(horse3);
-    const horse4 = birthHorse(0, 3 * 32);
-    horses.push(horse4);
-    const horse5 = birthHorse(0, 4 * 32);
-    horses.push(horse5);
-    const horse6 = birthHorse(0, 5 * 32);
-    horses.push(horse6);
-    const horse7 = birthHorse(0, 6 * 32);
-    horses.push(horse7);
-    const horse8 = birthHorse(0, 7 * 32);
-    horses.push(horse8);
-    const horse9 = birthHorse(0, 8 * 32);
-    horses.push(horse9);
-    const horse10 = birthHorse(0, 9 * 32);
-    horses.push(horse10);
+
+    // Text settings
+    textSize(typo.h)
+    textFont(typo.type)
+
+    sis.img1 = await loadImage("./assets/sisyphusImage.png");
+    sis.img2 = await loadImage("./assets/sisyphusImage2.png");
+
 }
 
-function birthHorse(x, y) {
-    const horse = {
-        x: x,
-        y: y,
-        height: horseImage.height,
-        speed: random(1.0, 1.5),
-        angle: random(0, TWO_PI),
-        tint: {
-            r: random(0, 255),
-            g: random(0, 255),
-            b: random(0, 255)
-        }
-    };
-    return horse;
-}
-
-
-/**
- * What?
-*/
+/** Main Draw function*/
 function draw() {
-    background("#7282bf");
+    drawSisyphus();
+    drawMountain(1, 1);
 
-    for (let horse of horses) {
-        if (raceStarted) {
-            horse.x += horse.speed + random(-1, 2);
-            horse.angle += 0.4;
-        }
+}
+//min 0.3, max 1
+let climb = 0.4;
+let climbSpeed = 1
+/** Draw Sisyphus*/
+function drawSisyphus() {
 
-        const hopAmount = sin(horse.angle);
-        tint(horse.tint.r, horse.tint.g, horse.tint.b);
-        image(horseImage, horse.x, horse.y + hopAmount * 4);
+    background(bgColor);
+    fill(mainColor)
+    text(sis.txt, cnvW / 10, cnvH / 6)
+
+    // moves the X and Y only on the Triangle slope
+    let currentX = lerp(0, cnvW, climb);
+    let currentY = lerp(cnvH, cnvH * squared, climb);
+
+    fill(mainColor);
+    circle(currentX - cnvW / 6, currentY, cnvW / sis.size);
+
+    // Runs the character animation
+    sis.frame = false
+    if (keyIsPressed) {
+        sis.frame = true;
+    }
+    // Character animation images
+    tint(mainColor)
+    if (sis.frame === false) {
+        image(sis.img1, currentX - cnvW / 6 - 165, currentY + 12, cnvW / 8, cnvW / 8)
+    } else if (sis.frame === true) {
+        image(sis.img2, currentX - cnvW / 6 - 165, currentY + 12, cnvW / 8, cnvW / 8)
     }
 }
 
-function mousePressed() {
-    raceStarted = true;
+/** Key press effect: Moves the ball*/
+function keyReleased() {
+
+
+    // Speed at which ball rolls
+    climbSpeed += 1
+    // Acceleration parameters
+    if (climb >= 0.9) {
+        climbSpeed *= -1.01
+    }
+    if (climb < 0.35) {
+        climbSpeed = 1
+    }
+    //climbing calculation
+    climb += 0.001 * climbSpeed
 }
+/** Draws the triangle for the mountain*/
+function drawMountain(x, y) {
+
+    let x1 = 0 + x, y1 = cnvH + y;
+    let x2 = cnvW + x, y2 = cnvH * squared + y;
+    let x3 = cnvW + x, y3 = cnvH + y;
+
+
+    fill(mainColor);
+    triangle(x1, y1, x2, y2, x3, y3);
+}
+
+
