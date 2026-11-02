@@ -89,8 +89,12 @@ function drawBg() {
 function OptCenter() {
     /** Option to be displayed (NEW) */
     let currentOpt = options[optIndex];
-    // Option that appears on-screen
-    text(currentOpt, cnv.w * half, cnv.h * 0.725)
+    // Draws the "Continue" Option
+    if (speechIndex > 0 && speechIndex < 4) {
+        optIndex = 1;
+        // Option that appears on-screen
+        text(currentOpt, cnv.w * half, cnv.h * 0.725)
+    }
 }
 
 
@@ -106,8 +110,7 @@ function drawText() {
     // Draws the second line of the first dialogue.
     if (speechIndex === 1) {
         text(currentLine2, cnv.w * half, cnv.h * 0.55)
-    }
-    if (speechIndex === 4) {
+    } else if (speechIndex === 4) {
         // Text
         text('Crying is a', cnv.w * 0.75, cnv.h * 0.25)
         text(' free action.', cnv.w * 0.75, cnv.h * 0.3)
@@ -119,16 +122,13 @@ function drawText() {
     }
 }
 
+/** Main Draw (Updated) */
 function draw() {
     drawBg();
     fill(txt.clr);
     drawText();
     OptCenter();
 
-    // Draws the "Continue" Option
-    if (speechIndex > 0 && speechIndex < 4) {
-        optIndex = 1;
-    }
     //Draws the Dialogue Number
-    text(speechIndex, cnv.w * half, cnv.h * 0.25);
+    //text(speechIndex, cnv.w * half, cnv.h * 0.25);
 }
