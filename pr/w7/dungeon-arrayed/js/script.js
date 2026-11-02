@@ -19,17 +19,15 @@ const cnv = {
     /** Background color (Updated) */
     bg: 30,
 }
-
+// Defines canvas Width
 cnv.w = cnv.h * cnv.r;
 
+/** Text properties (NEW) */
 let txt = {
     font: 'Courier New',
     size: 0.025,
     clr: 255,
 }
-
-/** 0.5 (NEW) */
-let half = 0.5
 
 /** Setup Function (Updated)*/
 function setup() {
@@ -48,7 +46,9 @@ function setup() {
     textAlign(CENTER, CENTER)
 }
 
-
+/** 0.5 (NEW) */
+const half = 0.5
+const tQuarter = 0.75
 
 /** All the dialogue strings, in an Array (NEW) */
 let speech = ["", "You wake in a strange dungeon,", "face pressed into cold floor.", "You are in a cell.", "What do you do?", "No one answers.", "What do you do?", "You are stuck in this cell."]
@@ -64,6 +64,7 @@ let optIndex = 0;
 function mouseClicked() {
     // Whenever mouse is pressed, advance the dialogue by 1
     speechIndex += 1;
+    // Decides which Option to show (NEW)
     optIndex = 1;
     if (speechIndex === 2) {
         speechIndex = 3;
@@ -74,6 +75,8 @@ function mouseClicked() {
     } else if (speechIndex === 7) {
         optIndex = 4
     }
+
+    //Resets the dialogue (Updated)
     if (speechIndex === speech.length) {
         speechIndex = 1;
         optIndex = 1;
@@ -85,7 +88,7 @@ function drawBg() {
     fill(cnv.bg)
     rect(cnv.w * half, cnv.h * half, cnv.w, cnv.h)
 }
-
+/** draws the option on each new dialogue (NEW) */
 function OptCenter() {
     /** Option to be displayed (NEW) */
     let currentOpt = options[optIndex];
@@ -112,8 +115,8 @@ function drawText() {
         text(currentLine2, cnv.w * half, cnv.h * 0.55)
     } else if (speechIndex === 4) {
         // Text
-        text('Crying is a', cnv.w * 0.75, cnv.h * 0.25)
-        text(' free action.', cnv.w * 0.75, cnv.h * 0.3)
+        text('Crying is a', cnv.w * tQuarter, cnv.h * 0.25)
+        text(' free action.', cnv.w * tQuarter, cnv.h * 0.3)
         //  Bracket
         push()
         textSize(64)
@@ -129,6 +132,6 @@ function draw() {
     drawText();
     OptCenter();
 
-    //Draws the Dialogue Number
+    //Draws the Dialogue Number (If needed)
     //text(speechIndex, cnv.w * half, cnv.h * 0.25);
 }
