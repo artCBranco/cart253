@@ -10,7 +10,7 @@ In improved version of the last project. A minigame where a square is controlled
 
 ## Screenshot(s)
 
-> ![Functions Prototype - Gameboy Aevrage](/assets/images/6-gameboy-average.png)
+> ![Functions Prototype - Gameboy Average](/assets/images/6-gameboy-average.png)
 
 ## Attribution
 
