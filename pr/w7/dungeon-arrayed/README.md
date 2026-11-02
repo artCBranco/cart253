@@ -2,15 +2,15 @@
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/pr/w4/dungeon)
+[View this project online](https://github.com/artCBranco/cart253/pr/w7/dungeon-arrayed)
 
 ## Description
 
-You awaken in a cold dungeon cell, what do you do? This project made in P5.js explores early RPG games by creating an endless loop with the illusion of choice: No matter what you do, you can't escape the dungeon.
+You awaken in a cold dungeon cell, what do you do? This project made in P5.js explores early RPG games by creating an endless loop with the illusion of choice: No matter what you do, you can't escape the dungeon. Update: Strings now use Array!
 
 ## Screenshot(s)
 
-> ![Conditionals Prototype - Dungeon](/assets/images/4-dungeon.gif)
+> ![Array Prototype - Dungeon Advanced](/assets/images/7-dungeon-arrayed.gif)
 
 ## Attribution
 
