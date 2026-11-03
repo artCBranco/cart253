@@ -110,6 +110,18 @@ the larger projects and prototype.
 
   <sub>
   Teammates for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/) and [Konstantinos Christodoulakis](https://sillysalmon33.github.io/cart253/)
+  </sub>
+  
+  - **Loops - Lines**
+
+  [View Online](https://artcbranco.github.io/cart253/pr/w8/lines) 
+
+  > ![Arrays Challenge - Bouncy Ball Ball Bonanza](/assets/images/8-lines.png)
+
+  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w8/lines)  
+
+  <sub>
+  Teammates for the Instructions Project: [Felipe S. Paiva](https://feguri.github.io/cart253/) and [Konstantinos Christodoulakis](https://sillysalmon33.github.io/cart253/)
   </sub> 
        
        

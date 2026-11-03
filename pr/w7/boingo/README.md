@@ -10,7 +10,7 @@ Code by Pippin Barr. Challenge by Felipe Amorim Castelo Branco, Konstantinos Chr
 
 ## Screenshot(s)
 
-> ![Functions Challenge - Ball Bounce](/assets/images/7-boingo.gif)
+> ![Arrays Challenge - Boingo](/assets/images/7-boingo.gif)
 
 ## Attribution
 

@@ -1,6 +1,6 @@
 /**
  * Bubbles
- *by Felipe Amorim Castelo Branco
+ * by Felipe Amorim Castelo Branco
  * 
  * Click to make bubbles!
  */
@@ -19,12 +19,13 @@ const cnv = {
 
 // Defines canvas Width
 cnv.w = cnv.h * cnv.r;
+const half = 0.5;
 
 /** background Color settings */
 let bg = {
-    r: 200,
+    r: 180,
     g: 240,
-    b: 200,
+    b: 180,
 }
 
 /** Bubbles array */
@@ -34,40 +35,53 @@ let bubbles = [];
 function setup() {
     createCanvas(cnv.w, cnv.h);
     background(bg.r, bg.g, bg.b);
+
     // Basic settings
     noStroke();
     rectMode(CENTER);
     colorMode(RGB);
+    textSize(64);
 }
 
-
-function mouseClicked() {
-    backgroundColor(bg.r, bg.g, bg.b)
-}
-
-let randomInt = random(200, 255); // Random integer between 1 and 9
 /**
  * draws the function
 */
 function draw() {
-    fill(randomInt, randomInt, randomInt)
-    circle(500, 500, 100)
 
 }
 
-/** Draws the bubble template*/
-function drawBubble() {
+/** Draws the bubble template */
+function createBubble() {
     //Bubble template
     const newBubble = {
-        x: cnvW * 0.75,
-        y: cnvH * 0.5,
+        x: cnv.w * 0.75,
+        y: cnv.h * 0.5,
         size: random(75, 100),
         speed: random(1, 10),
         fill: {
-            r: rndm,
-            g: rndm,
-            b: rndm,
+            r: random(200, 255),
+            g: random(200, 255),
+            b: random(200, 255),
         },
-        cntr: map(random(0, 1), 0, 255),
-    }
+    };
+    return newBubble;
 }
+
+function drawBubble() {
+    push()
+    strokeWeight(6)
+    fill(bubble.fill.r, bubble.fill.g, bubble.fill.b)
+    ellipse(bubble.x, bubble.y, bubble.size);
+    pop()
+}
+
+function mousePressed() {
+
+    let bubble = createBubble();
+    bubbles.push(bubble);
+    fill(random(200, 255), random(200, 255), random(200, 255))
+    rect(cnv.w * half, cnv.h * half, cnv.w, cnv.h)
+}
+
+
+

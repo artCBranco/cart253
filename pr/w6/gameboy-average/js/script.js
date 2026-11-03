@@ -22,13 +22,12 @@ const cnvW = 0.75;
 const typo = {
     // Font
     type: "Handjet",
-    ink: 0,
+    ink: 30,
     size: {
         h1: 96,
         h2: 64,
         h3: 48,
         h4: 32,
-
     },
     // All the text strings
     str: {
@@ -173,11 +172,11 @@ function setup() {
 // Draw Function  
 function draw() {
 
-
     // Background  
     drawBg()
     //Draw Game Control Guide
     drawGuide()
+    drawFrontier()
     // Draws the objectives
     drawObstacles()
     //Player  
@@ -189,10 +188,10 @@ function draw() {
     drawBtn(0, 0, 1)
 
     //loss()
-    if (playerX() === borderX && playerY() === borderY) {
+    if (playerX() === (cornerX + pxlX * 24) && playerY() === (cornerY + pxlY * 24)) {
         drawWin()
         noLoop()
-    } else if (playerX() === cornerX && playerY() === cornerY) {
+    } else if (playerX() === (cornerX + pxlX * 1) && playerY() === (cornerY + pxlY * 24)) {
         loss()
         noLoop()
     }
@@ -208,46 +207,26 @@ function draw() {
 
 // Draws objects in the green screen
 function drawObstacles() {
-    drawPoint(0, 0, 1)
-    drawPoint(25, 25, 1)
+    drawPoint(24, 1, 1)
+    drawPoint(24, 24, 1)
 }
 
 
 
 //Draws green Screen pixel border (UNUSED)
 function drawFrontier() {
-    drawWall(23, 23, 5)
-    drawWall(20, 25, 0)
-    drawWall(18, 25, 0)
-    drawWall(15, 25, 0)
-    drawWall(12, 25, 0)
-    drawWall(9, 25, 0)
-    drawWall(6, 25, 0)
-    drawWall(3, 25, 0)
-    drawWall(0, 23, 2)
-    drawWall(0, 0, 3)
-    drawWall(3, 0, 0)
-    drawWall(6, 0, 0)
-    drawWall(9, 0, 0)
-    drawWall(12, 0, 0)
-    drawWall(15, 0, 0)
-    drawWall(18, 0, 0)
-    drawWall(20, 0, 0)
-    drawWall(23, 0, 4)
-    drawWall(0, 3, 1)
-    drawWall(0, 6, 1)
-    drawWall(0, 9, 1)
-    drawWall(0, 12, 1)
-    drawWall(0, 15, 1)
-    drawWall(0, 18, 1)
-    drawWall(0, 20, 1)
-    drawWall(25, 3, 1)
-    drawWall(25, 6, 1)
-    drawWall(25, 9, 1)
-    drawWall(25, 12, 1)
-    drawWall(25, 15, 1)
-    drawWall(25, 18, 1)
-    drawWall(25, 20, 1)
+    for (let wallX = 0; wallX <= 25; wallX += 1) {
+        drawPoint(wallX, 0, 1)
+    }
+    for (let wallY = 0; wallY <= 25; wallY += 1) {
+        drawPoint(0, wallY, 1)
+    }
+    for (let wallX = 0; wallX <= 25; wallX += 1) {
+        drawPoint(wallX, 25, 1)
+    }
+    for (let wallY = 0; wallY <= 25; wallY += 1) {
+        drawPoint(25, wallY, 1)
+    }
 }
 
 
