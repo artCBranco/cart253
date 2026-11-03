@@ -7,56 +7,66 @@
 
 "use strict";
 
-/** Canvas Height */
-let cnvH = 800;
-/** Canvas Ratio */
-let cnvR = 1.8;
-/** Canvas Width */
-let cnvW = cnvH * cnvR;
+/** Canvas properties */
+const cnv = {
+    /** Canvas Height */
+    h: 600,
+    /** Canvas Ratio */
+    r: 1.333,
+    /** Canvas Width  */
+    w: 0,
+}
 
+// Defines canvas Width
+cnv.w = cnv.h * cnv.r;
 
+/** background Color settings */
+let bg = {
+    r: 200,
+    g: 240,
+    b: 200,
+}
+
+/** Bubbles array */
 let bubbles = [];
 
-/**
- * Sets up the canvas
-*/
+/** Sets up the Canvas */
 function setup() {
-    createCanvas(cnvW, cnvH);
-    background(200, 150, 200);
+    createCanvas(cnv.w, cnv.h);
+    background(bg.r, bg.g, bg.b);
     // Basic settings
     noStroke();
     rectMode(CENTER);
     colorMode(RGB);
-
 }
 
 
+function mouseClicked() {
+    backgroundColor(bg.r, bg.g, bg.b)
+}
+
+let randomInt = random(200, 255); // Random integer between 1 and 9
 /**
  * draws the function
 */
 function draw() {
-    let clr = '100,200, 255';
-    fill(clr)
+    fill(randomInt, randomInt, randomInt)
     circle(500, 500, 100)
 
 }
 
-
-/**
- * draws the bubble template
-*/
-function drawBubble(newBubble) {
-    /**
- * Bubble template
-*/
+/** Draws the bubble template*/
+function drawBubble() {
+    //Bubble template
     const newBubble = {
         x: cnvW * 0.75,
         y: cnvH * 0.5,
         size: random(75, 100),
+        speed: random(1, 10),
         fill: {
-            r: random(200, 250),
-            g: random(200, 250),
-            b: random(200, 250),
+            r: rndm,
+            g: rndm,
+            b: rndm,
         },
         cntr: map(random(0, 1), 0, 255),
     }
