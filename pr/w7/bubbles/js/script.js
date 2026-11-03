@@ -44,21 +44,28 @@ function setup() {
 }
 
 
-let bubbleX = cnv.w * 0.75;
-let bubbleY = cnv.h * 0.5;
-let bubbleSize = cnv.w / 8
+let bubbleX = 0
+let bubbleY = 0
+let bubbleSize = 0
 /**
  * draws the function
 */
 function draw() {
     fill(bg.r, bg.g, bg.b)
     rect(cnv.w * half, cnv.h * half, cnv.w, cnv.w)
-    bubbleX += random(-1, -3)
-    bubbleY += random(-5, 5)
-    bubbleSize += random(-15, 15)
 
-    for (let i = 0; i <= bubbles.length; i++) {
+    bubbleX += random(-5, -8)
+    bubbleY += random(-15, 16)
+    bubbleSize = random(cnv.w / 6, cnv.w / 12)
+
+
+    for (let i = 0; i < bubbles.length; i++) {
         drawBubble(bubbles[i])
+    }
+
+    if (bubbleX < 0) {
+        bubbleX = cnv.w
+        bubbleY = cnv.h * half
     }
 }
 
@@ -67,26 +74,27 @@ function draw() {
 function createBubble() {
     //Bubble template
     let newBubble = {
-        x: bubbleX,
-        y: bubbleY,
+        x: mouseX,
+        y: mouseY,
         size: bubbleSize,
     };
     return newBubble;
 }
 
-function drawBubble() {
+function drawBubble(bubbleIn) {
+    let elipX = bubbleIn.x + bubbleX;
+    let elipY = bubbleIn.y + bubbleY;
+    let elipSize = bubbleIn.size;
     push()
     strokeWeight(6)
-    fill(200, 100, 0, 50);
-    ellipse(bubbleX, bubbleY, bubbleSize);
+    fill(255, 255, 255, 50);
+    ellipse(elipX, elipY, elipSize);
     pop()
 }
 
 function mousePressed() {
     let bubble = createBubble();
     bubbles.push(bubble);
+    bubbles.push(bubble);
     console.log(bubbles)
 }
-
-
-
