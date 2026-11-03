@@ -43,26 +43,33 @@ function setup() {
     textSize(64);
 }
 
+
+let bubbleX = cnv.w * 0.75;
+let bubbleY = cnv.h * 0.5;
+let bubbleSize = cnv.w / 8
 /**
  * draws the function
 */
 function draw() {
+    fill(bg.r, bg.g, bg.b)
+    rect(cnv.w * half, cnv.h * half, cnv.w, cnv.w)
+    bubbleX += random(-1, -3)
+    bubbleY += random(-5, 5)
+    bubbleSize += random(-15, 15)
 
+    for (let i = 0; i <= bubbles.length; i++) {
+        drawBubble(bubbles[i])
+    }
 }
+
 
 /** Draws the bubble template */
 function createBubble() {
     //Bubble template
-    const newBubble = {
-        x: cnv.w * 0.75,
-        y: cnv.h * 0.5,
-        size: random(75, 100),
-        speed: random(1, 10),
-        fill: {
-            r: random(200, 255),
-            g: random(200, 255),
-            b: random(200, 255),
-        },
+    let newBubble = {
+        x: bubbleX,
+        y: bubbleY,
+        size: bubbleSize,
     };
     return newBubble;
 }
@@ -70,17 +77,15 @@ function createBubble() {
 function drawBubble() {
     push()
     strokeWeight(6)
-    fill(bubble.fill.r, bubble.fill.g, bubble.fill.b)
-    ellipse(bubble.x, bubble.y, bubble.size);
+    fill(200, 100, 0, 50);
+    ellipse(bubbleX, bubbleY, bubbleSize);
     pop()
 }
 
 function mousePressed() {
-
     let bubble = createBubble();
     bubbles.push(bubble);
-    fill(random(200, 255), random(200, 255), random(200, 255))
-    rect(cnv.w * half, cnv.h * half, cnv.w, cnv.h)
+    console.log(bubbles)
 }
 
 
