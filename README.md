@@ -291,7 +291,7 @@ the larger projects and prototype.
      
      [View Online](https://artcbranco.github.io/cart253/pr/w6/sisyphus)
        
-     > ![Functions Prototype - Unending Task](/assets/images/6-sisyphus)
+     > ![Functions Prototype - Unending Task](/assets/images/6-sisyphus.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w6/sisyphus)
      
@@ -302,25 +302,25 @@ the larger projects and prototype.
      
        [View Online](https://artcbranco.github.io/cart253/pr/w7/dungeon-arrayed)
        
-       > ![Arrays Prototype - Gameboy Average](/assets/images/7-dungeon-arrayed.gif)
+       > ![Arrays Prototype - Gameboy Average](/assets/images/4-dungeon.gif)
        
        [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/dungeon-arrayed)
      
      
      
-    - ** Project 2**
+    - **Bubbles**
      
-       [View Online](https://artcbranco.github.io/cart253/pr/w7/*)
+       [View Online](https://artcbranco.github.io/cart253/pr/w7/bubbles)
        
-       > ![Arrays Prototype - Hangman's Final Word ](/assets/images/7*)
+       > ![Arrays Prototype - Hangman's Final Word ](/assets/images/7-bubbles.gif)
        
-       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/*)
+       [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/bubbles)
      
      
      
     - ** Project 3**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w7/*sisyphus*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w7/*)
        
      > ![Arrays Prototype - Unending Task](/assets/images/7*)
        
