@@ -1,4 +1,4 @@
-# Bubbles
+# Shower Thoughts
 
 by Felipe Amorim Castelo Branco
 

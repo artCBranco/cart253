@@ -1,5 +1,5 @@
 /**
- * Bubbles
+ * Shower Thoughts
  * by Felipe Amorim Castelo Branco
  * 
  * Click to make bubbles!
@@ -27,7 +27,7 @@ const half = 0.5;
 let bg = {
     r: 180,
     g: 240,
-    b: 180,
+    b: 240,
 }
 
 /** Bubbles array */
@@ -50,11 +50,8 @@ let bubbleSize = 0
 
 /** draws the function */
 function draw() {
-    // Draws a background
-    fill(bg.r, bg.g, bg.b)
-    rect(cnv.w * half, cnv.h * half, cnv.w, cnv.w)
 
-
+    drawLine()
 
     bubbleSize = random(cnv.w / 6, cnv.w / 12)
 
@@ -69,12 +66,15 @@ function draw() {
         bubbleX = cnv.w
         bubbleY = cnv.h * half
     }*/
+
 }
+
 
 function moveBubble(bubble) {
     // Defines the variables
-    bubble.x += random(-5, -8)
-    bubble.y += random(-15, 16)
+    let wind = random(-1, 0)
+    bubble.x += random(-2, wind)
+    bubble.y += random(0, 0.5)
 }
 
 /** Draws the bubble template */
@@ -88,15 +88,33 @@ function createBubble() {
     return newBubble;
 }
 
-function drawBubble(bubbleIn) {
+function drawLine(artX) {
+    // Draws a background
+    fill(bg.r, bg.g, bg.b)
+    rect(cnv.w * half, cnv.h * half, cnv.w, cnv.w)
+    artX = 5;
 
+    while (artX < cnv.w) {
+        artX += 100;
+        push()
+        strokeWeight(3)
+        stroke(255)
+        line(0, artX, cnv.w, artX)
+        line(artX, 0, artX, cnv.h)
+        pop()
+        fill(255, 255, 255, 75);
+    }
+}
+
+function drawBubble(bubbleIn) {
     // Draws the bubble
     push()
     strokeWeight(6)
-    fill(255, 255, 255, 50);
+    fill(255, 255, 255, 75);
     ellipse(bubbleIn.x, bubbleIn.y, bubbleIn.size);
     pop()
 }
+
 /** When pressed, create a new bubble*/
 function mousePressed() {
     let bubble = createBubble();
