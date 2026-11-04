@@ -182,6 +182,10 @@ const screenSize = half + pxl.cornerY + pxl.cornerX;
 let ad = pxl.cornerX + pxl.x;
 /** Horizontal Movement of the Player */
 let ws = pxl.cornerY + pxl.y;
+/** Vertical Movement of the Player's shadow */
+let shadowX = pxl.cornerX + pxl.x;
+/** Horizontal Movement of the Player'shadow */
+let shadowY = pxl.cornerY + pxl.y;
 
 /** Initial Horizontal position of the Points */
 let pointX = pxl.cornerX;
@@ -215,22 +219,27 @@ function setup() {
     rectMode(CENTER)
 
     // Any code to run at Setup
+    drawBg()
+    drawFrontier()
 }
 
 /** Main Draw Function */
 function draw() {
+
+
     // 3D detail 
     fill(palette.depth)
     rect(cnv.w * 0.99, cnv.h * half, cnv.w * 0.02, cnv.h)
 
     // Draw Functions
-    drawBg()
+    // 
     limitScreen()
 
 
-    drawFrontier()
+
     drawObstacles()
     drawPlayer()
+    drawShadowP()
 
 
     //loss()  SWITCH TO CONSTANT
@@ -247,14 +256,13 @@ function draw() {
 
 
 
-
-
 /** Draws a single black pixel */
 function drawPoint(x, y, objSize) {
     /** Limits the horizontal parameter to be within the pixel limit */
     let piX = constrain(x, 0, pxl.max);
     /** Limits the vertical parameter to be within the pixel limit */
     let piY = constrain(y, 0, pxl.max);
+
 
     //Objective
     fill(typo.ink)
@@ -354,6 +362,20 @@ function drawPlayer(moveX, moveY) {
     fill(typo.ink)
     square(cnv.w * moveX, cnv.h * moveY, cnv.h * pxl.y, offQuart)
 }
+/**
+ * Draws  a shadow of the movable square controlled by the player. 
+ * moveX = Is the horizontal position
+ * moveY = Is the vertical position
+ */
+function drawShadowP(shadowX, shadowY) {
+    /** Is the horizontal position */
+    shadowX = playerX();
+    /** Is the vertical position */
+    shadowY = playerY();
+    // Movable square (Player)  
+    fill(palette.screen.r, palette.screen.g, palette.screen.b)
+    square(cnv.w * shadowX, cnv.h * shadowY, cnv.h * pxl.y, offQuart)
+}
 
 /** Returns the player X position */
 function playerX(playX) {
@@ -403,23 +425,37 @@ function keyPressed() {
     switch (key) {
         case 'w':
             ws -= pxl.y;
+            if (ws >= pxl.cornerX + (pxl.y * 3)) {
+                shadowY += pxl.y
+            }
             prs = 3;
             break;
         case 's':
             ws += pxl.y;
+            if (ws >= pxl.cornerX + (pxl.y * 3)) {
+                shadowY += pxl.y
+            }
             prs = 4;
             break;
         case 'a':
             ad -= pxl.x;
+            if (ad >= pxl.cornerX + (pxl.x * 3)) {
+                shadowX -= pxl.x
+            }
             prs = 1;
             break;
         case 'd':
             ad += pxl.x;
+            if (ad >= pxl.cornerX + (pxl.x * 3)) {
+                shadowX += pxl.x
+            }
             prs = 2;
             break;
         case 'r':
             ad = pxl.cornerX + pxl.x;
             ws = pxl.cornerY + pxl.y;
+            shadowX = pxl.cornerX + pxl.x;
+            shadowY = pxl.cornerY + pxl.y;
             prs = 5;
             loop()
             break;
@@ -470,7 +506,7 @@ function drawBtnBack(x, y, size) {
     // Vertical Arrow
     rect(cnv.w * (gameboy.posX + x), cnv.h * (gameboy.posY + y), cnv.h * gameboy.sizeY * size, cnv.h * gameboy.sizeX * size, offset)
     // Reset Button
-    rect(cnv.w * (gameboy.posX + (pxl.gap + (size * 0.1)) + x), cnv.h * (gameboy.posY + y), cnv.h * gameboy.sizeX * size, cnv.h * gameboy.sizeY * size, offset)
+    rect(cnv.w * (gameboy.posX + (gameboy.gap + (size * 0.1)) + x), cnv.h * (gameboy.posY + y), cnv.h * gameboy.sizeX * size, cnv.h * gameboy.sizeY * size, offset)
 }
 
 /** Draws the red reactive buttons at the bottom of the screen */
@@ -527,7 +563,7 @@ function drawBtn(x, y, size) {
     if (prs === 5) {
         fill(palette.prs.r, palette.prs.g, palette.prs.b)
     }
-    rect(cnv.w * (gameboy.posX + (pxl.gap + (size * 0.1)) + x), cnv.h * (gameboy.posY + y), cnv.h * gameboy.sizeX * size, cnv.h * gameboy.sizeY * size, offset)
+    rect(cnv.w * (gameboy.posX + (gameboy.gap + (size * 0.1)) + x), cnv.h * (gameboy.posY + y), cnv.h * gameboy.sizeX * size, cnv.h * gameboy.sizeY * size, offset)
     pop()
 
     // If no key is pressed, no change
