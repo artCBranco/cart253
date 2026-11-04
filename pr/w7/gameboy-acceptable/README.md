@@ -1,15 +1,16 @@
-# *
+# Gameboy Acceptable
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/pr/w7/*)
+[View this project online](https://github.com/artCBranco/cart253/pr/w7/gameboy-acceptable)
 
 ## Description
 
+In improved version of the last project. A minigame where a square is controlled by the WASD keys. Press SPACEBAR to jump.
 
 ## Screenshot(s)
 
-> ![Arrays Prototype - *](/assets/images/7*.gif)
+> ![Arrays Prototype - Gameboy Acceptable](/assets/images/6-gameboy-average.png)
 
 ## Attribution
 

@@ -308,23 +308,23 @@ the larger projects and prototype.
      
      
      
-    - **Bubbles**
+    - **Shower Thoughts**
      
        [View Online](https://artcbranco.github.io/cart253/pr/w7/bubbles)
        
-       > ![Arrays Prototype - Hangman's Final Word ](/assets/images/7-bubbles.gif)
+       > ![Arrays Prototype - Shower Thoughts ](/assets/images/7-bubbles.gif)
        
        [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/bubbles)
      
      
      
-    - ** Project 3**
+    - **Gameboy Acceptable**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w7/*)
+     [View Online](https://artcbranco.github.io/cart253/pr/w7/gameboy-average)
        
-     > ![Arrays Prototype - Unending Task](/assets/images/7*)
+     > ![Arrays Prototype - Gameboy Acceptable](/assets/images/6-gameboy-average.png)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/*)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/gameboy-average)
 
 
 ---
