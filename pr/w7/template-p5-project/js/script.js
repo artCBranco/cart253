@@ -275,17 +275,17 @@ function drawFrontier() {
     let wallY = 0;
 
     // Draws each wall on the screen borders
-    for (wallX <= 25; wallX += 1;) {
-        drawPoint(wallX, 0, 1)
+    while (wallX <= 25, wallX += 1) {
+        drawPoint(wallX, 0, 1);
     }
-    for (wallY <= 25; wallY += 1;) {
-        drawPoint(0, wallY, 1)
+    while (wallY <= 25, wallY += 1) {
+        drawPoint(0, wallY, 1);
     }
-    for (wallX <= 25; wallX += 1;) {
-        drawPoint(wallX, 25, 1)
+    while (wallX <= 25, wallX += 1) {
+        drawPoint(wallX, 25, 1);
     }
-    for (wallY <= 25; wallY += 1;) {
-        drawPoint(25, wallY, 1)
+    while (wallY <= 25, wallY += 1) {
+        drawPoint(25, wallY, 1);
     }
 }
 
@@ -354,7 +354,7 @@ function drawPlayer(moveX, moveY) {
     moveY = playerY();
     // Movable square (Player)  
     fill(typo.ink)
-    square(cnv * moveX, cnv.h * moveY, cnv.h * pxl.y, offQuart)
+    square(cnv.w * moveX, cnv.h * moveY, cnv.h * pxl.y, offQuart)
 }
 
 /** Returns the player X position */
@@ -439,10 +439,10 @@ function keyPressed() {
 function drawBg() {
     //3D Depth
     fill(palette.depth)
-    square(cnv * half - offHalf, cnv.h * (screenHeight) + offset, cnv.h * (screenSize) + offset + map(cnv.h, 0, pxl.maxRes * half, 0, offset), offset)
+    square(cnv.w * half - offHalf, cnv.h * (screenHeight) + offset, cnv.h * (screenSize) + offset + map(cnv.h, 0, pxl.maxRes * half, 0, offset), offset)
     //Green Screen
     fill(palette.screen.r, palette.screen.g, palette.screen.b)
-    square(cnv * half, cnv.h * (screenHeight) + offHalf + map(cnv.h, 0, pxl.maxRes * half, 0, offset), cnv.h * (screenSize) + offset, offset)
+    square(cnv.w * half, cnv.h * (screenHeight) + offHalf + map(cnv.h, 0, pxl.maxRes * half, 0, offset), cnv.h * (screenSize) + offset, offset)
     // Draw the 3D button shadows
     push()
     drawBtnBack(0.006, 0.006, 1)
@@ -560,8 +560,8 @@ function drawWin() {
     // Text Size
     textSize(map(cnv.h, offset, pxl.maxRes, offset, typo.size.h1))
     // Dialogues
-    text(typo.str[4], cnv.w / 2, cnv * typo.line1)
-    text(typo.str[5], cnv.w / 2, cnv * typo.line2)
+    text(typo.str[4], cnv.w / 2, cnv.w * typo.line1)
+    text(typo.str[5], cnv.w / 2, cnv.w * typo.line2)
     pop()
 
     //Smaller restart suggestion
