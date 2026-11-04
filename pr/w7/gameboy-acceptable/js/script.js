@@ -28,7 +28,7 @@ cnv.w = cnv.h * cnv.r;
 /** Anything related to Typography */
 const typo = {
     /** Font */
-    type: "Handjet",
+    type: 'Handjet',
     /** Color Black */
     ink: 30,
     /** Hierarchy */
@@ -52,7 +52,7 @@ const typo = {
     /** Game Guide text */
     guide: {
         /** Position on Canvas */
-        x: 0.7,
+        x: 0.65,
         /** Line Height */
         line1: .12,
         /** Line Height */
@@ -267,26 +267,25 @@ function drawObstacles() {
     drawPoint(24, 24, 1)
 }
 
-/** Draws the black pixel border */
+/** Draws the black pixel borde */
 function drawFrontier() {
     /** Number of Horizontal walls */
-    let wallX = 0;
+    let wallX = -1;
     /** Number of Vertical walls */
-    let wallY = 0;
+    let wallY = -1;
 
     // Draws each wall on the screen borders
-    while (wallX <= 25, wallX += 1) {
+    while (wallX <= 25) {
+        wallX += 1
         drawPoint(wallX, 0, 1);
-    }
-    while (wallY <= 25, wallY += 1) {
-        drawPoint(0, wallY, 1);
-    }
-    while (wallX <= 25, wallX += 1) {
         drawPoint(wallX, 25, 1);
     }
-    while (wallY <= 25, wallY += 1) {
+    while (wallY <= 25) {
+        wallY += 1
+        drawPoint(0, wallY, 1);
         drawPoint(25, wallY, 1);
     }
+
 }
 
 /** Draws a wall */
