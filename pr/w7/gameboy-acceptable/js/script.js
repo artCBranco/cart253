@@ -104,7 +104,7 @@ const palette = {
     },
 }
 
-/** Objective (Win/Loss) coordinates */
+/** Objective (Win/Loss) coordinates 
 const objectives = {
     winX: 24,
     winY: 24,
@@ -233,13 +233,13 @@ function draw() {
     drawPlayer()
 
 
-    //loss()
-    if (playerX() === (pxl.cornerX + pxl.x * objectives.winX) && playerY() === (pxl.cornerY + pxl.y * objectives.winY)) {
+    //loss()  SWITCH TO CONSTANT
+    if (playerX() === (pxl.cornerX + pxl.x * 24) && playerY() === (pxl.cornerY + pxl.y * 24)) {
         drawWin()
         noLoop()
     }
     //Win()
-    else if (playerX() === (pxl.cornerX + pxl.x * objectives.lossX) && playerY() === (pxl.cornerY + pxl.y * objectives.lossY)) {
+    else if (playerX() === (pxl.cornerX + pxl.x * 1) && playerY() === (pxl.cornerY + pxl.y * 24)) {
         drawLoss()
         noLoop()
     }
@@ -289,12 +289,10 @@ function drawFrontier() {
     }
 }
 
+/** Draws a wall */
 function createWalls(x, y, type) {
     /** Creates prepared walls */
     switch (type) {
-        case wall.POINT:
-            drawPoint(x, y, 1);
-            break;
         case wall.STRAIGHT_H:
             drawPoint(x, y, 1);
             drawPoint(x + 1, y, 1);
@@ -334,6 +332,7 @@ function createWalls(x, y, type) {
             drawPoint(x + 2, y + 2, 1);
             break;
         default:
+            drawPoint(x, y, 1);
             break;
     }
 }

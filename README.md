@@ -320,11 +320,11 @@ the larger projects and prototype.
      
     - **Gameboy Acceptable**
      
-     [View Online](https://artcbranco.github.io/cart253/pr/w7/gameboy-average)
+     [View Online](https://artcbranco.github.io/cart253/pr/w7/gameboy-acceptable)
        
      > ![Arrays Prototype - Gameboy Acceptable](/assets/images/6-gameboy-average.png)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/gameboy-average)
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w7/gameboy-acceptable)
 
 
 ---
