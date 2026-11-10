@@ -138,7 +138,7 @@ the larger projects and prototype.
 
   [View Online](https://artcbranco.github.io/cart253/pr/w9/dinocar) 
 
-  > ![Arrays Challenge - Bouncy Ball Ball Bonanza](/assets/images/9-dinocar.gif)
+  > ![Data Challenge - Terrible Car Name](/assets/images/9-dinocar.gif)
 
   [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w9/dinocar)  
 
