@@ -46,7 +46,6 @@ function draw() {
 
     push();
     fill("pink");
-    textAlign(CENTER, CENTER);
     textSize(32);
     text(carName, width / 2, height / 2);
     pop();
@@ -56,9 +55,13 @@ function draw() {
  * Generate a new car name
  */
 function mousePressed() {
-    let carIndex = random(0, carData.cars.length)
-    let currentCar = carData[carIndex]
-    let dinosaurIndex = random(0, dinosaurData.dinosaurs.length)
-    let currentDinosaur = dinosaurData[dinosaurIndex]
-    text(currentCar + " " + currentDinosaur, width / 2, height / 2)
+    let carIndex = Math.floor(random(0, carData.cars.length));
+    let currentCar = carData.cars[carIndex]
+    let dinosaurIndex = Math.floor(random(0, dinosaurData.dinosaurs.length));
+    let currentDinosaur = dinosaurData.dinosaurs[dinosaurIndex]
+    console.log(currentDinosaur, dinosaurIndex);
+    const finalText = currentCar + " " + currentDinosaur;
+    background("black");
+    fill("pink");
+    carName = finalText;
 }
