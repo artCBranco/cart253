@@ -99,3 +99,21 @@ The other project, Hangman, was also interesting. I didn't realize how simple ch
 Arrays was by far the hardest part of this class. I can kinda see why it would be useful, but it's very hard to get a grasp of how it works, and then implementing it in the project is another big hurdle. I feel like half of the problem is that it's a lot of moving parts. Most of the other things we learned are mostly self contained. A for or an if statement happen in those 3-5 consecutive lines of codes, so it's easy to follow the steps and the logic. With Arrays, it seems like you need to be all over the document, creating a ```drawObject()``` here, an ```object.push()``` there then back to ```draw()``` to actually use the object. And of course, each step is one more chance for something to be bugged/not working. It also applies several concepts at once: global vs. local variables, initialization order, etc. 
 
 Still, I can see how useful these arrays are. Just gotta master them.
+
+
+---
+## *Journal 9: Final #1 - Date: 2026-11-10*
+
+As it might have been obvious in the past few weeks, Gameboy quickly became my favorite project of the semester. Little by little I built it into something functional, then something pretty, then something great. It is my intention to polish this project throughout the next few weeks into a fully playable (and fun) game. The objectives goes as follow:
+
+- Separating all the variables into a JSON file
+- Creating an array for each wall type
+- Creating a functioning overlap check
+- Getting the walls to randomly spawn in the world, (But still allow the player to win)
+
+What I've been most afraid of so far is the ```checkOverlap``` function. It seems like a logical nightmare to figure out in which direction the player should move BACK to force it to not overlap. If I can get this to work, the game will be a procedurally generated labyrinth. The walls will spawn randomly every time the game resets, BUT the player should also ALWAYS have a path to the exit, like the way the game Spelunky handles the chamber generation. So far, my first instinct is some kind of logic where "if the wall on (7,6) is a type ```[0]```, then the walls above and below must absolutely be either a type ```[1]``` or ```[3]```, for example. If I can do that, then I can generate a complete maze that will always have a path to the end. Still, this means I have to carefully create all types of walls, figure out how to set up the puzzle and then actually implement it in the code. 
+
+Random topics to explore:
+
+- It would be cool if this gameboy could "load" other projects as well. The dungeon one in particular would work very well as a secondary game. 
+- The gameboy should have a "menu" and a start button. Some random options like "New Game" and "continue"? I could make a variable for the randomness (```randomseed()```) so that people could load back on to the last seed available. 
