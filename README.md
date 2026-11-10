@@ -20,7 +20,17 @@ the larger projects and prototype.
 
 ---
 
-## Projects:
+## Contents
+
+### Final Project:
+  - **Gameboy advanced**
+     
+     [View Online](https://artcbranco.github.io/cart253/pr/final/gameboy-advanced)
+       
+     > ![Final Prototype - Gameboy Advanced](/assets/images/final-gameboy.gif)
+       
+     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/final/gameboy-advanced)
+
 
 ### Reflexive Journal
 
@@ -239,11 +249,9 @@ the larger projects and prototype.
      > ![Events Prototype - Pianinho](/assets/images/5-piano.gif)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/piano)
+    
      
-     
-     
-     
-     
+          
    - **Click Counter**
      
      [View Online](https://artcbranco.github.io/cart253/pr/w5/counter)
@@ -251,7 +259,6 @@ the larger projects and prototype.
      > ![Events Prototype - Click Counter](/assets/images/5-counter.png)
        
      [View Code](https://github.com/artCBranco/cart253/tree/main/pr/w5/counter)
-       
        
        
        
