@@ -117,3 +117,9 @@ Random topics to explore:
 
 - It would be cool if this gameboy could "load" other projects as well. The dungeon one in particular would work very well as a secondary game. 
 - The gameboy should have a "menu" and a start button. Some random options like "New Game" and "continue"? I could make a variable for the randomness (```randomseed()```) so that people could load back on to the last seed available. 
+- Level up/ difficulty? Player could raise a variable called difficulty by completing levels, which makes the procedural randomless more challenging
+- Insanity mode: You move the wall instead of the player?
+
+
+---
+## *Journal 10: Final #2 - Date:*
