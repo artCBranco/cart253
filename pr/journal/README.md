@@ -123,3 +123,13 @@ Random topics to explore:
 
 ---
 ## *Journal 10: Final #2 - Date:*
+
+---
+## *Journal 11: Final #3 - Date:*
+
+---
+## *Journal 12: Final #4 - Date:*
+
+
+
+<small>PS: Journal 8? Nunca nem vi.</small>
