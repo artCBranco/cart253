@@ -22,9 +22,6 @@ const cnv = {
 cnv.w = cnv.h * cnv.r;
 
 
-
-
-
 /** Anything related to Typography */
 const typo = {
     /** Font */
