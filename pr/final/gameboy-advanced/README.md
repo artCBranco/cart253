@@ -1,16 +1,17 @@
-# Gameboy Acceptable
+# Gameboy Advanced
 
 by Felipe Amorim Castelo Branco
 
-[View this project online](https://github.com/artCBranco/cart253/pr/w7/gameboy-acceptable)
+[View this project online](https://github.com/artCBranco/cart253/pr/final/gameboy-advanced)
 
 ## Description
 
-In improved version of the last project. A minigame where a square is controlled by the WASD keys. Press SPACEBAR to jump.
+The ultimate gameboy. Play through infinite random mazes.
+Gameboy Screen Resolution: 25x25
 
 ## Screenshot(s)
 
-> ![Arrays Prototype - Gameboy Acceptable](/assets/images/6-gameboy-average.png)
+> ![Final Prototype - Gameboy Advanced](/assets/images/final-gameboy-advanced.gif)
 
 ## Attribution
 
