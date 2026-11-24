@@ -4,9 +4,69 @@
  * 
  * All extensively documented
  */
+// Text & Screen Visuals
 
+/** Draws the Game Control Guide */
+function drawGuide() {
+    fill(typo.ink)
+    text(typo.str[0], cnv.w * typo.guide.x, cnv.h * typo.guide.line1)
+    text(typo.str[1], cnv.w * typo.guide.x, cnv.h * typo.guide.line2)
+}
 
+/** Draws the Win Screen */
+function drawWin() {
+    //Background
+    drawBg()
 
+    //Text color
+    fill(typo.ink)
+    // Title text
+    push()
+    // Text Size
+    textSize(map(cnv.h, offset, pxl.maxRes, offset, typo.size.h1))
+    // Dialogues
+    text(typo.str[4], cnv.w / 2, cnv.w * typo.line1)
+    text(typo.str[5], cnv.w / 2, cnv.w * typo.line2)
+    pop()
+
+    //Smaller restart suggestion
+    textSize(map(cnv.w, offset, pxl.maxRes, offset, typo.size.h3))
+    text(typo.str[3], cnv.w * half, cnv.h * half)
+}
+
+/** Draws the Loss Screen */
+function drawLoss() {
+    // Background
+    drawBg()
+
+    //Text color
+    fill(typo.ink)
+
+    // Title text
+    push()
+    // Text Size
+    textSize(map(cnv.w, offset, pxl.maxRes, offset, typo.size.h1))
+    // Dialogues
+    text(typo.str[6], cnv.w * half, cnv.h * typo.line1)
+    text(typo.str[7], cnv.w * half, cnv.h * typo.line2)
+    pop()
+
+    // Smaller restart suggestion
+    textSize(map(cnv.w, offset, pxl.maxRes, offset, typo.size.h3))
+    text(typo.str[3], cnv.w * half, cnv.h * half)
+}
+
+// Screen
+
+/** Draws a single black pixel */
+function drawPoint() {
+    fill(typo.ink)
+    // For every coordinates on the pxlTracker Array
+    for (let point of pxlTracker) {
+        // Draws the Square at Every coordinate
+        square(cnv.w * (pointX + pxl.x * point.x), cnv.h * (pointY + pxl.y * point.y), cnv.h * pxl.y, offQuart)
+    }
+}
 /** Draw the Background */
 function drawBg() {
     //3D Depth
@@ -32,6 +92,9 @@ function drawBg() {
     // "To move the square" string
     drawGuide()
 }
+
+
+// Gameboy Hardware
 
 /** Draw the 3D back of the buttons */
 function drawBtnBack(x, y, size) {
@@ -120,9 +183,3 @@ function drawBtn(x, y, size) {
     rect(cnv.w * (gameboy.posX + x), cnv.h * (gameboy.posY + y), cnv.h * gameboy.sizeX * size / 2.7, cnv.h * gameboy.sizeY * size, offset)
 }
 
-/** Draws the Game Control Guide */
-function drawGuide() {
-    fill(typo.ink)
-    text(typo.str[0], cnv.w * typo.guide.x, cnv.h * typo.guide.line1)
-    text(typo.str[1], cnv.w * typo.guide.x, cnv.h * typo.guide.line2)
-}

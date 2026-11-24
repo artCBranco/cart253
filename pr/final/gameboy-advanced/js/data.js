@@ -24,7 +24,7 @@ const typo = {
     /** Font */
     type: 'Handjet',
     /** Color Black */
-    ink: 30,
+    ink: 40,
     /** Hierarchy */
     size: {
         /** Hierarchy */
@@ -152,6 +152,16 @@ const pxl = {
     cornerX: 0.095,
     /** Top Right corner of the screen */
     cornerY: 0.065,
+    /** Loss Coordinates*/
+    loss: {
+        x: 23,
+        y: 1,
+    },
+    /** Win Coordinates */
+    win: {
+        x: 24,
+        y: 24,
+    },
 }
 
 // Calculations
@@ -176,20 +186,16 @@ const screenSize = half + pxl.cornerY + pxl.cornerX;
 let ad = pxl.cornerX + pxl.x;
 /** Horizontal Movement of the Player */
 let ws = pxl.cornerY + pxl.y;
-/** Vertical Movement of the Player's shadow */
-let shadowX = pxl.cornerX + pxl.x;
-/** Horizontal Movement of the Player'shadow */
-let shadowY = pxl.cornerY + pxl.y;
-
-/** Initial Horizontal position of the Points */
-let pointX = pxl.cornerX;
-/** Initial Vertical position of the Points */
-let pointY = pxl.cornerY;
 
 /** Defines the Horizontal limit of the screen */
 const borderX = pxl.cornerX + pxl.x * pxl.max;
 /** Defines the Vertical limit of the screen */
 const borderY = pxl.cornerY + pxl.y * pxl.max;
+
+/** Defines the Horizontal limits of the black pixels */
+const pointX = pxl.cornerX
+/** Defines the Vertical limits of the black pixels */
+const pointY = pxl.cornerY
 
 /** KeyPress counter, used in Switch and drawButtonBack() */
 let prs;
