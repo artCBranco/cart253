@@ -140,10 +140,13 @@ TODO:
 - TEST the new colision
 - Fix the Win/Loss conditions
 - Get started on the next feature.
+
 ---
+
 ## *Journal 11: Final #3 - Date:*
 
 ---
+
 ## *Journal 12: Final #4 - Date:*
 
 
