@@ -3,12 +3,12 @@ let playerHistory = [];
 
 /** Returns the player's current position*/
 function calculatePlayerPos() {
-    let playX = borderX + pxl.x * constrain(ad, 0, pxl.max);
-    let plaY = borderY + pxl.y * constrain(ws, 0, pxl.max);
-    if (pxlTracker.includes({ playX, plaY }) === true) {
+    let playX = pxl.cornerX + pxl.x * constrain(ad, 0, pxl.max);
+    let plaY = pxl.cornerX + pxl.y * constrain(ws, 0, pxl.max);
+    /*if (pxlTracker.includes({ playX, plaY }) === true) {
         playX = playerHistory[4].x;
         plaY = playerHistory[4].y;
-    }
+    }*/
     return { x: playX, y: plaY };
 }
 
@@ -22,11 +22,10 @@ function drawPlayer() {
     let pos = calculatePlayerPos();
 
     // Movable square (Player)  
-    //  fill(palette.screen.r, palette.screen.g, palette.screen.b)
-    //  square(cnv.w * moveX, cnv.h * moveY, cnv.h * pxl.y * 3, offQuart)
     fill(typo.ink)
-    square(pos.x, pos.y, cnv.h * pxl.y, offQuart)
+    square(cnv.w * (pos.x), cnv.h * (pos.y), cnv.w * pxl.y, offQuart)
 }
+
 
 /** The function containing Game Controls. */
 function keyPressed() {
@@ -58,8 +57,8 @@ function keyPressed() {
             prs = 2;
             break;
         case 'r':
-            ad = 1;
-            ws = 1;
+            ad = 0;
+            ws = 0;
             prs = 5;
             loop()
             keyCount = 0;
@@ -79,15 +78,13 @@ function keyPressed() {
 
 /** Defines the Area the Player can Move */
 function limitScreen() {
-
-    let pos = calculatePlayerPos
     //loss()  SWITCH TO CONSTANT
-    if (pos.x === pxl.win.x && pos.y === pxl.win.y) {
+    if (ad === pxl.win.x && ws === pxl.win.y) {
         drawWin()
         noLoop()
     }
     //Win()
-    else if (pos.x === pxl.loss.x && pos.y === pxl.loss.y) {
+    else if (ad === pxl.loss.x && ws === pxl.loss.y) {
         drawLoss()
         noLoop()
     }

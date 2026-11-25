@@ -31,10 +31,11 @@ function setup() {
 
 /** Main Draw Function */
 function draw() {
+    drawBg()
     // Win, loss and Blocked areas
     limitScreen()
     // Draw Functions
-    drawBg()
-    drawPoint()
+    //drawPoint()
     drawPlayer()
+
 }
