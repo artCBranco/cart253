@@ -9,9 +9,12 @@
 /** Draws the Game Control Guide */
 function drawGuide() {
     fill(typo.ink)
-    text(typo.str[0], cnv.w * typo.guide.x, cnv.h * typo.guide.line1)
+    text(keyCount, cnv.w * typo.guide.x, cnv.h * typo.guide.line1)
+    //typo.str[0]
     text(typo.str[1], cnv.w * typo.guide.x, cnv.h * typo.guide.line2)
 }
+
+
 
 /** Draws the Win Screen */
 function drawWin() {
@@ -25,8 +28,8 @@ function drawWin() {
     // Text Size
     textSize(map(cnv.h, offset, pxl.maxRes, offset, typo.size.h1))
     // Dialogues
-    text(typo.str[4], cnv.w / 2, cnv.w * typo.line1)
-    text(typo.str[5], cnv.w / 2, cnv.w * typo.line2)
+    text(typo.str[4], cnv.w * half, cnv.w * typo.line1)
+    text(typo.str[5], cnv.w * half, cnv.w * typo.line2)
     pop()
 
     //Smaller restart suggestion

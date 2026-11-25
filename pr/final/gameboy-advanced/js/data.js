@@ -8,7 +8,7 @@
 /** Canvas properties */
 const cnv = {
     /** Canvas Height */
-    h: 900,
+    h: 600,
     /** Canvas Ratio */
     r: 0.75,
     /** Canvas Width */
@@ -50,7 +50,7 @@ const typo = {
         /** Line Height */
         line1: .12,
         /** Line Height */
-        line2: .155,
+        line2: .16,
     },
 }
 
@@ -144,22 +144,26 @@ const pxl = {
     x: 0.0325,
     /** Gameboy vertical pixel size. */
     y: 0.025,
-    /** Maximum Pixel size */
-    max: 25,
-    /** Max resolution */
-    maxRes: 2160,
     /** Top Right corner of the screen */
     cornerX: 0.095,
     /** Top Right corner of the screen */
     cornerY: 0.065,
+    /** Maximum Pixel size */
+    max: 25,
+    /** Max resolution */
+    maxRes: 2160,
     /** Loss Coordinates*/
     loss: {
+        /** Loss X Coordinate */
         x: 23,
+        /** Loss Y Coordinate */
         y: 1,
     },
     /** Win Coordinates */
     win: {
+        /** Win X Coordinate */
         x: 24,
+        /** Win Y Coordinate */
         y: 24,
     },
 }
@@ -182,15 +186,17 @@ const screenHeight = half - (pxl.cornerY + pxl.cornerX - pxl.y);
 const screenSize = half + pxl.cornerY + pxl.cornerX;
 
 
-/** Vertical Movement of the Player */
-let ad = pxl.cornerX + pxl.x;
-/** Horizontal Movement of the Player */
-let ws = pxl.cornerY + pxl.y;
+let ad = 0
+let ws = 0
 
 /** Defines the Horizontal limit of the screen */
 const borderX = pxl.cornerX + pxl.x * pxl.max;
 /** Defines the Vertical limit of the screen */
 const borderY = pxl.cornerY + pxl.y * pxl.max;
+/** Initial Player Position (Top Left Corner)  */
+const initialX = cnv.w * pxl.cornerX;
+/** Initial Player Position (Top Left Corner) */
+const initialY = cnv.h * pxl.cornerY;
 
 /** Defines the Horizontal limits of the black pixels */
 const pointX = pxl.cornerX
@@ -199,3 +205,5 @@ const pointY = pxl.cornerY
 
 /** KeyPress counter, used in Switch and drawButtonBack() */
 let prs;
+/** Counts total amount of moves made by the Player */
+let keyCount = 0;

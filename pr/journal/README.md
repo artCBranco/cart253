@@ -122,8 +122,24 @@ Random topics to explore:
 
 
 ---
-## *Journal 10: Final #2 - Date:*
+## *Journal 10: Final #2 - Date:2026-11-24*
 
+Trying to get the collisions to work in these past two weeks were absolute hell. Nothing worked and no matter how much I researched online, I couldn't find out where I was going wrong. The interesting thing is, I knew almost exactly *what* was wrong, I just lacked the means to complete it. Thankfully, Pippin filled in the gaps in my logic today. The solution was to separate the information from the design, which, to me seems counter intuitive. If I'm trying to get the coordinates from the square drawn in the picture, I wouldn't normally think of drawing from the coordinates instead. Effect before cause and all of that.
+
+So, now that's fixed. I added an array where I push all the coordinates of every single pixel on-screen, then I just draw it all at once with a ``for``` loop.
+
+Next part: actually making the player react to the obstruction. Which means I need a very simple (supposedly) function that says "If the player walks into the wall, walk back". Easy, until I realized I needed to know exactly where the player was standing before he moved. More hellcoding ensued. The solution: Another array. On the ```keypressed()``` function, push the new coordinates into it, and there we have it. A history of every step the player took... forever. (I added a ```.shift``` clause to erase old stuff to avoid shorting out the memory, ofc). Now, I can just make an ```if``` statement and say ```playerPosition = lastPosition```
+
+Unfortunately, this fix took me into a big rabbit hole of completely altering some of my key variables, and now nothing's working. Upside: It's just the Math that ain't mathing. Downside: I hate math. 
+
+As far as I understand so far, the issue is that I changed the amount that is added to the ```ad``` and ```ws``` variables when the corresponding key is pressed. Instead of the exact percentage of the screen (```pxl.y```), it`s just a counter, which corresponds to which pixel the square should be in. So I'll likely have to multiply that to make it have an effect. 
+
+TODO:
+- Fix the player movement
+- Clean the code
+- TEST the new colision
+- Fix the Win/Loss conditions
+- Get started on the next feature.
 ---
 ## *Journal 11: Final #3 - Date:*
 
