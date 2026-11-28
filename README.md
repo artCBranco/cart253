@@ -26,12 +26,13 @@ the larger projects and prototype.
   - **Gameboy advanced**
   
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/X2j05lODm4J3JoixSNmUt7/253_Presentation?node-id=1-2&viewport=416%2C92%2C0.23&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
+  
      
-     [View Online](https://artcbranco.github.io/cart253/pr/final/gameboy-advanced)
+  [View Online](https://artcbranco.github.io/cart253/pr/final/gameboy-advanced)
        
-     > ![Final Prototype - Gameboy Advanced](/assets/images/final-gameboy.gif)
+  > ![Final Prototype - Gameboy Advanced](/assets/images/final-gameboy.gif)
        
-     [View Code](https://github.com/artCBranco/cart253/tree/main/pr/final/gameboy-advanced)
+  [View Code](https://github.com/artCBranco/cart253/tree/main/pr/final/gameboy-advanced)
 
 
 ### Reflexive Journal
